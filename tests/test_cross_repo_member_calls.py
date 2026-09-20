@@ -6,9 +6,9 @@ type already in hand and nothing about it reached `graph.json` — the only arti
 `merge-graphs` and `global add` read. The two-repo graph was missing precisely the
 edges that make it a call graph.
 
-The Java, C++, C#, Swift, Go, PHP and TS/JS resolvers now park those calls on the
-caller node and this pass finishes them after the merge. The cases below pin what it
-must NOT do as much as what it must: the single-definition guard, the cross-repo-only
+The Java, C++, C#, Swift, Go, Kotlin, PHP and TS/JS resolvers now park those calls on
+the caller node and this pass finishes them after the merge. The cases below pin what
+it must NOT do as much as what it must: the single-definition guard, the cross-repo-only
 scope, and the language guard are what keep it from fabricating an edge from a name
 collision.
 """
@@ -47,6 +47,7 @@ needs_csharp = _needs("tree_sitter_c_sharp")
 needs_swift = _needs("tree_sitter_swift")
 needs_go = _needs("tree_sitter_go")
 needs_typescript = _needs("tree_sitter_typescript")
+needs_kotlin = _needs("tree_sitter_kotlin")
 
 
 def _caller(repo: str, parked: list[dict], node_id: str = "app_run",
@@ -468,6 +469,14 @@ def test_a_java_build_parks_the_call_and_the_merge_finishes_it(tmp_path: Path):
         ("src/greeter.go", "package svc\n\ntype Greeter struct{}\n\n"
                            "func (g *Greeter) Greet() {}\n"),
         marks=needs_go, id="go-struct-field",
+    ),
+    pytest.param(
+        # The object-qualified shape the Kotlin resolver answers: `Greeter.greet()`
+        # names the object singleton explicitly, and only the other repo declares it.
+        "kotlin", "greet",
+        ("src/App.kt", "fun run() { Greeter.greet() }\n"),
+        ("src/Greeter.kt", "object Greeter { fun greet() {} }\n"),
+        marks=needs_kotlin, id="kotlin-object-receiver",
     ),
 ])
 def test_each_language_parks_the_call_and_the_merge_finishes_it(

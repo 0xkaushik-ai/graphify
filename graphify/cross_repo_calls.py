@@ -43,6 +43,7 @@ _LANG_SUFFIXES: dict[str, frozenset[str]] = {
     "csharp": frozenset({".cs"}),
     "go": frozenset({".go"}),
     "java": frozenset({".java"}),
+    "kotlin": frozenset({".kt", ".kts"}),
     "swift": frozenset({".swift"}),
     "php": frozenset({".php", ".phtml", ".php3", ".php4", ".php5", ".php7", ".phps"}),
     # TS and JS share one key: a TS class legitimately answers a JS call site, so
