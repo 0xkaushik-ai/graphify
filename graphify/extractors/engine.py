@@ -7689,6 +7689,7 @@ def _extract_generic(
             # self): kept apart from member_receiver, which feeds the
             # receiver-typed resolvers and raw_calls.
             self_receiver: str | None = None
+            is_scoped_call: bool = False
             swift_receiver: str | None = None
             member_receiver: str | None = None
             kotlin_qualified_prefix: str | None = None
@@ -8014,6 +8015,7 @@ def _extract_generic(
                     # qualified-call branch here, so a dedicated PHP resolver can
                     # bind it to the actual method on that class.
                     is_member_call = True
+                    is_scoped_call = True
                     name_node = node.child_by_field_name("name")
                     if name_node:
                         callee_name = _read_text(name_node, source)
@@ -8264,7 +8266,7 @@ def _extract_generic(
                     and is_member_call
                     and not lua_self_qualified
                 )
-                if _python_defer or _java_defer or (_builtin_member_call and not php_builtin_self_call) or _lua_member_defer or (
+                if _python_defer or _java_defer or (_builtin_member_call and not php_builtin_self_call) or _lua_member_defer or is_scoped_call or (
                     is_member_call
                     and member_receiver
                     and (
