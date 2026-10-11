@@ -33,9 +33,9 @@ _WORKSPACE_MANIFEST_NAMES = ("pnpm-workspace.yaml", "package.json")
 # mtime component, so extract() clears it per run.
 _PACKAGE_IMPORTS_CACHE: "dict[str, tuple[Path, dict] | None]" = {}
 
-_JS_RESOLVE_EXTS = (".ts", ".tsx", ".mts", ".cts", ".svelte", ".js", ".jsx", ".mjs", ".cjs")
+_JS_RESOLVE_EXTS = (".ts", ".tsx", ".mts", ".cts", ".svelte", ".ejs", ".js", ".jsx", ".mjs", ".cjs")
 
-_JS_INDEX_FILES = ("index.ts", "index.tsx", "index.svelte", "index.js", "index.jsx", "index.mjs")
+_JS_INDEX_FILES = ("index.ts", "index.tsx", "index.svelte", "index.ejs", "index.js", "index.jsx", "index.mjs")
 
 def _declared_language_suffixes(target_exts: tuple[str, ...]) -> tuple[str, ...]:
     """Return declared literal suffixes for these languages in deterministic order."""
