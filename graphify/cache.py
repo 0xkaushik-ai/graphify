@@ -37,7 +37,7 @@ except Exception:
     _EXTRACTOR_VERSION = "unknown"
 
 # Bump when AST cache-key semantics change independently of the package version.
-_AST_CACHE_SCHEMA = 10  # C# partial types carry `type_path`, the nested/generic partial merge key; prior (9): Python property-read raw calls and `_py_property` nodes; (8): Rust `use`-group per-binding edges; (7): Python opaque-base/super(args) markers + nested-class enclosing ids.
+_AST_CACHE_SCHEMA = 11  # Python property-accessor decorators / `Self`, Swift `Self`, Go generic type params no longer mint sourceless stubs; Python forward type-hint keeps the file node; PowerShell dot-source paths and script-scope calls; C# recovers members past a verbatim-interpolated escaped-quote string; prior (10): C# partial types carry `type_path`; (9): Python property-read raw calls and `_py_property` nodes; (8): Rust `use`-group per-binding edges; (7): Python opaque-base/super(args) markers + nested-class enclosing ids.
 
 
 # Per-process memo: distributions() scans site-packages metadata, which is
