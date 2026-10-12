@@ -530,6 +530,9 @@ class TestSubprocessStdinIsolation:
 
 class TestParsePrDict:
     def test_parse_pr_dict_complete(self):
+        # A recent updatedAt so status stays APPROVED (a hardcoded date eventually
+        # crosses the staleness window and _classify returns STALE first).
+        recent = datetime.now(timezone.utc) - timedelta(days=1)
         raw = {
             "number": 42,
             "title": "Add feature",
@@ -539,7 +542,7 @@ class TestParsePrDict:
             "isDraft": False,
             "reviewDecision": "APPROVED",
             "statusCheckRollup": [{"conclusion": "SUCCESS", "status": "COMPLETED"}],
-            "updatedAt": "2026-09-20T10:00:00Z",
+            "updatedAt": recent.strftime("%Y-%m-%dT%H:%M:%SZ"),
         }
         pr = _parse_pr_dict(raw, expected_base="v8")
         assert pr.number == 42
@@ -551,7 +554,7 @@ class TestParsePrDict:
         assert pr.review_decision == "APPROVED"
         assert pr.ci_status == "SUCCESS"
         assert pr.status == "APPROVED"
-        assert pr.updated_at.year == 2026
+        assert pr.updated_at.year == recent.year
 
     def test_parse_pr_dict_defaults_on_missing_optional_fields(self):
         raw = {
