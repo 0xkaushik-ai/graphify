@@ -2,6 +2,31 @@
 
 Full release notes with details on each version: [GitHub Releases](https://github.com/Graphify-Labs/graphify/releases)
 
+## 0.9.88 (2026-10-12)
+
+Twenty community pull requests: language-extraction and call-resolution fixes (Java, C/C++, Python, Swift, Go, PowerShell, C#, JS/EJS), dedup/shrink-guard hardening, and query/graph.html ergonomics. The AST cache schema is bumped, so the first build after upgrading re-extracts.
+
+- Feature: **Java** a call on a chained, `new` or cast receiver (`factory.builder().size(3).build()`, `new Builder().size(1)`, `((Builder) o).build()`) now resolves through the declared return types on the method chain, binding only on a single unambiguous target (#4306, #4307, thanks @rohit-jsfreaky).
+- Fix: **Java** a bare call or field receiver inherited from a supertype in another file now resolves to the nearest declaring supertype (class wins over an interface default; a tie binds nothing), instead of dangling (#4304, #4305, thanks @rohit-jsfreaky).
+- Fix: **C/C++** a quoted cross-directory include (`#include "../lib/foo.h"`, STM32 `Core/Src` to `Core/Inc`) now resolves to the right header by a unique longest-shared-directory-prefix match, fail-closed on ties and never guessing for `./`, `../`, absolute or angle-bracket includes (#4354, #4392, thanks @hopstreax).
+- Fix: **Python** a `@name.setter`/`.getter`/`.deleter` decorator no longer mints a sourceless stub node (#4380, #4385, thanks @rajatnagda45).
+- Fix: **Python** a `Self` (PEP 673) type annotation (`-> Self`, `: Self`, `typing.Self`) no longer mints a sourceless `self` stub (#4381, #4386, thanks @rajatnagda45).
+- Fix: **Swift** a `Self` type annotation no longer mints a sourceless `self` stub (#4382, #4387, thanks @rajatnagda45).
+- Fix: **Go** generic type parameters (`[T any]`) in signatures, struct fields and interface methods no longer mint sourceless `t`/`r` stubs (#4383, #4388, thanks @rajatnagda45).
+- Fix: **Python** a class type-hinted before it is defined (a forward reference) no longer mints a bare stub that collides with and swallows the file node (#4334, #4343, thanks @Mpasha17).
+- Fix: **C#** extraction now recovers members declared after a verbatim interpolated string that ends in an escaped quote (`$@"a""{e}"""`), instead of silently dropping the rest of the file; the fix masks only the offending bytes and discards the rewrite unless it re-parses clean (#3376, #3612, thanks @rohit-jsfreaky).
+- Fix: **PowerShell** dot-sourced includes with quoted or `$PSScriptRoot` paths now emit import edges, and script-scope commands (outside any function) are now collected as calls (#4356, #4369, thanks @FabioRueda).
+- Fix: **JS/TS** a bare or scoped external import is now anchored to the package name rather than the path leaf, so `@scope-a/utils` and `@scope-b/utils` stay distinct and `lodash/fp/map` collapses onto one `lodash` node (#3084, #3092, thanks @rohit-jsfreaky).
+- Feature: **EJS** (`.ejs`) templates now have an extractor: scriptlet functions/classes, require/import edges, dynamic imports, and `<%- include('partial') %>` composition edges, instead of a single top-level parse error (#3811, #4338, thanks @nothariharan).
+- Fix: **serve** a dotted Python query (`pkg.mod.func`, `pkg.mod:func`) now resolves to the symbol by module path, fail-closed on a same-file ambiguity, without regressing bare-name lookups (#4366, #4367, thanks @Mpasha17).
+- Fix: dedup now path-qualifies semantic ids that dropped the directory, so `a/x.md` and `b/x.md` (both minting a bare `x`) stay distinct instead of collapsing and losing one node; a reference to the bare id from a third file is left unresolved with a warning rather than guessed (#4281, #4362, thanks @Deepjyoti-Sarmah).
+- Fix: a semantic node that dedup legitimately folded into its AST twin is now exempt from the shrink guard, so `graphify update` on a graph that had an LLM semantic ghost is no longer wrongly write-blocked; the exemption is scoped to a strict `_origin=="ast"` twin at the same path and label, so a genuine partial-build loss is still refused. LLM node/edge field aliases (`file`/`filepath`, `relationship`) are folded, with the canonical field always winning (#4389, #4391, thanks @AndresDiagoM).
+- Fix: **install** `graphify install/uninstall` now removes only graphify's own hook entries (keyed on the `hook-guard`/`hook-check` command, not a loose "graphify" substring), keeping co-located user hooks and other commands in the same group, and routes uninstall through a backup (#4359, #4373, thanks @nothariharan).
+- Fix: **install** CLAUDE.md, AGENTS.md and sibling files now keep their original line endings (CRLF or LF) across install and uninstall, instead of being normalized to the platform default (#4360, #4372, thanks @nothariharan).
+- Fix: **wiki** index rows now link to their own article when two communities or god-nodes share a label, instead of both pointing at the first-registered slug and orphaning the second article (#3032, #3033, #3095, thanks @rohit-jsfreaky).
+- Feature: **query** `--seed` starts the traversal at given nodes (ids, labels, callable names or paths) so an external ranker can choose the start set; unresolved seeds are reported and skipped, and an all-unresolved set fails closed rather than falling back to keyword seeds (#4293, #4289, thanks @devkancheti4-design).
+- Feature: **graph.html** the sidebar now shows a hover tooltip with the full (truncated) legend/search/neighbor name and the legend node count; user text is written via `textContent`, preserving the embedded-JSON escaping (#4286, #4291, thanks @Hassannzidan).
+
 ## 0.9.87 (2026-10-12)
 
 Eighteen community pull requests: language-extraction fixes (PHP, C#, Python, TypeScript, Julia), retrieval and watch hardening, and skill/benchmark correctness.
