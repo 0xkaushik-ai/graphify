@@ -2,6 +2,29 @@
 
 Full release notes with details on each version: [GitHub Releases](https://github.com/Graphify-Labs/graphify/releases)
 
+## 0.9.87 (2026-10-12)
+
+Eighteen community pull requests: language-extraction fixes (PHP, C#, Python, TypeScript, Julia), retrieval and watch hardening, and skill/benchmark correctness.
+
+- Fix: **PHP** a `Class::method()` static call now resolves to the called method rather than binding to the class node, and no longer stalls at INFERRED confidence for a same-namespace call that needs no `use` import. `self`/`static`/`parent` and lowercase class receivers route through the PHP resolver, fail-closed on any ambiguous or off-corpus receiver (#3872, #3874, thanks @rikurunico).
+- Fix: **C#** nested and generic `partial` types now merge by their full type path (`Outer\`1.Inner`), so a two-file nested partial is unified while `Foo` and `Foo<T>` stay distinct; a cross-file unqualified call binds to the caller's own merged type when it is the single own-type candidate, and a sourceless placeholder base is dropped when a real same-named base exists on the partial (#4363, #4364, thanks @JensD-git). (The AST cache schema is bumped, so the first build after upgrading re-extracts.)
+- Feature: **Python** a read of a `@property` (`obj.prop`, including `x.prop += v`) now links to the property's getter, instead of being dropped as a bare attribute access (#4337, thanks @rohit-jsfreaky). (The AST cache schema is bumped, so the first build after upgrading re-extracts.)
+- Fix: **TypeScript** a public call `c.name()` reaches a `#name`-labeled node only when the class declares a public `name`, and a public call keeps its edge when `foo` and `#foo` share one node (#4298, thanks @rohit-jsfreaky).
+- Fix: **Julia** parametric and module-qualified functor (callable-struct) types are named by their type rather than the variable, and never fall back to the variable binding (#4351, thanks @ayarodionov).
+- Fix: **C#** a `var` is typed from the called method's return type, so downstream member calls on it resolve (#4266, #4268, thanks @Mpasha17).
+- Fix: `graphify affected <PR>` now scopes graph impact to the requested PR instead of the repository default branch, and PR default-branch detection is isolated under test (#3829, thanks @hopstreax).
+- Fix: `update` refuses to drop a saved semantic node id when the node total grows (treating it as an incomplete re-extract), while still letting a removed import stub go; `export` keeps an integer node id that is still in the graph (#4115, thanks @SrijanSriv).
+- Fix: the MCP `query_graph` seed order no longer lets a weak match on an early-alphabet term lead a specific term's exact match: the per-term guaranteed seeds (#1445) are ordered by match strength (#4357, #4358, thanks @devkancheti4-design).
+- Fix: the update skill stamps `_origin` on the semantic tier so an AST-only `update` cannot delete semantic nodes it did not re-extract (#2843, #3110, thanks @abhay-codes07).
+- Feature: a project can declare what an ambiguous extension (`.inc`, `.h`, TS-family) means via `language.<ext>=<language|.ext>` lines in `.graphifyrc`; the declaration flows through classification, extractor selection, imports, watch, and the AST cache, and default detection is byte-for-byte unchanged when absent (#2961, #3789, thanks @andrebrait and @abhay-codes07).
+- Fix: the hook's soft read/search nudge is bounded per session instead of firing on every matching file (#3435, #3443, thanks @L4XB).
+- Fix: the update skill prints a short summary of the incremental step and leaves the full result in `.graphify_incremental.json`, instead of dumping every file path into the agent context (#3952, thanks @mdshzb04).
+- Fix: **skillgen** Step 3 Part A now passes `root=` to `extract()`, so adapting the snippet to a relocated cache (`--out`) no longer renames every code node and blinds the node-count shrink guard (#3727, #3955, thanks @jnrod03-rgb).
+- Fix: **watch** a full-corpus rebuild is no longer silently dropped when the rebuild lock is busy; it is queued (superseding queued incremental paths) and drained after the in-flight rebuild, and the "changes queued" log only prints when something was actually queued (#4274, #4276, thanks @smngvlkz).
+- Fix: the benchmark now counts the tokens of the answer `query_graph` actually returns (calling the real budgeted query path) instead of a separate unbudgeted reimplementation (#4347, #4348, thanks @rohit-jsfreaky).
+- Feature: **graph.html** gains a light/dark/system theme toggle; the dark default renders byte-identically to before (#3894, #4300, thanks @Mpasha17).
+- Fix: labeling now honors the Claude CLI model environment variable (`GRAPHIFY_CLAUDE_CLI_MODEL`), matching the extraction path, so labeling no longer silently falls back to the session default model (#3846, #3876, thanks @oleksii-tumanov).
+
 ## 0.9.86 (2026-10-11)
 
 Eighteen community pull requests: language-extraction fixes, safety and determinism hardening, and CLI/query ergonomics.
