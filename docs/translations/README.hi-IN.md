@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ graphify install               # register the skill with your AI assistant
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 सहेजे गए ग्राफ में `graph.schema_version` शामिल होता है ताकि इंटीग्रेशन असंगत
 फॉर्मेट बदलावों का पता लगा सकें, साथ ही `graph.graphify_version` जो इसे बनाने वाले
 Graphify रिलीज़ की पहचान करता है।
 
-**यहां काम करता है:** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, और 15+ और भी — [अपना प्लेटफॉर्म चुनें](#install)।
+**यहां काम करता है:** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, और 15+ और भी: [अपना प्लेटफॉर्म चुनें](#install)।
 
 ---
 
@@ -81,11 +81,11 @@ Graphify रिलीज़ की पहचान करता है।
 
 पूरी गाइड और संदर्भ **[docs.graphify.com](https://docs.graphify.com)** पर मौजूद हैं:
 
-- **[Quickstart](https://docs.graphify.com/quickstart)** — अपना पहला ग्राफ बनाएं
-- **[CLI reference](https://docs.graphify.com/reference/overview)** — हर कमांड और फ्लैग
-- **[Ask better graph questions](https://docs.graphify.com/guides/querying)** — querying पैटर्न
-- **[Configuration](https://docs.graphify.com/reference/configuration)** — एनवायरनमेंट वेरिएबल और ट्यूनिंग
-- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)** — भाषाएं और फाइल प्रकार
+- **[Quickstart](https://docs.graphify.com/quickstart)**: अपना पहला ग्राफ बनाएं
+- **[CLI reference](https://docs.graphify.com/reference/overview)**: हर कमांड और फ्लैग
+- **[Ask better graph questions](https://docs.graphify.com/guides/querying)**: querying पैटर्न
+- **[Configuration](https://docs.graphify.com/reference/configuration)**: एनवायरनमेंट वेरिएबल और ट्यूनिंग
+- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**: भाषाएं और फाइल प्रकार
 - **[Team workflows](https://docs.graphify.com/guides/team-workflows)** और **[PR review](https://docs.graphify.com/guides/pull-requests)**
 - **[Troubleshooting](https://docs.graphify.com/troubleshooting)** और **[How it works](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 आधिकारिक स्रोत रिपॉज़िटरी [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) है।
 
-**स्टेप 1 — पैकेज इंस्टॉल करें:**
+**स्टेप 1: पैकेज इंस्टॉल करें:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**स्टेप 2 — अपने AI असिस्टेंट के साथ स्किल रजिस्टर करें:**
+**स्टेप 2: अपने AI असिस्टेंट के साथ स्किल रजिस्टर करें:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ graphify install --project --platform codex
 
 Codex यूज़र्स को समानांतर एक्सट्रैक्शन के लिए `~/.codex/config.toml` में `[features]` के अंतर्गत `multi_agent = true` की भी ज़रूरत होती है। CodeBuddy वही Agent tool और PreToolUse hook तंत्र उपयोग करता है जो Claude Code करता है। Factory Droid समानांतर subagent डिस्पैच के लिए `Task` tool उपयोग करता है। OpenClaw और Aider अनुक्रमिक एक्सट्रैक्शन उपयोग करते हैं (उन प्लेटफॉर्म्स पर समानांतर एजेंट सपोर्ट अभी शुरुआती है)। Trae समानांतर subagent डिस्पैच के लिए Agent tool उपयोग करता है और `PreToolUse` hooks का समर्थन **नहीं** करता, इसलिए AGENTS.md ही हमेशा-चालू तंत्र है।
 
-`--platform agents` (alias `--platform skills`) जेनेरिक क्रॉस-फ्रेमवर्क [Agent-Skills](https://github.com/anthropics/skills) लोकेशन को लक्षित करता है: स्पेक का यूज़र-ग्लोबल `~/.agents/skills/` (जिसे `npx skills` और स्पेक-अनुरूप फ्रेमवर्क पढ़ते हैं) ग्लोबल इंस्टॉल के लिए, और `./.agents/skills/` किसी प्रोजेक्ट (`--project`) इंस्टॉल के लिए। सादा `graphify install` डिज़ाइन से सिंगल-प्लेटफॉर्म (Claude Code) ही रहता है — जब आप चाहते हैं कि स्किल किसी भी ऐसे फ्रेमवर्क द्वारा खोजी जा सके जो `.agents/skills` पढ़ता है, तब नामित `agents` प्लेटफॉर्म उपयोग करें।
+`--platform agents` (alias `--platform skills`) जेनेरिक क्रॉस-फ्रेमवर्क [Agent-Skills](https://github.com/anthropics/skills) लोकेशन को लक्षित करता है: स्पेक का यूज़र-ग्लोबल `~/.agents/skills/` (जिसे `npx skills` और स्पेक-अनुरूप फ्रेमवर्क पढ़ते हैं) ग्लोबल इंस्टॉल के लिए, और `./.agents/skills/` किसी प्रोजेक्ट (`--project`) इंस्टॉल के लिए। सादा `graphify install` डिज़ाइन से सिंगल-प्लेटफॉर्म (Claude Code) ही रहता है: जब आप चाहते हैं कि स्किल किसी भी ऐसे फ्रेमवर्क द्वारा खोजी जा सके जो `.agents/skills` पढ़ता है, तब नामित `agents` प्लेटफॉर्म उपयोग करें।
 
 > Codex `/graphify` के बजाय `$graphify` उपयोग करता है।
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 नीचे [पूर्ण कमांड संदर्भ](#full-command-reference) देखें।
@@ -393,12 +393,12 @@ graphify `.gitignore` का सम्मान करता है और `--ex
 
 ## गोपनीयता
 
-- **कोड फाइलें** — tree-sitter के ज़रिए लोकली प्रोसेस होती हैं। कुछ भी आपकी मशीन से बाहर नहीं जाता। केवल-कोड वाले corpus के लिए किसी API की की ज़रूरत नहीं — `graphify extract` पूरी तरह ऑफ़लाइन चलता है। मिश्रित रेपो पर, केवल कोड को इंडेक्स करने और उन डॉक्स/PDF/इमेज को छोड़ने के लिए जिन्हें अन्यथा LLM की ज़रूरत होती, `--code-only` जोड़ें।
-- **वीडियो / ऑडियो** — faster-whisper के साथ लोकली ट्रांसक्राइब होते हैं। कुछ भी आपकी मशीन से बाहर नहीं जाता।
-- **डॉक्स, PDF, इमेज** — सिमैंटिक एक्सट्रैक्शन के लिए आपके AI असिस्टेंट को भेजे जाते हैं (`/graphify` स्किल के ज़रिए, आपके IDE सेशन में जो भी मॉडल चलता है उसका उपयोग करके)। हेडलेस `graphify extract` के लिए `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), एक चालू Ollama इंस्टेंस (`OLLAMA_BASE_URL`), मानक provider chain के ज़रिए AWS क्रेडेंशियल (Bedrock - कोई API की की ज़रूरत नहीं, IAM उपयोग करता है), या `claude` CLI बाइनरी (Claude Code - कोई API की की ज़रूरत नहीं, आपकी Claude सदस्यता उपयोग करता है) चाहिए। `--dedup-llm` फ्लैग वही की उपयोग करता है।
-- **Data residency** — `graphify extract` अपने आप पता लगाता है कि कौन-सा provider उपयोग करना है, इस आधार पर कि कौन-सी API की सेट है (प्राथमिकता: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama)। data-residency आवश्यकताओं वाले कोड के लिए, `--backend ollama` (पूरी तरह लोकल) उपयोग करें या एक स्पष्ट `--backend` फ्लैग पास करें। Kimi (`MOONSHOT_API_KEY`) चीन में Moonshot AI सर्वर पर रूट करता है।
+- **कोड फाइलें**: tree-sitter के ज़रिए लोकली प्रोसेस होती हैं। कुछ भी आपकी मशीन से बाहर नहीं जाता। केवल-कोड वाले corpus के लिए किसी API की की ज़रूरत नहीं: `graphify extract` पूरी तरह ऑफ़लाइन चलता है। मिश्रित रेपो पर, केवल कोड को इंडेक्स करने और उन डॉक्स/PDF/इमेज को छोड़ने के लिए जिन्हें अन्यथा LLM की ज़रूरत होती, `--code-only` जोड़ें।
+- **वीडियो / ऑडियो**: faster-whisper के साथ लोकली ट्रांसक्राइब होते हैं। कुछ भी आपकी मशीन से बाहर नहीं जाता।
+- **डॉक्स, PDF, इमेज**: सिमैंटिक एक्सट्रैक्शन के लिए आपके AI असिस्टेंट को भेजे जाते हैं (`/graphify` स्किल के ज़रिए, आपके IDE सेशन में जो भी मॉडल चलता है उसका उपयोग करके)। हेडलेस `graphify extract` के लिए `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), एक चालू Ollama इंस्टेंस (`OLLAMA_BASE_URL`), मानक provider chain के ज़रिए AWS क्रेडेंशियल (Bedrock - कोई API की की ज़रूरत नहीं, IAM उपयोग करता है), या `claude` CLI बाइनरी (Claude Code - कोई API की की ज़रूरत नहीं, आपकी Claude सदस्यता उपयोग करता है) चाहिए। `--dedup-llm` फ्लैग वही की उपयोग करता है।
+- **Data residency**: `graphify extract` अपने आप पता लगाता है कि कौन-सा provider उपयोग करना है, इस आधार पर कि कौन-सी API की सेट है (प्राथमिकता: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama)। data-residency आवश्यकताओं वाले कोड के लिए, `--backend ollama` (पूरी तरह लोकल) उपयोग करें या एक स्पष्ट `--backend` फ्लैग पास करें। Kimi (`MOONSHOT_API_KEY`) चीन में Moonshot AI सर्वर पर रूट करता है।
 - **कोई telemetry नहीं**, कोई उपयोग ट्रैकिंग नहीं, कोई analytics नहीं।
-- **Query logging** — हर `graphify query`, `graphify path`, `graphify explain`, और MCP `query_graph` कॉल को `~/.cache/graphify-queries.log` में JSON Lines फॉर्मेट में लॉग किया जाता है (timestamp, question, corpus, लौटाए गए nodes, duration)। पूर्ण subgraph उत्तर डिफ़ॉल्ट रूप से संग्रहीत **नहीं** किए जाते। ऑप्ट-आउट करने के लिए `GRAPHIFY_QUERY_LOG_DISABLE=1` सेट करें, या कोड पथ को निष्क्रिय किए बिना चुप करने के लिए `GRAPHIFY_QUERY_LOG=/dev/null`।
+- **Query logging**: हर `graphify query`, `graphify path`, `graphify explain`, और MCP `query_graph` कॉल को `~/.cache/graphify-queries.log` में JSON Lines फॉर्मेट में लॉग किया जाता है (timestamp, question, corpus, लौटाए गए nodes, duration)। पूर्ण subgraph उत्तर डिफ़ॉल्ट रूप से संग्रहीत **नहीं** किए जाते। ऑप्ट-आउट करने के लिए `GRAPHIFY_QUERY_LOG_DISABLE=1` सेट करें, या कोड पथ को निष्क्रिय किए बिना चुप करने के लिए `GRAPHIFY_QUERY_LOG=/dev/null`।
 
 ---
 
@@ -416,11 +416,11 @@ graphify `.gitignore` का सम्मान करता है और `--ex
 
 ## और जानें
 
-- [docs.graphify.com](https://docs.graphify.com) — पूरी दस्तावेज़: गाइड, कमांड संदर्भ, और इंटीग्रेशन
-- [How it works](../how-it-works.md) — एक्सट्रैक्शन पाइपलाइन, समुदाय पहचान, confidence स्कोरिंग, बेंचमार्क
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — मॉड्यूल विभाजन, कोई भाषा कैसे जोड़ें
-- [Optional integrations](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — graphify के पीछे के विचारों पर किताब, आर्किटेक्चर आद्योपांत
+- [docs.graphify.com](https://docs.graphify.com): पूरी दस्तावेज़: गाइड, कमांड संदर्भ, और इंटीग्रेशन
+- [How it works](../how-it-works.md): एक्सट्रैक्शन पाइपलाइन, समुदाय पहचान, confidence स्कोरिंग, बेंचमार्क
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): मॉड्यूल विभाजन, कोई भाषा कैसे जोड़ें
+- [Optional integrations](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): graphify के पीछे के विचारों पर किताब, आर्किटेक्चर आद्योपांत
 
 ---
 
@@ -428,12 +428,12 @@ graphify `.gitignore` का सम्मान करता है और `--ex
 
 [**Graphify Cloud**](https://app.graphify.com/login) graphify के ऊपर बना हमेशा-चालू स्तर है। प्रति फ़ोल्डर मांग पर दोबारा बनाए जाने वाले ग्राफ के बजाय, यह आपके पूरे सॉफ़्टवेयर डेवलपमेंट लाइफ़साइकल में एक लाइव ग्राफ बनाए रखता है:
 
-- **80% कम टोकन** — हमेशा-चालू मेमोरी का मतलब है कि आपके एजेंट्स हर सेशन में कोडबेस को दोबारा पढ़ना और दोबारा समझाना बंद कर देते हैं।
-- **मोनोरेपो और क्रॉस-रेपो** — हर सर्विस और रिपॉज़िटरी में एक जुड़ा हुआ ग्राफ, प्रति फ़ोल्डर एक ग्राफ नहीं।
-- **औपचारिक सत्यापन** — आर्किटेक्चरल और dependency invariants को लाइव ग्राफ के विरुद्ध जांचें।
-- **आपके SDLC के विहंगम दृश्य के साथ कोड रिव्यू** — मर्ज करने से पहले देखें कि कोई बदलाव पूरे सिस्टम में कैसे फैलता है।
-- **SDLC कनेक्टर्स** — Sentry, Jira, और अन्य को खींच लें, ताकि इंसिडेंट, टिकट, और कोड एक ही ग्राफ में रहें।
-- **हमेशा-चालू** — कोड, डॉक्स, और मीटिंग्स में बैकग्राउंड में लगातार अपडेट होता है।
+- **80% कम टोकन**: हमेशा-चालू मेमोरी का मतलब है कि आपके एजेंट्स हर सेशन में कोडबेस को दोबारा पढ़ना और दोबारा समझाना बंद कर देते हैं।
+- **मोनोरेपो और क्रॉस-रेपो**: हर सर्विस और रिपॉज़िटरी में एक जुड़ा हुआ ग्राफ, प्रति फ़ोल्डर एक ग्राफ नहीं।
+- **औपचारिक सत्यापन**: आर्किटेक्चरल और dependency invariants को लाइव ग्राफ के विरुद्ध जांचें।
+- **आपके SDLC के विहंगम दृश्य के साथ कोड रिव्यू**: मर्ज करने से पहले देखें कि कोई बदलाव पूरे सिस्टम में कैसे फैलता है।
+- **SDLC कनेक्टर्स**: Sentry, Jira, और अन्य को खींच लें, ताकि इंसिडेंट, टिकट, और कोड एक ही ग्राफ में रहें।
+- **हमेशा-चालू**: कोड, डॉक्स, और मीटिंग्स में बैकग्राउंड में लगातार अपडेट होता है।
 
 **[app.graphify.com पर 14-दिन का मुफ्त ट्रायल शुरू करें &rarr;](https://app.graphify.com/login)**
 

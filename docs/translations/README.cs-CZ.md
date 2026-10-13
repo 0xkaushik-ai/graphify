@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ A je to. Dostanete **tři soubory**:
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 Uložený graf obsahuje `graph.schema_version`, aby integrace dokázaly detekovat
 nekompatibilní změny formátu, plus `graph.graphify_version` identifikující
 vydání Graphify, které jej vytvořilo.
 
-**Funguje v** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot a 15+ dalších — [vyberte svou platformu](#install).
+**Funguje v** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot a 15+ dalších: [vyberte svou platformu](#install).
 
 ---
 
@@ -81,11 +81,11 @@ vydání Graphify, které jej vytvořilo.
 
 Úplné průvodce a referenční příručka žijí na **[docs.graphify.com](https://docs.graphify.com)**:
 
-- **[Rychlý start](https://docs.graphify.com/quickstart)** — sestavte svůj první graf
-- **[Referenční příručka CLI](https://docs.graphify.com/reference/overview)** — každý příkaz a přepínač
-- **[Pokládejte lepší otázky grafu](https://docs.graphify.com/guides/querying)** — vzory dotazování
-- **[Konfigurace](https://docs.graphify.com/reference/configuration)** — proměnné prostředí a ladění
-- **[Podporované vstupy](https://docs.graphify.com/concepts/supported-inputs)** — jazyky a typy souborů
+- **[Rychlý start](https://docs.graphify.com/quickstart)**: sestavte svůj první graf
+- **[Referenční příručka CLI](https://docs.graphify.com/reference/overview)**: každý příkaz a přepínač
+- **[Pokládejte lepší otázky grafu](https://docs.graphify.com/guides/querying)**: vzory dotazování
+- **[Konfigurace](https://docs.graphify.com/reference/configuration)**: proměnné prostředí a ladění
+- **[Podporované vstupy](https://docs.graphify.com/concepts/supported-inputs)**: jazyky a typy souborů
 - **[Týmové pracovní postupy](https://docs.graphify.com/guides/team-workflows)** a **[revize PR](https://docs.graphify.com/guides/pull-requests)**
 - **[Řešení potíží](https://docs.graphify.com/troubleshooting)** a **[Jak to funguje](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 Oficiální zdrojový repozitář je [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**Krok 1 — nainstalujte balíček:**
+**Krok 1: nainstalujte balíček:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**Krok 2 — zaregistrujte skill u svého AI asistenta:**
+**Krok 2: zaregistrujte skill u svého AI asistenta:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ například `graphify claude install --project` nebo `graphify codex install --p
 
 Uživatelé Codexu také potřebují `multi_agent = true` pod `[features]` v `~/.codex/config.toml` pro paralelní extrakci. CodeBuddy používá stejný mechanismus nástroje Agent a hooku PreToolUse jako Claude Code. Factory Droid používá nástroj `Task` pro paralelní rozeslání subagentů. OpenClaw a Aider používají sekvenční extrakci (podpora paralelních agentů je na těchto platformách ještě v počátcích). Trae používá nástroj Agent pro paralelní rozeslání subagentů a **ne**podporuje hooky `PreToolUse`, takže AGENTS.md je vždy zapnutý mechanismus.
 
-`--platform agents` (alias `--platform skills`) cílí na obecné umístění [Agent-Skills](https://github.com/anthropics/skills) napříč frameworky: uživatelsky globální `~/.agents/skills/` dle specifikace (čtené `npx skills` a frameworky odpovídajícími specifikaci) pro globální instalaci a `./.agents/skills/` pro instalaci v rámci projektu (`--project`). Prosté `graphify install` zůstává záměrně jednoplatformní (Claude Code) — použijte pojmenovanou platformu `agents`, když chcete, aby byl skill objevitelný kterýmkoli frameworkem, který čte `.agents/skills`.
+`--platform agents` (alias `--platform skills`) cílí na obecné umístění [Agent-Skills](https://github.com/anthropics/skills) napříč frameworky: uživatelsky globální `~/.agents/skills/` dle specifikace (čtené `npx skills` a frameworky odpovídajícími specifikaci) pro globální instalaci a `./.agents/skills/` pro instalaci v rámci projektu (`--project`). Prosté `graphify install` zůstává záměrně jednoplatformní (Claude Code): použijte pojmenovanou platformu `agents`, když chcete, aby byl skill objevitelný kterýmkoli frameworkem, který čte `.agents/skills`.
 
 > Codex používá `$graphify` místo `/graphify`.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 Viz [úplnou referenční příručku příkazů](#full-command-reference) níže.
@@ -393,12 +393,12 @@ Backendy, API klíče, chování hooků a ladění jsou řízeny proměnnými pr
 
 ## Soukromí
 
-- **Soubory s kódem** — zpracovávány lokálně přes tree-sitter. Nic neopustí váš počítač. Korpus obsahující jen kód nevyžaduje API klíč — `graphify extract` běží plně offline. U smíšeného repozitáře přidejte `--code-only`, abyste indexovali jen kód a přeskočili dokumentaci/PDF/obrázky, které by jinak potřebovaly LLM.
-- **Video / audio** — přepisováno lokálně pomocí faster-whisper. Nic neopustí váš počítač.
-- **Dokumentace, PDF, obrázky** — odesílány vašemu AI asistentovi k sémantické extrakci (přes skill `/graphify`, s použitím jakéhokoli modelu, na kterém běží vaše relace IDE). Bezhlavý `graphify extract` vyžaduje `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), běžící instanci Ollama (`OLLAMA_BASE_URL`), přihlašovací údaje AWS přes standardní řetězec poskytovatelů (Bedrock – není třeba API klíč, používá IAM) nebo binárku CLI `claude` (Claude Code – není třeba API klíč, používá vaše předplatné Claude). Přepínač `--dedup-llm` používá stejný klíč.
-- **Datová rezidence** — `graphify extract` automaticky detekuje, kterého poskytovatele použít, na základě toho, který API klíč je nastaven (priorita: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Pro kód s požadavky na datovou rezidenci použijte `--backend ollama` (plně lokální) nebo předejte explicitní přepínač `--backend`. Kimi (`MOONSHOT_API_KEY`) směruje na servery Moonshot AI v Číně.
+- **Soubory s kódem**: zpracovávány lokálně přes tree-sitter. Nic neopustí váš počítač. Korpus obsahující jen kód nevyžaduje API klíč: `graphify extract` běží plně offline. U smíšeného repozitáře přidejte `--code-only`, abyste indexovali jen kód a přeskočili dokumentaci/PDF/obrázky, které by jinak potřebovaly LLM.
+- **Video / audio**: přepisováno lokálně pomocí faster-whisper. Nic neopustí váš počítač.
+- **Dokumentace, PDF, obrázky**: odesílány vašemu AI asistentovi k sémantické extrakci (přes skill `/graphify`, s použitím jakéhokoli modelu, na kterém běží vaše relace IDE). Bezhlavý `graphify extract` vyžaduje `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), běžící instanci Ollama (`OLLAMA_BASE_URL`), přihlašovací údaje AWS přes standardní řetězec poskytovatelů (Bedrock – není třeba API klíč, používá IAM) nebo binárku CLI `claude` (Claude Code – není třeba API klíč, používá vaše předplatné Claude). Přepínač `--dedup-llm` používá stejný klíč.
+- **Datová rezidence**: `graphify extract` automaticky detekuje, kterého poskytovatele použít, na základě toho, který API klíč je nastaven (priorita: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Pro kód s požadavky na datovou rezidenci použijte `--backend ollama` (plně lokální) nebo předejte explicitní přepínač `--backend`. Kimi (`MOONSHOT_API_KEY`) směruje na servery Moonshot AI v Číně.
 - **Žádná telemetrie**, žádné sledování využití, žádná analytika.
-- **Logování dotazů** — každé volání `graphify query`, `graphify path`, `graphify explain` a MCP `query_graph` se loguje do `~/.cache/graphify-queries.log` ve formátu JSON Lines (časová značka, otázka, korpus, vrácené uzly, doba trvání). Úplné odpovědi podgrafů **nejsou** ve výchozím nastavení ukládány. Nastavte `GRAPHIFY_QUERY_LOG_DISABLE=1` pro odhlášení nebo `GRAPHIFY_QUERY_LOG=/dev/null` pro ztišení bez zakázání kódové cesty.
+- **Logování dotazů**: každé volání `graphify query`, `graphify path`, `graphify explain` a MCP `query_graph` se loguje do `~/.cache/graphify-queries.log` ve formátu JSON Lines (časová značka, otázka, korpus, vrácené uzly, doba trvání). Úplné odpovědi podgrafů **nejsou** ve výchozím nastavení ukládány. Nastavte `GRAPHIFY_QUERY_LOG_DISABLE=1` pro odhlášení nebo `GRAPHIFY_QUERY_LOG=/dev/null` pro ztišení bez zakázání kódové cesty.
 
 ---
 
@@ -416,11 +416,11 @@ Každý příkaz a přepínač s příklady: **[Referenční příručka CLI](ht
 
 ## Dozvědět se více
 
-- [docs.graphify.com](https://docs.graphify.com) — úplná dokumentace: průvodce, referenční příručka příkazů a integrace
-- [Jak to funguje](../how-it-works.md) — extrakční pipeline, detekce komunit, skórování spolehlivosti, benchmarky
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — rozpis modulů, jak přidat jazyk
-- [Volitelné integrace](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — kniha o myšlenkách za graphify, architektura od začátku do konce
+- [docs.graphify.com](https://docs.graphify.com): úplná dokumentace: průvodce, referenční příručka příkazů a integrace
+- [Jak to funguje](../how-it-works.md): extrakční pipeline, detekce komunit, skórování spolehlivosti, benchmarky
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): rozpis modulů, jak přidat jazyk
+- [Volitelné integrace](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): kniha o myšlenkách za graphify, architektura od začátku do konce
 
 ---
 
@@ -428,12 +428,12 @@ Každý příkaz a přepínač s příklady: **[Referenční příručka CLI](ht
 
 [**Graphify Cloud**](https://app.graphify.com/login) je vždy zapnutá vrstva postavená nad graphify. Místo grafu, který znovu sestavujete na vyžádání pro jednotlivé složky, udržuje jeden živý graf napříč celým vaším životním cyklem vývoje softwaru:
 
-- **O 80 % méně tokenů** — vždy zapnutá paměť znamená, že vaši agenti přestanou znovu číst a znovu vysvětlovat kódovou základnu každou relaci.
-- **Monorepo a napříč repozitáři** — jeden propojený graf napříč každou službou a repozitářem, ne graf na složku.
-- **Formální verifikace** — kontrolujte architektonické a závislostní invarianty proti živému grafu.
-- **Revize kódu s ptačím pohledem na váš SDLC** — vidíte, jak se změna šíří napříč celým systémem, dříve než mergnete.
-- **Konektory SDLC** — vtáhněte Sentry, Jira a další, aby incidenty, tikety a kód žily v jednom grafu.
-- **Vždy zapnuté** — aktualizuje se nepřetržitě na pozadí napříč kódem, dokumentací a schůzkami.
+- **O 80 % méně tokenů**: vždy zapnutá paměť znamená, že vaši agenti přestanou znovu číst a znovu vysvětlovat kódovou základnu každou relaci.
+- **Monorepo a napříč repozitáři**: jeden propojený graf napříč každou službou a repozitářem, ne graf na složku.
+- **Formální verifikace**: kontrolujte architektonické a závislostní invarianty proti živému grafu.
+- **Revize kódu s ptačím pohledem na váš SDLC**: vidíte, jak se změna šíří napříč celým systémem, dříve než mergnete.
+- **Konektory SDLC**: vtáhněte Sentry, Jira a další, aby incidenty, tikety a kód žily v jednom grafu.
+- **Vždy zapnuté**: aktualizuje se nepřetržitě na pozadí napříč kódem, dokumentací a schůzkami.
 
 **[Spusťte bezplatnou 14denní zkušební verzi na app.graphify.com &rarr;](https://app.graphify.com/login)**
 

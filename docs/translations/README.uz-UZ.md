@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <b>Agent token xarajatini 80% ga kamaytiring.</b> Graphify Cloud — bu agentlaringizni boshqaradigan, kod sifatini yuqori saqlaydigan va rasmiy verifikatsiya orqali toʻgʻriligini isbotlaydigan doimo yoqilgan xotira. <a href="https://app.graphify.com/login"><b>14 kunlik bepul sinov muddatini boshlang &rarr;</b></a>
+  <b>Agent token xarajatini 80% ga kamaytiring.</b> Graphify Cloud: bu agentlaringizni boshqaradigan, kod sifatini yuqori saqlaydigan va rasmiy verifikatsiya orqali toʻgʻriligini isbotlaydigan doimo yoqilgan xotira. <a href="https://app.graphify.com/login"><b>14 kunlik bepul sinov muddatini boshlang &rarr;</b></a>
 </p>
 
 Sunʼiy intellektli kodlash yordamchingizda `/graphify` deb yozing, u butun loyihangizni (kod, hujjatlar, PDF-lar, rasmlar, videolar) fayllar boʻylab **grep qilish oʻrniga soʻrov yuborishingiz mumkin** boʻlgan **bilimlar grafigiga** moslashtiradi.
@@ -44,7 +44,7 @@ Sunʼiy intellektli kodlash yordamchingizda `/graphify` deb yozing, u butun loyi
   <img src="https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/graph-hero.png" alt="graphify's interactive graph.html showing the FastAPI codebase as a force-directed knowledge graph with a legend of detected communities" width="900">
 </p>
 <p align="center">
-  <em>graphify tomonidan moslashtirilgan FastAPI kod bazasi. Har bir tugun — tushuncha, ranglar — aniqlangan jamoalar va butun narsa graph.html da bosiladigan holatda.</em>
+  <em>graphify tomonidan moslashtirilgan FastAPI kod bazasi. Har bir tugun: tushuncha, ranglar: aniqlangan jamoalar va butun narsa graph.html da bosiladigan holatda.</em>
 </p>
 
 **Ishni boshlash** (30 soniya):
@@ -64,16 +64,16 @@ Hammasi shu. Siz **uchta fayl** olasiz:
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 Saqlangan graf integratsiyalar nomutanosib format oʻzgarishlarini aniqlay olishi
 uchun `graph.schema_version` ni, shuningdek uni yaratgan Graphify nashrini
 aniqlaydigan `graph.graphify_version` ni oʻz ichiga oladi.
 
-**Quyidagilarda ishlaydi:** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot va yana 15+ — [platformangizni tanlang](#install).
+**Quyidagilarda ishlaydi:** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot va yana 15+: [platformangizni tanlang](#install).
 
 ---
 
@@ -81,11 +81,11 @@ aniqlaydigan `graph.graphify_version` ni oʻz ichiga oladi.
 
 Toʻliq qoʻllanmalar va maʼlumotnoma **[docs.graphify.com](https://docs.graphify.com)** da joylashgan:
 
-- **[Tezkor boshlash](https://docs.graphify.com/quickstart)** — birinchi grafigingizni quring
-- **[CLI maʼlumotnomasi](https://docs.graphify.com/reference/overview)** — har bir buyruq va bayroq
-- **[Grafikka yaxshiroq savollar bering](https://docs.graphify.com/guides/querying)** — soʻrov andozalari
-- **[Konfiguratsiya](https://docs.graphify.com/reference/configuration)** — muhit oʻzgaruvchilari va sozlash
-- **[Qoʻllab-quvvatlanadigan kirishlar](https://docs.graphify.com/concepts/supported-inputs)** — tillar va fayl turlari
+- **[Tezkor boshlash](https://docs.graphify.com/quickstart)**: birinchi grafigingizni quring
+- **[CLI maʼlumotnomasi](https://docs.graphify.com/reference/overview)**: har bir buyruq va bayroq
+- **[Grafikka yaxshiroq savollar bering](https://docs.graphify.com/guides/querying)**: soʻrov andozalari
+- **[Konfiguratsiya](https://docs.graphify.com/reference/configuration)**: muhit oʻzgaruvchilari va sozlash
+- **[Qoʻllab-quvvatlanadigan kirishlar](https://docs.graphify.com/concepts/supported-inputs)**: tillar va fayl turlari
 - **[Jamoaviy ish jarayonlari](https://docs.graphify.com/guides/team-workflows)** va **[PR koʻrigi](https://docs.graphify.com/guides/pull-requests)**
 - **[Nosozliklarni bartaraf etish](https://docs.graphify.com/troubleshooting)** va **[Qanday ishlaydi](https://docs.graphify.com/concepts/architecture)**
 
@@ -131,7 +131,7 @@ Quticha ochilishi bilan oladigan narsalaringiz:
 | **Xudo tugunlari** | Eng koʻp bogʻlangan tushunchalar, shunda hamma narsa nima orqali oqishini koʻrasiz |
 | **Jamoalar** | Grafik quyi tizimlarga boʻlingan holda (Leiden), LLM-siz yorliqlar bilan |
 | **Fayllararo havolalar** | `calls` / `imports` / `inherits` / `mixes_in` tree-sitter AST orqali ~40 tilda aniqlanadi |
-| **Soʻrov, yoʻl, tushuntirish** | Savol bering, ikki narsa oʻrtasidagi yoʻlni kuzating yoki bitta tushunchani tushuntiring — hammasi `graph.json` asosida |
+| **Soʻrov, yoʻl, tushuntirish** | Savol bering, ikki narsa oʻrtasidagi yoʻlni kuzating yoki bitta tushunchani tushuntiring: hammasi `graph.json` asosida |
 | **Asos + hujjat havolalari** | `# NOTE:` / `# WHY:` izohlari va ADR/RFC iqtiboslari kodga bogʻlangan birinchi darajali tugunlarga aylanadi |
 | **Koddan tashqari** | Hujjatlar, PDF-lar, rasmlar va video/audio hammasi bir xil grafikga moslashtiriladi |
 | **Avvalo mahalliy** | Kod mahalliy ravishda tree-sitter bilan tahlil qilinadi (LLM yoʻq, hech narsa mashinangizdan chiqmaydi); faqat hujjatlar/media boʻyicha semantik oʻtish bekendga murojaat qiladi, va faqat siz uni sozlasangiz |
@@ -187,9 +187,9 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 > [!IMPORTANT]
 > **Rasmiy paket:** PyPI paketi `graphifyy` (ikkita y). PyPI dagi boshqa `graphify*` paketlar bogʻliq emas. CLI buyrugʻi hamon `graphify`.
 
-Rasmiy manba repozitoriysi — [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
+Rasmiy manba repozitoriysi: [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**1-qadam — paketni oʻrnating:**
+**1-qadam: paketni oʻrnating:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**2-qadam — koʻnikmani sunʼiy intellektli yordamchingizda roʻyxatdan oʻtkazing:**
+**2-qadam: koʻnikmani sunʼiy intellektli yordamchingizda roʻyxatdan oʻtkazing:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ masalan `graphify claude install --project` yoki `graphify codex install --proje
 
 Codex foydalanuvchilariga parallel ajratib olish uchun `~/.codex/config.toml` dagi `[features]` ostida `multi_agent = true` ham kerak. CodeBuddy Claude Code bilan bir xil Agent vositasi va PreToolUse hook mexanizmidan foydalanadi. Factory Droid parallel subagent joʻnatish uchun `Task` vositasidan foydalanadi. OpenClaw va Aider ketma-ket ajratib olishdan foydalanadi (bu platformalarda parallel agent qoʻllab-quvvatlashi hali ilk bosqichda). Trae parallel subagent joʻnatish uchun Agent vositasidan foydalanadi va `PreToolUse` hooklarini **qoʻllab-quvvatlamaydi**, shuning uchun AGENTS.md doimo yoqilgan mexanizmdir.
 
-`--platform agents` (taxallus `--platform skills`) umumiy freymvorklararo [Agent-Skills](https://github.com/anthropics/skills) manzillarini nishonga oladi: global oʻrnatish uchun spetsifikatsiyaning foydalanuvchi uchun global `~/.agents/skills/` (`npx skills` va spetsifikatsiyaga mos freymvorklar tomonidan oʻqiladi), loyiha (`--project`) oʻrnatishi uchun esa `./.agents/skills/`. Yalangʻoch `graphify install` dizayn boʻyicha bitta platformali (Claude Code) boʻlib qoladi — koʻnikmaning `.agents/skills` ni oʻqiydigan har qanday freymvork tomonidan topilishini istasangiz, nomlangan `agents` platformasidan foydalaning.
+`--platform agents` (taxallus `--platform skills`) umumiy freymvorklararo [Agent-Skills](https://github.com/anthropics/skills) manzillarini nishonga oladi: global oʻrnatish uchun spetsifikatsiyaning foydalanuvchi uchun global `~/.agents/skills/` (`npx skills` va spetsifikatsiyaga mos freymvorklar tomonidan oʻqiladi), loyiha (`--project`) oʻrnatishi uchun esa `./.agents/skills/`. Yalangʻoch `graphify install` dizayn boʻyicha bitta platformali (Claude Code) boʻlib qoladi: koʻnikmaning `.agents/skills` ni oʻqiydigan har qanday freymvork tomonidan topilishini istasangiz, nomlangan `agents` platformasidan foydalaning.
 
 > Codex `/graphify` oʻrniga `$graphify` dan foydalanadi.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 Quyidagi [toʻliq buyruqlar maʼlumotnomasiga](#full-command-reference) qarang.
@@ -393,12 +393,12 @@ Bekendlar, API kalitlari, hook xatti-harakati va sozlash muhit oʻzgaruvchilari 
 
 ## Maxfiylik
 
-- **Kod fayllari** — tree-sitter orqali mahalliy ravishda qayta ishlanadi. Hech narsa mashinangizdan chiqmaydi. Faqat koddan iborat korpus API kalitini talab qilmaydi — `graphify extract` toʻliq oflayn ishlaydi. Aralash repoda, faqat kodni indekslash va aks holda LLM talab qiladigan hujjatlar/PDF-lar/rasmlarni oʻtkazib yuborish uchun `--code-only` qoʻshing.
-- **Video / audio** — faster-whisper bilan mahalliy ravishda transkripsiya qilinadi. Hech narsa mashinangizdan chiqmaydi.
-- **Hujjatlar, PDF-lar, rasmlar** — semantik ajratib olish uchun sunʼiy intellektli yordamchingizga yuboriladi (`/graphify` koʻnikmasi orqali, IDE sessiyangiz ishlatadigan modeldan foydalanib). Boshsiz `graphify extract` `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), ishlab turgan Ollama namunasi (`OLLAMA_BASE_URL`), standart provayder zanjiri orqali AWS hisob maʼlumotlari (Bedrock — API kaliti kerak emas, IAM dan foydalanadi) yoki `claude` CLI binarini (Claude Code — API kaliti kerak emas, Claude obunangizdan foydalanadi) talab qiladi. `--dedup-llm` bayrogʻi xuddi shu kalitdan foydalanadi.
-- **Maʼlumotlar joylashuvi** — `graphify extract` qaysi API kaliti oʻrnatilganiga qarab qaysi provayderdan foydalanishni avtomatik aniqlaydi (ustuvorlik: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Maʼlumotlar joylashuvi talablariga ega kod uchun `--backend ollama` (toʻliq mahalliy) dan foydalaning yoki aniq `--backend` bayrogʻini uzating. Kimi (`MOONSHOT_API_KEY`) Xitoydagi Moonshot AI serverlariga yoʻnaltiradi.
+- **Kod fayllari**: tree-sitter orqali mahalliy ravishda qayta ishlanadi. Hech narsa mashinangizdan chiqmaydi. Faqat koddan iborat korpus API kalitini talab qilmaydi: `graphify extract` toʻliq oflayn ishlaydi. Aralash repoda, faqat kodni indekslash va aks holda LLM talab qiladigan hujjatlar/PDF-lar/rasmlarni oʻtkazib yuborish uchun `--code-only` qoʻshing.
+- **Video / audio**: faster-whisper bilan mahalliy ravishda transkripsiya qilinadi. Hech narsa mashinangizdan chiqmaydi.
+- **Hujjatlar, PDF-lar, rasmlar**: semantik ajratib olish uchun sunʼiy intellektli yordamchingizga yuboriladi (`/graphify` koʻnikmasi orqali, IDE sessiyangiz ishlatadigan modeldan foydalanib). Boshsiz `graphify extract` `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), ishlab turgan Ollama namunasi (`OLLAMA_BASE_URL`), standart provayder zanjiri orqali AWS hisob maʼlumotlari (Bedrock: API kaliti kerak emas, IAM dan foydalanadi) yoki `claude` CLI binarini (Claude Code: API kaliti kerak emas, Claude obunangizdan foydalanadi) talab qiladi. `--dedup-llm` bayrogʻi xuddi shu kalitdan foydalanadi.
+- **Maʼlumotlar joylashuvi**: `graphify extract` qaysi API kaliti oʻrnatilganiga qarab qaysi provayderdan foydalanishni avtomatik aniqlaydi (ustuvorlik: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Maʼlumotlar joylashuvi talablariga ega kod uchun `--backend ollama` (toʻliq mahalliy) dan foydalaning yoki aniq `--backend` bayrogʻini uzating. Kimi (`MOONSHOT_API_KEY`) Xitoydagi Moonshot AI serverlariga yoʻnaltiradi.
 - **Telemetriya yoʻq**, foydalanishni kuzatish yoʻq, analitika yoʻq.
-- **Soʻrovlarni jurnalga yozish** — har bir `graphify query`, `graphify path`, `graphify explain` va MCP `query_graph` chaqiruvi JSON Lines formatida `~/.cache/graphify-queries.log` ga yoziladi (vaqt belgisi, savol, korpus, qaytarilgan tugunlar, davomiylik). Toʻliq subgraf javoblari sukut boʻyicha **saqlanmaydi**. Voz kechish uchun `GRAPHIFY_QUERY_LOG_DISABLE=1` ni oʻrnating yoki kod yoʻlini oʻchirmasdan jim qilish uchun `GRAPHIFY_QUERY_LOG=/dev/null` ni oʻrnating.
+- **Soʻrovlarni jurnalga yozish**: har bir `graphify query`, `graphify path`, `graphify explain` va MCP `query_graph` chaqiruvi JSON Lines formatida `~/.cache/graphify-queries.log` ga yoziladi (vaqt belgisi, savol, korpus, qaytarilgan tugunlar, davomiylik). Toʻliq subgraf javoblari sukut boʻyicha **saqlanmaydi**. Voz kechish uchun `GRAPHIFY_QUERY_LOG_DISABLE=1` ni oʻrnating yoki kod yoʻlini oʻchirmasdan jim qilish uchun `GRAPHIFY_QUERY_LOG=/dev/null` ni oʻrnating.
 
 ---
 
@@ -416,24 +416,24 @@ Misollar bilan har bir buyruq va bayroq: **[CLI maʼlumotnomasi](https://docs.gr
 
 ## Koʻproq bilib oling
 
-- [docs.graphify.com](https://docs.graphify.com) — toʻliq hujjatlar: qoʻllanmalar, buyruqlar maʼlumotnomasi va integratsiyalar
-- [Qanday ishlaydi](../how-it-works.md) — ajratib olish quvuri, jamoalarni aniqlash, ishonchni baholash, benchmarklar
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — modullar taqsimoti, til qanday qoʻshiladi
-- [Ixtiyoriy integratsiyalar](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — graphify ortidagi gʻoyalar va boshdan-oyoq arxitektura haqidagi kitob
+- [docs.graphify.com](https://docs.graphify.com): toʻliq hujjatlar: qoʻllanmalar, buyruqlar maʼlumotnomasi va integratsiyalar
+- [Qanday ishlaydi](../how-it-works.md): ajratib olish quvuri, jamoalarni aniqlash, ishonchni baholash, benchmarklar
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): modullar taqsimoti, til qanday qoʻshiladi
+- [Ixtiyoriy integratsiyalar](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): graphify ortidagi gʻoyalar va boshdan-oyoq arxitektura haqidagi kitob
 
 ---
 
 ## Graphify Cloud
 
-[**Graphify Cloud**](https://app.graphify.com/login) — bu graphify ustiga qurilgan doimo yoqilgan qatlam. Har bir papka uchun talab boʻyicha qayta quriladigan graf oʻrniga, u butun dasturiy taʼminot ishlab chiqish hayotiy sikli boʻylab bitta jonli grafikni saqlaydi:
+[**Graphify Cloud**](https://app.graphify.com/login): bu graphify ustiga qurilgan doimo yoqilgan qatlam. Har bir papka uchun talab boʻyicha qayta quriladigan graf oʻrniga, u butun dasturiy taʼminot ishlab chiqish hayotiy sikli boʻylab bitta jonli grafikni saqlaydi:
 
-- **80% kamroq token** — doimo yoqilgan xotira agentlaringiz kod bazasini har sessiyada qayta oʻqishni va qayta tushuntirishni toʻxtatishini anglatadi.
-- **Monorepo va repolar aro** — har bir xizmat va repozitoriy boʻylab bitta bogʻlangan graf, papka boshiga graf emas.
-- **Rasmiy verifikatsiya** — arxitektura va bogʻliqlik invariantlarini jonli grafikka nisbatan tekshiring.
-- **SDLC-ingizga qushqocha nigoh bilan kod koʻrigi** — oʻzgarish birlashtirishdan oldin butun tizim boʻylab qanday tarqalishini koʻring.
-- **SDLC konnektorlari** — Sentry, Jira va boshqalarni tortib oling, shunda hodisalar, chiptalar va kod bitta grafikda yashaydi.
-- **Doimo yoqilgan** — kod, hujjatlar va uchrashuvlar boʻylab fonda uzluksiz yangilanadi.
+- **80% kamroq token**: doimo yoqilgan xotira agentlaringiz kod bazasini har sessiyada qayta oʻqishni va qayta tushuntirishni toʻxtatishini anglatadi.
+- **Monorepo va repolar aro**: har bir xizmat va repozitoriy boʻylab bitta bogʻlangan graf, papka boshiga graf emas.
+- **Rasmiy verifikatsiya**: arxitektura va bogʻliqlik invariantlarini jonli grafikka nisbatan tekshiring.
+- **SDLC-ingizga qushqocha nigoh bilan kod koʻrigi**: oʻzgarish birlashtirishdan oldin butun tizim boʻylab qanday tarqalishini koʻring.
+- **SDLC konnektorlari**: Sentry, Jira va boshqalarni tortib oling, shunda hodisalar, chiptalar va kod bitta grafikda yashaydi.
+- **Doimo yoqilgan**: kod, hujjatlar va uchrashuvlar boʻylab fonda uzluksiz yangilanadi.
 
 **[app.graphify.com da 14 kunlik bepul sinov muddatini boshlang &rarr;](https://app.graphify.com/login)**
 

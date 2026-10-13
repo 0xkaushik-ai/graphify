@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ graphify install               # register the skill with your AI assistant
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 Το αποθηκευμένο γράφημα περιλαμβάνει το `graph.schema_version` ώστε οι ενσωματώσεις
 να μπορούν να εντοπίζουν ασύμβατες αλλαγές μορφής, καθώς και το
 `graph.graphify_version` που προσδιορίζει την έκδοση Graphify που το παρήγαγε.
 
-**Λειτουργεί σε** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot και 15+ ακόμη — [επιλέξτε την πλατφόρμα σας](#install).
+**Λειτουργεί σε** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot και 15+ ακόμη: [επιλέξτε την πλατφόρμα σας](#install).
 
 ---
 
@@ -81,11 +81,11 @@ graphify-out/
 
 Πλήρεις οδηγοί και αναφορά βρίσκονται στο **[docs.graphify.com](https://docs.graphify.com)**:
 
-- **[Γρήγορη εκκίνηση](https://docs.graphify.com/quickstart)** — δημιουργήστε το πρώτο σας γράφημα
-- **[Αναφορά CLI](https://docs.graphify.com/reference/overview)** — κάθε εντολή και σημαία
-- **[Κάντε καλύτερες ερωτήσεις στο γράφημα](https://docs.graphify.com/guides/querying)** — μοτίβα ερωτημάτων
-- **[Διαμόρφωση](https://docs.graphify.com/reference/configuration)** — μεταβλητές περιβάλλοντος και ρύθμιση
-- **[Υποστηριζόμενες είσοδοι](https://docs.graphify.com/concepts/supported-inputs)** — γλώσσες και τύποι αρχείων
+- **[Γρήγορη εκκίνηση](https://docs.graphify.com/quickstart)**: δημιουργήστε το πρώτο σας γράφημα
+- **[Αναφορά CLI](https://docs.graphify.com/reference/overview)**: κάθε εντολή και σημαία
+- **[Κάντε καλύτερες ερωτήσεις στο γράφημα](https://docs.graphify.com/guides/querying)**: μοτίβα ερωτημάτων
+- **[Διαμόρφωση](https://docs.graphify.com/reference/configuration)**: μεταβλητές περιβάλλοντος και ρύθμιση
+- **[Υποστηριζόμενες είσοδοι](https://docs.graphify.com/concepts/supported-inputs)**: γλώσσες και τύποι αρχείων
 - **[Ροές εργασίας ομάδας](https://docs.graphify.com/guides/team-workflows)** και **[έλεγχος PR](https://docs.graphify.com/guides/pull-requests)**
 - **[Αντιμετώπιση προβλημάτων](https://docs.graphify.com/troubleshooting)** και **[Πώς λειτουργεί](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 Το επίσημο αποθετήριο πηγαίου κώδικα είναι το [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**Βήμα 1 — εγκαταστήστε το πακέτο:**
+**Βήμα 1: εγκαταστήστε το πακέτο:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**Βήμα 2 — καταχωρίστε τη δεξιότητα στον βοηθό AI σας:**
+**Βήμα 2: καταχωρίστε τη δεξιότητα στον βοηθό AI σας:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ sidecar `references/` που η δεξιότητα φορτώνει κατ' απ
 
 Οι χρήστες του Codex χρειάζονται επίσης `multi_agent = true` κάτω από το `[features]` στο `~/.codex/config.toml` για παράλληλη εξαγωγή. Το CodeBuddy χρησιμοποιεί το ίδιο εργαλείο Agent και μηχανισμό hook PreToolUse με το Claude Code. Το Factory Droid χρησιμοποιεί το εργαλείο `Task` για παράλληλη αποστολή subagent. Το OpenClaw και το Aider χρησιμοποιούν διαδοχική εξαγωγή (η υποστήριξη παράλληλων agent είναι ακόμη σε πρώιμο στάδιο σε αυτές τις πλατφόρμες). Το Trae χρησιμοποιεί το εργαλείο Agent για παράλληλη αποστολή subagent και **δεν** υποστηρίζει hooks `PreToolUse`, οπότε το AGENTS.md είναι ο πάντα ενεργός μηχανισμός.
 
-Το `--platform agents` (ψευδώνυμο `--platform skills`) στοχεύει τις γενικές cross-framework τοποθεσίες [Agent-Skills](https://github.com/anthropics/skills): την καθολική για τον χρήστη `~/.agents/skills/` της προδιαγραφής (που διαβάζεται από το `npx skills` και τα συμβατά με την προδιαγραφή frameworks) για καθολική εγκατάσταση, και την `./.agents/skills/` για εγκατάσταση σε επίπεδο έργου (`--project`). Το σκέτο `graphify install` παραμένει εκ σχεδιασμού για μία πλατφόρμα (Claude Code) — χρησιμοποιήστε την ονομασμένη πλατφόρμα `agents` όταν θέλετε η δεξιότητα να είναι ανιχνεύσιμη από οποιοδήποτε framework διαβάζει το `.agents/skills`.
+Το `--platform agents` (ψευδώνυμο `--platform skills`) στοχεύει τις γενικές cross-framework τοποθεσίες [Agent-Skills](https://github.com/anthropics/skills): την καθολική για τον χρήστη `~/.agents/skills/` της προδιαγραφής (που διαβάζεται από το `npx skills` και τα συμβατά με την προδιαγραφή frameworks) για καθολική εγκατάσταση, και την `./.agents/skills/` για εγκατάσταση σε επίπεδο έργου (`--project`). Το σκέτο `graphify install` παραμένει εκ σχεδιασμού για μία πλατφόρμα (Claude Code): χρησιμοποιήστε την ονομασμένη πλατφόρμα `agents` όταν θέλετε η δεξιότητα να είναι ανιχνεύσιμη από οποιοδήποτε framework διαβάζει το `.agents/skills`.
 
 > Το Codex χρησιμοποιεί `$graphify` αντί για `/graphify`.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 Δείτε την [πλήρη αναφορά εντολών](#full-command-reference) παρακάτω.
@@ -393,12 +393,12 @@ graphify prs --conflicts           # PRs sharing graph communities — merge-ord
 
 ## Απόρρητο
 
-- **Αρχεία κώδικα** — επεξεργάζονται τοπικά μέσω tree-sitter. Τίποτα δεν φεύγει από το μηχάνημά σας. Ένα σώμα μόνο κώδικα δεν απαιτεί κλειδί API — το `graphify extract` εκτελείται πλήρως εκτός σύνδεσης. Σε ένα μικτό repo, προσθέστε `--code-only` για να ευρετηριάσετε μόνο τον κώδικα και να παραλείψετε τα έγγραφα/PDF/εικόνες που διαφορετικά θα χρειάζονταν LLM.
-- **Βίντεο / ήχος** — μεταγράφονται τοπικά με faster-whisper. Τίποτα δεν φεύγει από το μηχάνημά σας.
-- **Έγγραφα, PDF, εικόνες** — αποστέλλονται στον βοηθό AI σας για σημασιολογική εξαγωγή (μέσω της δεξιότητας `/graphify`, χρησιμοποιώντας όποιο μοντέλο εκτελεί η συνεδρία του IDE σας). Το headless `graphify extract` απαιτεί `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), μια εκτελούμενη εγκατάσταση Ollama (`OLLAMA_BASE_URL`), διαπιστευτήρια AWS μέσω της τυπικής αλυσίδας παρόχων (Bedrock — δεν χρειάζεται κλειδί API, χρησιμοποιεί IAM) ή το δυαδικό `claude` CLI (Claude Code — δεν χρειάζεται κλειδί API, χρησιμοποιεί τη συνδρομή σας Claude). Η σημαία `--dedup-llm` χρησιμοποιεί το ίδιο κλειδί.
-- **Τοποθεσία δεδομένων** — το `graphify extract` ανιχνεύει αυτόματα ποιον πάροχο να χρησιμοποιήσει με βάση το ποιο κλειδί API έχει οριστεί (προτεραιότητα: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Για κώδικα με απαιτήσεις τοποθεσίας δεδομένων, χρησιμοποιήστε `--backend ollama` (πλήρως τοπικά) ή περάστε μια ρητή σημαία `--backend`. Το Kimi (`MOONSHOT_API_KEY`) δρομολογεί σε διακομιστές Moonshot AI στην Κίνα.
+- **Αρχεία κώδικα**: επεξεργάζονται τοπικά μέσω tree-sitter. Τίποτα δεν φεύγει από το μηχάνημά σας. Ένα σώμα μόνο κώδικα δεν απαιτεί κλειδί API: το `graphify extract` εκτελείται πλήρως εκτός σύνδεσης. Σε ένα μικτό repo, προσθέστε `--code-only` για να ευρετηριάσετε μόνο τον κώδικα και να παραλείψετε τα έγγραφα/PDF/εικόνες που διαφορετικά θα χρειάζονταν LLM.
+- **Βίντεο / ήχος**: μεταγράφονται τοπικά με faster-whisper. Τίποτα δεν φεύγει από το μηχάνημά σας.
+- **Έγγραφα, PDF, εικόνες**: αποστέλλονται στον βοηθό AI σας για σημασιολογική εξαγωγή (μέσω της δεξιότητας `/graphify`, χρησιμοποιώντας όποιο μοντέλο εκτελεί η συνεδρία του IDE σας). Το headless `graphify extract` απαιτεί `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), μια εκτελούμενη εγκατάσταση Ollama (`OLLAMA_BASE_URL`), διαπιστευτήρια AWS μέσω της τυπικής αλυσίδας παρόχων (Bedrock: δεν χρειάζεται κλειδί API, χρησιμοποιεί IAM) ή το δυαδικό `claude` CLI (Claude Code: δεν χρειάζεται κλειδί API, χρησιμοποιεί τη συνδρομή σας Claude). Η σημαία `--dedup-llm` χρησιμοποιεί το ίδιο κλειδί.
+- **Τοποθεσία δεδομένων**: το `graphify extract` ανιχνεύει αυτόματα ποιον πάροχο να χρησιμοποιήσει με βάση το ποιο κλειδί API έχει οριστεί (προτεραιότητα: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Για κώδικα με απαιτήσεις τοποθεσίας δεδομένων, χρησιμοποιήστε `--backend ollama` (πλήρως τοπικά) ή περάστε μια ρητή σημαία `--backend`. Το Kimi (`MOONSHOT_API_KEY`) δρομολογεί σε διακομιστές Moonshot AI στην Κίνα.
 - **Χωρίς τηλεμετρία**, χωρίς παρακολούθηση χρήσης, χωρίς analytics.
-- **Καταγραφή ερωτημάτων** — κάθε κλήση `graphify query`, `graphify path`, `graphify explain` και MCP `query_graph` καταγράφεται στο `~/.cache/graphify-queries.log` σε μορφή JSON Lines (χρονοσήμανση, ερώτηση, σώμα, επιστρεφόμενοι κόμβοι, διάρκεια). Οι πλήρεις απαντήσεις υπογραφήματος **δεν** αποθηκεύονται εκ προεπιλογής. Ορίστε `GRAPHIFY_QUERY_LOG_DISABLE=1` για εξαίρεση, ή `GRAPHIFY_QUERY_LOG=/dev/null` για σίγαση χωρίς απενεργοποίηση της διαδρομής κώδικα.
+- **Καταγραφή ερωτημάτων**: κάθε κλήση `graphify query`, `graphify path`, `graphify explain` και MCP `query_graph` καταγράφεται στο `~/.cache/graphify-queries.log` σε μορφή JSON Lines (χρονοσήμανση, ερώτηση, σώμα, επιστρεφόμενοι κόμβοι, διάρκεια). Οι πλήρεις απαντήσεις υπογραφήματος **δεν** αποθηκεύονται εκ προεπιλογής. Ορίστε `GRAPHIFY_QUERY_LOG_DISABLE=1` για εξαίρεση, ή `GRAPHIFY_QUERY_LOG=/dev/null` για σίγαση χωρίς απενεργοποίηση της διαδρομής κώδικα.
 
 ---
 
@@ -416,11 +416,11 @@ graphify prs --conflicts           # PRs sharing graph communities — merge-ord
 
 ## Μάθετε περισσότερα
 
-- [docs.graphify.com](https://docs.graphify.com) — πλήρης τεκμηρίωση: οδηγοί, αναφορά εντολών και ενσωματώσεις
-- [Πώς λειτουργεί](../how-it-works.md) — ο αγωγός εξαγωγής, η ανίχνευση κοινοτήτων, η βαθμολόγηση εμπιστοσύνης, τα benchmarks
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — ανάλυση ενοτήτων, πώς να προσθέσετε μια γλώσσα
-- [Προαιρετικές ενσωματώσεις](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — το βιβλίο για τις ιδέες πίσω από το graphify, την αρχιτεκτονική από άκρη σε άκρη
+- [docs.graphify.com](https://docs.graphify.com): πλήρης τεκμηρίωση: οδηγοί, αναφορά εντολών και ενσωματώσεις
+- [Πώς λειτουργεί](../how-it-works.md): ο αγωγός εξαγωγής, η ανίχνευση κοινοτήτων, η βαθμολόγηση εμπιστοσύνης, τα benchmarks
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): ανάλυση ενοτήτων, πώς να προσθέσετε μια γλώσσα
+- [Προαιρετικές ενσωματώσεις](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): το βιβλίο για τις ιδέες πίσω από το graphify, την αρχιτεκτονική από άκρη σε άκρη
 
 ---
 
@@ -428,12 +428,12 @@ graphify prs --conflicts           # PRs sharing graph communities — merge-ord
 
 Το [**Graphify Cloud**](https://app.graphify.com/login) είναι το πάντα ενεργό στρώμα που χτίστηκε πάνω στο graphify. Αντί για ένα γράφημα που ξαναχτίζετε κατ' απαίτηση ανά φάκελο, διατηρεί ένα ζωντανό γράφημα σε ολόκληρο τον κύκλο ζωής ανάπτυξης λογισμικού σας:
 
-- **80% λιγότερα token** — η πάντα ενεργή μνήμη σημαίνει ότι οι agent σας σταματούν να ξαναδιαβάζουν και να ξαναεξηγούν τη βάση κώδικα σε κάθε συνεδρία.
-- **Monorepo και cross-repo** — ένα συνδεδεμένο γράφημα σε κάθε υπηρεσία και αποθετήριο, όχι ένα γράφημα ανά φάκελο.
-- **Τυπική επαλήθευση** — ελέγξτε αρχιτεκτονικές και εξαρτησιακές αναλλοίωτες έναντι του ζωντανού γραφήματος.
-- **Έλεγχος κώδικα με πανοραμική εποπτεία του SDLC σας** — δείτε πώς μια αλλαγή διαδίδεται σε όλο το σύστημα πριν κάνετε merge.
-- **Connectors SDLC** — ενσωματώστε Sentry, Jira και άλλα, ώστε περιστατικά, tickets και κώδικας να ζουν σε ένα γράφημα.
-- **Πάντα ενεργό** — ενημερώνεται συνεχώς στο παρασκήνιο σε κώδικα, έγγραφα και συναντήσεις.
+- **80% λιγότερα token**: η πάντα ενεργή μνήμη σημαίνει ότι οι agent σας σταματούν να ξαναδιαβάζουν και να ξαναεξηγούν τη βάση κώδικα σε κάθε συνεδρία.
+- **Monorepo και cross-repo**: ένα συνδεδεμένο γράφημα σε κάθε υπηρεσία και αποθετήριο, όχι ένα γράφημα ανά φάκελο.
+- **Τυπική επαλήθευση**: ελέγξτε αρχιτεκτονικές και εξαρτησιακές αναλλοίωτες έναντι του ζωντανού γραφήματος.
+- **Έλεγχος κώδικα με πανοραμική εποπτεία του SDLC σας**: δείτε πώς μια αλλαγή διαδίδεται σε όλο το σύστημα πριν κάνετε merge.
+- **Connectors SDLC**: ενσωματώστε Sentry, Jira και άλλα, ώστε περιστατικά, tickets και κώδικας να ζουν σε ένα γράφημα.
+- **Πάντα ενεργό**: ενημερώνεται συνεχώς στο παρασκήνιο σε κώδικα, έγγραφα και συναντήσεις.
 
 **[Ξεκινήστε μια δωρεάν δοκιμή 14 ημερών στο app.graphify.com &rarr;](https://app.graphify.com/login)**
 

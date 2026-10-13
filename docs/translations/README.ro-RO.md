@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ Asta e tot. Obțineți **trei fișiere**:
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 Graful persistat include `graph.schema_version` astfel încât integrările să poată detecta
 modificările de format incompatibile, plus `graph.graphify_version` care identifică
 versiunea Graphify care l-a produs.
 
-**Funcționează în** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot și încă 15+ — [alegeți-vă platforma](#install).
+**Funcționează în** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot și încă 15+: [alegeți-vă platforma](#install).
 
 ---
 
@@ -81,11 +81,11 @@ versiunea Graphify care l-a produs.
 
 Ghidurile complete și referința se află la **[docs.graphify.com](https://docs.graphify.com)**:
 
-- **[Ghid de pornire rapidă](https://docs.graphify.com/quickstart)** — construiți primul vostru graf
-- **[Referința CLI](https://docs.graphify.com/reference/overview)** — fiecare comandă și opțiune
-- **[Puneți întrebări mai bune despre graf](https://docs.graphify.com/guides/querying)** — tipare de interogare
-- **[Configurare](https://docs.graphify.com/reference/configuration)** — variabile de mediu și reglaje
-- **[Intrări acceptate](https://docs.graphify.com/concepts/supported-inputs)** — limbaje și tipuri de fișiere
+- **[Ghid de pornire rapidă](https://docs.graphify.com/quickstart)**: construiți primul vostru graf
+- **[Referința CLI](https://docs.graphify.com/reference/overview)**: fiecare comandă și opțiune
+- **[Puneți întrebări mai bune despre graf](https://docs.graphify.com/guides/querying)**: tipare de interogare
+- **[Configurare](https://docs.graphify.com/reference/configuration)**: variabile de mediu și reglaje
+- **[Intrări acceptate](https://docs.graphify.com/concepts/supported-inputs)**: limbaje și tipuri de fișiere
 - **[Fluxuri de lucru în echipă](https://docs.graphify.com/guides/team-workflows)** și **[revizuire PR](https://docs.graphify.com/guides/pull-requests)**
 - **[Depanare](https://docs.graphify.com/troubleshooting)** și **[Cum funcționează](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 Depozitul sursă oficial este [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**Pasul 1 — instalați pachetul:**
+**Pasul 1: instalați pachetul:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**Pasul 2 — înregistrați skill-ul la asistentul vostru AI:**
+**Pasul 2: înregistrați skill-ul la asistentul vostru AI:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ de exemplu `graphify claude install --project` sau `graphify codex install --pro
 
 Utilizatorii Codex au nevoie și de `multi_agent = true` sub `[features]` în `~/.codex/config.toml` pentru extracția paralelă. CodeBuddy folosește același mecanism de unealtă Agent și hook PreToolUse ca și Claude Code. Factory Droid folosește unealta `Task` pentru dispecerizarea paralelă a subagenților. OpenClaw și Aider folosesc extracție secvențială (suportul pentru agenți paraleli este încă la început pe aceste platforme). Trae folosește unealta Agent pentru dispecerizarea paralelă a subagenților și **nu** acceptă hook-uri `PreToolUse`, așa că AGENTS.md este mecanismul mereu activ.
 
-`--platform agents` (alias `--platform skills`) vizează locațiile generice, între framework-uri, [Agent-Skills](https://github.com/anthropics/skills): `~/.agents/skills/` la nivel de utilizator din specificație (citit de `npx skills` și de framework-urile conforme cu specificația) pentru o instalare globală, și `./.agents/skills/` pentru o instalare la nivel de proiect (`--project`). Simplul `graphify install` rămâne, prin design, pe o singură platformă (Claude Code) — folosiți platforma numită `agents` când vreți ca skill-ul să fie descoperit de orice framework care citește `.agents/skills`.
+`--platform agents` (alias `--platform skills`) vizează locațiile generice, între framework-uri, [Agent-Skills](https://github.com/anthropics/skills): `~/.agents/skills/` la nivel de utilizator din specificație (citit de `npx skills` și de framework-urile conforme cu specificația) pentru o instalare globală, și `./.agents/skills/` pentru o instalare la nivel de proiect (`--project`). Simplul `graphify install` rămâne, prin design, pe o singură platformă (Claude Code): folosiți platforma numită `agents` când vreți ca skill-ul să fie descoperit de orice framework care citește `.agents/skills`.
 
 > Codex folosește `$graphify` în loc de `/graphify`.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 Vedeți [referința completă a comenzilor](#full-command-reference) mai jos.
@@ -393,12 +393,12 @@ Backend-urile, cheile API, comportamentul hook-urilor și reglajele sunt control
 
 ## Confidențialitate
 
-- **Fișiere de cod** — procesate local prin tree-sitter. Nimic nu părăsește mașina voastră. Un corpus format doar din cod nu necesită cheie API — `graphify extract` rulează complet offline. Pe un repo mixt, adăugați `--code-only` pentru a indexa doar codul și a sări peste documentele/PDF-urile/imaginile care altfel ar avea nevoie de un LLM.
-- **Video / audio** — transcrise local cu faster-whisper. Nimic nu părăsește mașina voastră.
-- **Documente, PDF-uri, imagini** — trimise asistentului vostru AI pentru extracție semantică (prin skill-ul `/graphify`, folosind orice model rulează sesiunea voastră IDE). `graphify extract` în mod headless necesită `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), o instanță Ollama în funcțiune (`OLLAMA_BASE_URL`), credențiale AWS prin lanțul standard de furnizori (Bedrock – nu e nevoie de cheie API, folosește IAM), sau binarul CLI `claude` (Claude Code – nu e nevoie de cheie API, folosește abonamentul vostru Claude). Opțiunea `--dedup-llm` folosește aceeași cheie.
-- **Rezidența datelor** — `graphify extract` detectează automat ce furnizor să folosească pe baza cheii API setate (prioritate: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Pentru cod cu cerințe de rezidență a datelor, folosiți `--backend ollama` (complet local) sau transmiteți o opțiune `--backend` explicită. Kimi (`MOONSHOT_API_KEY`) rutează către serverele Moonshot AI din China.
+- **Fișiere de cod**: procesate local prin tree-sitter. Nimic nu părăsește mașina voastră. Un corpus format doar din cod nu necesită cheie API: `graphify extract` rulează complet offline. Pe un repo mixt, adăugați `--code-only` pentru a indexa doar codul și a sări peste documentele/PDF-urile/imaginile care altfel ar avea nevoie de un LLM.
+- **Video / audio**: transcrise local cu faster-whisper. Nimic nu părăsește mașina voastră.
+- **Documente, PDF-uri, imagini**: trimise asistentului vostru AI pentru extracție semantică (prin skill-ul `/graphify`, folosind orice model rulează sesiunea voastră IDE). `graphify extract` în mod headless necesită `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), o instanță Ollama în funcțiune (`OLLAMA_BASE_URL`), credențiale AWS prin lanțul standard de furnizori (Bedrock – nu e nevoie de cheie API, folosește IAM), sau binarul CLI `claude` (Claude Code – nu e nevoie de cheie API, folosește abonamentul vostru Claude). Opțiunea `--dedup-llm` folosește aceeași cheie.
+- **Rezidența datelor**: `graphify extract` detectează automat ce furnizor să folosească pe baza cheii API setate (prioritate: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Pentru cod cu cerințe de rezidență a datelor, folosiți `--backend ollama` (complet local) sau transmiteți o opțiune `--backend` explicită. Kimi (`MOONSHOT_API_KEY`) rutează către serverele Moonshot AI din China.
 - **Fără telemetrie**, fără urmărirea utilizării, fără analitică.
-- **Jurnalizarea interogărilor** — fiecare apel `graphify query`, `graphify path`, `graphify explain` și MCP `query_graph` este jurnalizat în `~/.cache/graphify-queries.log` în format JSON Lines (marcaj de timp, întrebare, corpus, noduri returnate, durată). Răspunsurile complete de subgraf **nu** sunt stocate în mod implicit. Setați `GRAPHIFY_QUERY_LOG_DISABLE=1` pentru a renunța, sau `GRAPHIFY_QUERY_LOG=/dev/null` pentru a reduce la tăcere fără a dezactiva calea de cod.
+- **Jurnalizarea interogărilor**: fiecare apel `graphify query`, `graphify path`, `graphify explain` și MCP `query_graph` este jurnalizat în `~/.cache/graphify-queries.log` în format JSON Lines (marcaj de timp, întrebare, corpus, noduri returnate, durată). Răspunsurile complete de subgraf **nu** sunt stocate în mod implicit. Setați `GRAPHIFY_QUERY_LOG_DISABLE=1` pentru a renunța, sau `GRAPHIFY_QUERY_LOG=/dev/null` pentru a reduce la tăcere fără a dezactiva calea de cod.
 
 ---
 
@@ -416,11 +416,11 @@ Fiecare comandă și opțiune, cu exemple: **[Referința CLI](https://docs.graph
 
 ## Aflați mai multe
 
-- [docs.graphify.com](https://docs.graphify.com) — documentație completă: ghiduri, referința comenzilor și integrări
-- [Cum funcționează](../how-it-works.md) — pipeline-ul de extracție, detecția comunităților, punctarea încrederii, benchmark-uri
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — defalcarea modulelor, cum să adăugați un limbaj
-- [Integrări opționale](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — cartea despre ideile din spatele graphify, arhitectura de la cap la coadă
+- [docs.graphify.com](https://docs.graphify.com): documentație completă: ghiduri, referința comenzilor și integrări
+- [Cum funcționează](../how-it-works.md): pipeline-ul de extracție, detecția comunităților, punctarea încrederii, benchmark-uri
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): defalcarea modulelor, cum să adăugați un limbaj
+- [Integrări opționale](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): cartea despre ideile din spatele graphify, arhitectura de la cap la coadă
 
 ---
 
@@ -428,12 +428,12 @@ Fiecare comandă și opțiune, cu exemple: **[Referința CLI](https://docs.graph
 
 [**Graphify Cloud**](https://app.graphify.com/login) este stratul mereu activ construit deasupra graphify. În loc de un graf pe care îl reconstruiți la cerere pentru fiecare folder, menține un singur graf viu pe tot parcursul ciclului vostru de dezvoltare software:
 
-- **Cu 80% mai puține token-uri** — memoria mereu activă înseamnă că agenții voștri nu mai recitesc și reexplică baza de cod la fiecare sesiune.
-- **Monorepo și între repo-uri** — un singur graf conectat peste fiecare serviciu și repozitoriu, nu un graf per folder.
-- **Verificare formală** — verificați invarianții arhitecturali și de dependențe față de graful viu.
-- **Revizuire de cod cu o vedere de ansamblu asupra SDLC-ului** — vedeți cum se propagă o modificare prin întregul sistem înainte de a face merge.
-- **Conectori SDLC** — aduceți Sentry, Jira și altele, astfel încât incidentele, tichetele și codul să trăiască într-un singur graf.
-- **Mereu activ** — se actualizează continuu în fundal peste cod, documente și întâlniri.
+- **Cu 80% mai puține token-uri**: memoria mereu activă înseamnă că agenții voștri nu mai recitesc și reexplică baza de cod la fiecare sesiune.
+- **Monorepo și între repo-uri**: un singur graf conectat peste fiecare serviciu și repozitoriu, nu un graf per folder.
+- **Verificare formală**: verificați invarianții arhitecturali și de dependențe față de graful viu.
+- **Revizuire de cod cu o vedere de ansamblu asupra SDLC-ului**: vedeți cum se propagă o modificare prin întregul sistem înainte de a face merge.
+- **Conectori SDLC**: aduceți Sentry, Jira și altele, astfel încât incidentele, tichetele și codul să trăiască într-un singur graf.
+- **Mereu activ**: se actualizează continuu în fundal peste cod, documente și întâlniri.
 
 **[Începeți o perioadă de probă gratuită de 14 zile pe app.graphify.com &rarr;](https://app.graphify.com/login)**
 

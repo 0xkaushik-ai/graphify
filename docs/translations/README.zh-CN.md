@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ graphify install               # register the skill with your AI assistant
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 持久化的图谱包含 `graph.schema_version`，便于集成方检测
 不兼容的格式变更，另外还有 `graph.graphify_version`，用于标识生成该图谱的
 Graphify 版本。
 
-**支持** Claude Code、Cursor、Codex、Gemini CLI、GitHub Copilot 及 15 种以上平台 —— [选择你的平台](#install)。
+**支持** Claude Code、Cursor、Codex、Gemini CLI、GitHub Copilot 及 15 种以上平台: [选择你的平台](#install)。
 
 ---
 
@@ -81,11 +81,11 @@ Graphify 版本。
 
 完整的指南与参考资料位于 **[docs.graphify.com](https://docs.graphify.com)**：
 
-- **[Quickstart](https://docs.graphify.com/quickstart)** —— 构建你的第一张图
-- **[CLI reference](https://docs.graphify.com/reference/overview)** —— 每一个命令和参数
-- **[Ask better graph questions](https://docs.graphify.com/guides/querying)** —— 查询模式
-- **[Configuration](https://docs.graphify.com/reference/configuration)** —— 环境变量与调优
-- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)** —— 语言与文件类型
+- **[Quickstart](https://docs.graphify.com/quickstart)**: 构建你的第一张图
+- **[CLI reference](https://docs.graphify.com/reference/overview)**: 每一个命令和参数
+- **[Ask better graph questions](https://docs.graphify.com/guides/querying)**: 查询模式
+- **[Configuration](https://docs.graphify.com/reference/configuration)**: 环境变量与调优
+- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**: 语言与文件类型
 - **[Team workflows](https://docs.graphify.com/guides/team-workflows)** 与 **[PR review](https://docs.graphify.com/guides/pull-requests)**
 - **[Troubleshooting](https://docs.graphify.com/troubleshooting)** 与 **[How it works](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 官方源码仓库是 [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)。
 
-**第 1 步 —— 安装软件包：**
+**第 1 步: 安装软件包：**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**第 2 步 —— 向你的 AI 助手注册该技能：**
+**第 2 步: 向你的 AI 助手注册该技能：**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ graphify install --project --platform codex
 
 Codex 用户还需要在 `~/.codex/config.toml` 的 `[features]` 下设置 `multi_agent = true`，以便进行并行提取。CodeBuddy 使用与 Claude Code 相同的 Agent 工具和 PreToolUse 钩子机制。Factory Droid 使用 `Task` 工具进行并行子智能体派发。OpenClaw 和 Aider 使用顺序提取（这些平台上的并行智能体支持仍处于早期阶段）。Trae 使用 Agent 工具进行并行子智能体派发，且**不**支持 `PreToolUse` 钩子，因此 AGENTS.md 是其始终在线的机制。
 
-`--platform agents`（别名 `--platform skills`）面向通用的跨框架 [Agent-Skills](https://github.com/anthropics/skills) 位置：对于全局安装，使用规范定义的用户全局目录 `~/.agents/skills/`（由 `npx skills` 及符合规范的框架读取）；对于项目（`--project`）安装，使用 `./.agents/skills/`。裸的 `graphify install` 按设计仍为单平台（Claude Code）—— 当你希望该技能能被任何读取 `.agents/skills` 的框架发现时，请使用名为 `agents` 的平台。
+`--platform agents`（别名 `--platform skills`）面向通用的跨框架 [Agent-Skills](https://github.com/anthropics/skills) 位置：对于全局安装，使用规范定义的用户全局目录 `~/.agents/skills/`（由 `npx skills` 及符合规范的框架读取）；对于项目（`--project`）安装，使用 `./.agents/skills/`。裸的 `graphify install` 按设计仍为单平台（Claude Code）: 当你希望该技能能被任何读取 `.agents/skills` 的框架发现时，请使用名为 `agents` 的平台。
 
 > Codex 使用 `$graphify` 而非 `/graphify`。
 
@@ -313,7 +313,7 @@ Codex 用户还需要在 `~/.codex/config.toml` 的 `[features]` 下设置 `mult
 
 **CodeBuddy** 做与 Claude Code 相同的两件事：写入一个 `CODEBUDDY.md` 段落，告诉 CodeBuddy 在回答架构问题前先读取 `graphify-out/GRAPH_REPORT.md`；并安装 `PreToolUse` 钩子（`.codebuddy/settings.json`），它会在 Bash 搜索命令和文件读取之前触发，推动改用 `graphify query`。
 
-**Codex** 会写入 `AGENTS.md`，这正是该平台上真正承载始终在线图谱指引的地方。`graphify codex install` 也会在 `.codex/hooks.json` 中注册一个 `PreToolUse` 钩子（`graphify hook-check`），但该条目被刻意设为**空操作**：Codex Desktop 会拒绝 `PreToolUse` 上的 `hookSpecificOutput.additionalContext`，因此在那里发出提示会破坏 Bash 工具调用。与 Claude Code 不同——在 Claude Code 上由钩子（`graphify hook-guard`）负责提示——在 Codex 上，钩子会触发并刻意什么都不做，而 `AGENTS.md` 才是始终在线的机制。
+**Codex** 会写入 `AGENTS.md`，这正是该平台上真正承载始终在线图谱指引的地方。`graphify codex install` 也会在 `.codex/hooks.json` 中注册一个 `PreToolUse` 钩子（`graphify hook-check`），但该条目被刻意设为**空操作**：Codex Desktop 会拒绝 `PreToolUse` 上的 `hookSpecificOutput.additionalContext`，因此在那里发出提示会破坏 Bash 工具调用。与 Claude Code 不同: 在 Claude Code 上由钩子（`graphify hook-guard`）负责提示: 在 Codex 上，钩子会触发并刻意什么都不做，而 `AGENTS.md` 才是始终在线的机制。
 
 **Kilo Code** 会将 Graphify 技能安装到 `~/.config/kilo/skills/graphify/SKILL.md`，并将一个原生的 `/graphify` 命令安装到 `~/.config/kilo/command/graphify.md`。`graphify kilo install` 还会写入 `AGENTS.md`，外加一个原生的 `tool.execute.before` 插件（`.kilo/plugins/graphify.js` + `.kilo/kilo.json` 或 `.kilo/kilo.jsonc` 注册），使 Kilo 能通过原生 `.kilo` 配置获得同样的始终在线图谱提醒行为。
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 参见下方的[完整命令参考](#full-command-reference)。
@@ -393,12 +393,12 @@ graphify 遵循 `.gitignore`，并支持 `--exclude` 模式和项目级的 `.gra
 
 ## 隐私
 
-- **代码文件** —— 通过 tree-sitter 在本地处理。任何内容都不会离开你的机器。纯代码语料无需 API 密钥 —— `graphify extract` 完全离线运行。在混合仓库中，加上 `--code-only` 可仅索引代码，并跳过那些原本需要 LLM 的文档/PDF/图片。
-- **视频 / 音频** —— 使用 faster-whisper 在本地转录。任何内容都不会离开你的机器。
-- **文档、PDF、图片** —— 发送到你的 AI 助手进行语义提取（通过 `/graphify` 技能，使用你 IDE 会话所运行的任何模型）。无头的 `graphify extract` 需要 `GEMINI_API_KEY` / `GOOGLE_API_KEY`（Gemini）、`MOONSHOT_API_KEY`（Kimi）、`ANTHROPIC_API_KEY`（Claude）、`OPENAI_API_KEY`（OpenAI）、`DEEPSEEK_API_KEY`（DeepSeek）、一个正在运行的 Ollama 实例（`OLLAMA_BASE_URL`）、通过标准提供方链提供的 AWS 凭据（Bedrock —— 无需 API 密钥，使用 IAM），或者 `claude` CLI 二进制文件（Claude Code —— 无需 API 密钥，使用你的 Claude 订阅）。`--dedup-llm` 标志使用相同的密钥。
-- **数据驻留** —— `graphify extract` 会根据已设置的 API 密钥自动检测使用哪个提供方（优先级：Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama）。对于有数据驻留要求的代码，请使用 `--backend ollama`（完全本地）或传入显式的 `--backend` 标志。Kimi（`MOONSHOT_API_KEY`）会路由到位于中国的 Moonshot AI 服务器。
+- **代码文件**: 通过 tree-sitter 在本地处理。任何内容都不会离开你的机器。纯代码语料无需 API 密钥: `graphify extract` 完全离线运行。在混合仓库中，加上 `--code-only` 可仅索引代码，并跳过那些原本需要 LLM 的文档/PDF/图片。
+- **视频 / 音频**: 使用 faster-whisper 在本地转录。任何内容都不会离开你的机器。
+- **文档、PDF、图片**: 发送到你的 AI 助手进行语义提取（通过 `/graphify` 技能，使用你 IDE 会话所运行的任何模型）。无头的 `graphify extract` 需要 `GEMINI_API_KEY` / `GOOGLE_API_KEY`（Gemini）、`MOONSHOT_API_KEY`（Kimi）、`ANTHROPIC_API_KEY`（Claude）、`OPENAI_API_KEY`（OpenAI）、`DEEPSEEK_API_KEY`（DeepSeek）、一个正在运行的 Ollama 实例（`OLLAMA_BASE_URL`）、通过标准提供方链提供的 AWS 凭据（Bedrock: 无需 API 密钥，使用 IAM），或者 `claude` CLI 二进制文件（Claude Code: 无需 API 密钥，使用你的 Claude 订阅）。`--dedup-llm` 标志使用相同的密钥。
+- **数据驻留**: `graphify extract` 会根据已设置的 API 密钥自动检测使用哪个提供方（优先级：Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama）。对于有数据驻留要求的代码，请使用 `--backend ollama`（完全本地）或传入显式的 `--backend` 标志。Kimi（`MOONSHOT_API_KEY`）会路由到位于中国的 Moonshot AI 服务器。
 - **无遥测**、无使用情况追踪、无分析。
-- **查询日志** —— 每一次 `graphify query`、`graphify path`、`graphify explain` 以及 MCP `query_graph` 调用都会以 JSON Lines 格式记录到 `~/.cache/graphify-queries.log`（时间戳、问题、语料、返回的节点数、耗时）。默认**不**存储完整的子图响应。设置 `GRAPHIFY_QUERY_LOG_DISABLE=1` 可退出，或设置 `GRAPHIFY_QUERY_LOG=/dev/null` 在不禁用代码路径的情况下静默它。
+- **查询日志**: 每一次 `graphify query`、`graphify path`、`graphify explain` 以及 MCP `query_graph` 调用都会以 JSON Lines 格式记录到 `~/.cache/graphify-queries.log`（时间戳、问题、语料、返回的节点数、耗时）。默认**不**存储完整的子图响应。设置 `GRAPHIFY_QUERY_LOG_DISABLE=1` 可退出，或设置 `GRAPHIFY_QUERY_LOG=/dev/null` 在不禁用代码路径的情况下静默它。
 
 ---
 
@@ -416,11 +416,11 @@ graphify 遵循 `.gitignore`，并支持 `--exclude` 模式和项目级的 `.gra
 
 ## 了解更多
 
-- [docs.graphify.com](https://docs.graphify.com) —— 完整文档：指南、命令参考和集成
-- [How it works](../how-it-works.md) —— 提取流水线、社区检测、置信度评分、基准测试
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) —— 模块拆解、如何添加一门语言
-- [Optional integrations](../docker-mcp-sqlite.md) —— Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) —— 讲述 graphify 背后理念的书，从头到尾剖析其架构
+- [docs.graphify.com](https://docs.graphify.com): 完整文档：指南、命令参考和集成
+- [How it works](../how-it-works.md): 提取流水线、社区检测、置信度评分、基准测试
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): 模块拆解、如何添加一门语言
+- [Optional integrations](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): 讲述 graphify 背后理念的书，从头到尾剖析其架构
 
 ---
 
@@ -428,12 +428,12 @@ graphify 遵循 `.gitignore`，并支持 `--exclude` 模式和项目级的 `.gra
 
 [**Graphify Cloud**](https://app.graphify.com/login) 是构建在 graphify 之上的始终在线层。它不是一张你按文件夹按需重建的图，而是在你的整个软件开发生命周期中保持一张实时图：
 
-- **token 减少 80%** —— 始终在线的记忆意味着你的智能体不必在每次会话中重新读取和重新解释代码库。
-- **Monorepo 与跨仓库** —— 一张跨越每个服务和仓库的连通图，而不是每个文件夹一张图。
-- **形式化验证** —— 对照实时图检查架构与依赖的不变式。
-- **带有 SDLC 全局视角的代码评审** —— 在合并之前就看清一处改动如何波及整个系统。
-- **SDLC 连接器** —— 接入 Sentry、Jira 等，让事故、工单和代码同处一张图中。
-- **始终在线** —— 在后台跨代码、文档和会议持续更新。
+- **token 减少 80%**: 始终在线的记忆意味着你的智能体不必在每次会话中重新读取和重新解释代码库。
+- **Monorepo 与跨仓库**: 一张跨越每个服务和仓库的连通图，而不是每个文件夹一张图。
+- **形式化验证**: 对照实时图检查架构与依赖的不变式。
+- **带有 SDLC 全局视角的代码评审**: 在合并之前就看清一处改动如何波及整个系统。
+- **SDLC 连接器**: 接入 Sentry、Jira 等，让事故、工单和代码同处一张图中。
+- **始终在线**: 在后台跨代码、文档和会议持续更新。
 
 **[在 app.graphify.com 开始 14 天免费试用 &rarr;](https://app.graphify.com/login)**
 

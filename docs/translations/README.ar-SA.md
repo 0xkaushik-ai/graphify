@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ graphify install               # register the skill with your AI assistant
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 يتضمن الرسم البياني المحفوظ `graph.schema_version` حتى تتمكن عمليات التكامل من اكتشاف
 تغييرات الصيغة غير المتوافقة، إضافةً إلى `graph.graphify_version` الذي يحدد
 إصدار Graphify الذي أنتجه.
 
-**يعمل في** Claude Code وCursor وCodex وGemini CLI وGitHub Copilot و15+ غيرها — [اختر منصّتك](#install).
+**يعمل في** Claude Code وCursor وCodex وGemini CLI وGitHub Copilot و15+ غيرها: [اختر منصّتك](#install).
 
 ---
 
@@ -81,11 +81,11 @@ graphify-out/
 
 الأدلة الكاملة والمرجع موجودة في **[docs.graphify.com](https://docs.graphify.com)**:
 
-- **[Quickstart](https://docs.graphify.com/quickstart)** — ابنِ أول رسم بياني لك
-- **[CLI reference](https://docs.graphify.com/reference/overview)** — كل أمر وكل راية
-- **[Ask better graph questions](https://docs.graphify.com/guides/querying)** — أنماط الاستعلام
-- **[Configuration](https://docs.graphify.com/reference/configuration)** — متغيرات البيئة والضبط
-- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)** — اللغات وأنواع الملفات
+- **[Quickstart](https://docs.graphify.com/quickstart)**: ابنِ أول رسم بياني لك
+- **[CLI reference](https://docs.graphify.com/reference/overview)**: كل أمر وكل راية
+- **[Ask better graph questions](https://docs.graphify.com/guides/querying)**: أنماط الاستعلام
+- **[Configuration](https://docs.graphify.com/reference/configuration)**: متغيرات البيئة والضبط
+- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**: اللغات وأنواع الملفات
 - **[Team workflows](https://docs.graphify.com/guides/team-workflows)** و**[PR review](https://docs.graphify.com/guides/pull-requests)**
 - **[Troubleshooting](https://docs.graphify.com/troubleshooting)** و**[How it works](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 مستودع المصدر الرسمي هو [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**الخطوة 1 — ثبّت الحزمة:**
+**الخطوة 1: ثبّت الحزمة:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**الخطوة 2 — سجّل المهارة لدى مساعد الذكاء الاصطناعي:**
+**الخطوة 2: سجّل المهارة لدى مساعد الذكاء الاصطناعي:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ graphify install --project --platform codex
 
 يحتاج مستخدمو Codex أيضًا إلى `multi_agent = true` ضمن `[features]` في `~/.codex/config.toml` من أجل الاستخراج المتوازي. يستخدم CodeBuddy آلية أداة Agent وخطّاف PreToolUse نفسها المستخدمة في Claude Code. يستخدم Factory Droid أداة `Task` لإرسال الوكلاء الفرعيين بشكل متوازٍ. يستخدم OpenClaw وAider استخراجًا تسلسليًا (دعم الوكلاء المتوازي لا يزال مبكرًا على تلك المنصّات). يستخدم Trae أداة Agent لإرسال الوكلاء الفرعيين بشكل متوازٍ **ولا** يدعم خطّافات `PreToolUse`، لذا فإن AGENTS.md هي الآلية دائمة التشغيل.
 
-يستهدف `--platform agents` (الاسم البديل `--platform skills`) المواقع العامة عبر الأطر [Agent-Skills](https://github.com/anthropics/skills): المسار العام للمستخدم في المواصفة `~/.agents/skills/` (يقرؤه `npx skills` والأطر المتوافقة مع المواصفة) للتثبيت العام، و`./.agents/skills/` للتثبيت محدّد النطاق بالمشروع (`--project`). يبقى `graphify install` المجرّد أحادي المنصّة (Claude Code) بحكم التصميم — استخدم منصّة `agents` المُسمّاة عندما تريد أن تكون المهارة قابلة للاكتشاف من أي إطار يقرأ `.agents/skills`.
+يستهدف `--platform agents` (الاسم البديل `--platform skills`) المواقع العامة عبر الأطر [Agent-Skills](https://github.com/anthropics/skills): المسار العام للمستخدم في المواصفة `~/.agents/skills/` (يقرؤه `npx skills` والأطر المتوافقة مع المواصفة) للتثبيت العام، و`./.agents/skills/` للتثبيت محدّد النطاق بالمشروع (`--project`). يبقى `graphify install` المجرّد أحادي المنصّة (Claude Code) بحكم التصميم: استخدم منصّة `agents` المُسمّاة عندما تريد أن تكون المهارة قابلة للاكتشاف من أي إطار يقرأ `.agents/skills`.
 
 > يستخدم Codex `$graphify` بدلًا من `/graphify`.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 راجع [مرجع الأوامر الكامل](#full-command-reference) أدناه.
@@ -393,12 +393,12 @@ graphify prs --conflicts           # PRs sharing graph communities — merge-ord
 
 ## Privacy
 
-- **ملفات الشيفرة** — تُعالَج محليًا عبر tree-sitter. لا شيء يغادر جهازك. لا تتطلب مجموعة شيفرة فقط أي مفتاح API — يعمل `graphify extract` دون اتصال تمامًا. على مستودع مختلط، أضف `--code-only` لفهرسة الشيفرة فقط وتخطّي الوثائق/ملفات PDF/الصور التي ستحتاج خلاف ذلك إلى نموذج لغوي.
-- **الفيديو / الصوت** — يُنسَخ محليًا بـ faster-whisper. لا شيء يغادر جهازك.
-- **الوثائق وملفات PDF والصور** — تُرسَل إلى مساعد الذكاء الاصطناعي لديك للاستخراج الدلالي (عبر مهارة `/graphify`، باستخدام أي نموذج تشغّله جلسة بيئة التطوير لديك). يتطلب `graphify extract` بدون واجهة `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini)، أو `MOONSHOT_API_KEY` (Kimi)، أو `ANTHROPIC_API_KEY` (Claude)، أو `OPENAI_API_KEY` (OpenAI)، أو `DEEPSEEK_API_KEY` (DeepSeek)، أو نسخة Ollama قيد التشغيل (`OLLAMA_BASE_URL`)، أو بيانات اعتماد AWS عبر سلسلة المزوّد القياسية (Bedrock - لا حاجة لمفتاح API، يستخدم IAM)، أو الملف الثنائي لـ `claude` CLI (Claude Code - لا حاجة لمفتاح API، يستخدم اشتراكك في Claude). تستخدم راية `--dedup-llm` المفتاح نفسه.
-- **مكان إقامة البيانات** — يكتشف `graphify extract` تلقائيًا أي مزوّد يُستخدم بناءً على مفتاح API المُعيَّن (الأولوية: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). للشيفرة ذات متطلبات مكان إقامة البيانات، استخدم `--backend ollama` (محلي تمامًا) أو مرّر راية `--backend` صريحة. يوجّه Kimi (`MOONSHOT_API_KEY`) إلى خوادم Moonshot AI في الصين.
+- **ملفات الشيفرة**: تُعالَج محليًا عبر tree-sitter. لا شيء يغادر جهازك. لا تتطلب مجموعة شيفرة فقط أي مفتاح API: يعمل `graphify extract` دون اتصال تمامًا. على مستودع مختلط، أضف `--code-only` لفهرسة الشيفرة فقط وتخطّي الوثائق/ملفات PDF/الصور التي ستحتاج خلاف ذلك إلى نموذج لغوي.
+- **الفيديو / الصوت**: يُنسَخ محليًا بـ faster-whisper. لا شيء يغادر جهازك.
+- **الوثائق وملفات PDF والصور**: تُرسَل إلى مساعد الذكاء الاصطناعي لديك للاستخراج الدلالي (عبر مهارة `/graphify`، باستخدام أي نموذج تشغّله جلسة بيئة التطوير لديك). يتطلب `graphify extract` بدون واجهة `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini)، أو `MOONSHOT_API_KEY` (Kimi)، أو `ANTHROPIC_API_KEY` (Claude)، أو `OPENAI_API_KEY` (OpenAI)، أو `DEEPSEEK_API_KEY` (DeepSeek)، أو نسخة Ollama قيد التشغيل (`OLLAMA_BASE_URL`)، أو بيانات اعتماد AWS عبر سلسلة المزوّد القياسية (Bedrock - لا حاجة لمفتاح API، يستخدم IAM)، أو الملف الثنائي لـ `claude` CLI (Claude Code - لا حاجة لمفتاح API، يستخدم اشتراكك في Claude). تستخدم راية `--dedup-llm` المفتاح نفسه.
+- **مكان إقامة البيانات**: يكتشف `graphify extract` تلقائيًا أي مزوّد يُستخدم بناءً على مفتاح API المُعيَّن (الأولوية: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). للشيفرة ذات متطلبات مكان إقامة البيانات، استخدم `--backend ollama` (محلي تمامًا) أو مرّر راية `--backend` صريحة. يوجّه Kimi (`MOONSHOT_API_KEY`) إلى خوادم Moonshot AI في الصين.
 - **لا قياسات عن بُعد**، ولا تتبع استخدام، ولا تحليلات.
-- **تسجيل الاستعلامات** — يُسجَّل كل استدعاء `graphify query` و`graphify path` و`graphify explain` واستدعاء MCP `query_graph` في `~/.cache/graphify-queries.log` بصيغة JSON Lines (الطابع الزمني، والسؤال، والمجموعة، والعقد المُعادة، والمدة). لا تُخزَّن استجابات الرسوم البيانية الجزئية الكاملة افتراضيًا. اضبط `GRAPHIFY_QUERY_LOG_DISABLE=1` للانسحاب، أو `GRAPHIFY_QUERY_LOG=/dev/null` لإسكاته دون تعطيل مسار الشيفرة.
+- **تسجيل الاستعلامات**: يُسجَّل كل استدعاء `graphify query` و`graphify path` و`graphify explain` واستدعاء MCP `query_graph` في `~/.cache/graphify-queries.log` بصيغة JSON Lines (الطابع الزمني، والسؤال، والمجموعة، والعقد المُعادة، والمدة). لا تُخزَّن استجابات الرسوم البيانية الجزئية الكاملة افتراضيًا. اضبط `GRAPHIFY_QUERY_LOG_DISABLE=1` للانسحاب، أو `GRAPHIFY_QUERY_LOG=/dev/null` لإسكاته دون تعطيل مسار الشيفرة.
 
 ---
 
@@ -416,11 +416,11 @@ graphify prs --conflicts           # PRs sharing graph communities — merge-ord
 
 ## Learn more
 
-- [docs.graphify.com](https://docs.graphify.com) — الوثائق الكاملة: الأدلة ومرجع الأوامر وعمليات التكامل
-- [How it works](../how-it-works.md) — خط أنابيب الاستخراج واكتشاف المجتمعات وتقييم الثقة والمعايير
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — تفصيل الوحدات وكيفية إضافة لغة
-- [Optional integrations](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — الكتاب عن الأفكار وراء graphify والمعمارية من البداية إلى النهاية
+- [docs.graphify.com](https://docs.graphify.com): الوثائق الكاملة: الأدلة ومرجع الأوامر وعمليات التكامل
+- [How it works](../how-it-works.md): خط أنابيب الاستخراج واكتشاف المجتمعات وتقييم الثقة والمعايير
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): تفصيل الوحدات وكيفية إضافة لغة
+- [Optional integrations](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): الكتاب عن الأفكار وراء graphify والمعمارية من البداية إلى النهاية
 
 ---
 
@@ -428,12 +428,12 @@ graphify prs --conflicts           # PRs sharing graph communities — merge-ord
 
 [**Graphify Cloud**](https://app.graphify.com/login) هي الطبقة دائمة التشغيل المبنية فوق graphify. بدلًا من رسم بياني تعيد بناءه عند الطلب لكل مجلد، تُبقي رسمًا بيانيًا حيًّا واحدًا عبر دورة حياة تطوير برمجياتك بأكملها:
 
-- **رموز أقل بنسبة 80%** — الذاكرة دائمة التشغيل تعني أن وكلاءك يتوقفون عن إعادة قراءة قاعدة الشيفرة وإعادة شرحها في كل جلسة.
-- **مستودع أحادي وعبر المستودعات** — رسم بياني متصل واحد عبر كل خدمة ومستودع، وليس رسمًا بيانيًا لكل مجلد.
-- **التحقق الصوري** — تحقق من الثوابت المعمارية وثوابت التبعيات مقابل الرسم البياني الحيّ.
-- **مراجعة الشيفرة بنظرة شاملة على دورة حياة التطوير** — انظر كيف يتموّج تغيير عبر النظام كله قبل أن تدمجه.
-- **موصّلات دورة حياة التطوير** — اجلب Sentry وJira والمزيد، بحيث تعيش الحوادث والتذاكر والشيفرة في رسم بياني واحد.
-- **دائم التشغيل** — يُحدَّث باستمرار في الخلفية عبر الشيفرة والوثائق والاجتماعات.
+- **رموز أقل بنسبة 80%**: الذاكرة دائمة التشغيل تعني أن وكلاءك يتوقفون عن إعادة قراءة قاعدة الشيفرة وإعادة شرحها في كل جلسة.
+- **مستودع أحادي وعبر المستودعات**: رسم بياني متصل واحد عبر كل خدمة ومستودع، وليس رسمًا بيانيًا لكل مجلد.
+- **التحقق الصوري**: تحقق من الثوابت المعمارية وثوابت التبعيات مقابل الرسم البياني الحيّ.
+- **مراجعة الشيفرة بنظرة شاملة على دورة حياة التطوير**: انظر كيف يتموّج تغيير عبر النظام كله قبل أن تدمجه.
+- **موصّلات دورة حياة التطوير**: اجلب Sentry وJira والمزيد، بحيث تعيش الحوادث والتذاكر والشيفرة في رسم بياني واحد.
+- **دائم التشغيل**: يُحدَّث باستمرار في الخلفية عبر الشيفرة والوثائق والاجتماعات.
 
 **[ابدأ تجربة مجانية لمدة 14 يومًا على app.graphify.com &rarr;](https://app.graphify.com/login)**
 

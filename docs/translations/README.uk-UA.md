@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <b>Скоротіть витрати токенів агентів на 80%.</b> Graphify Cloud — це завжди увімкнена пам'ять, яка керує вашими агентами, підтримує високу якість коду та доводить коректність за допомогою формальної верифікації. <a href="https://app.graphify.com/login"><b>Розпочніть безкоштовну 14-денну пробну версію &rarr;</b></a>
+  <b>Скоротіть витрати токенів агентів на 80%.</b> Graphify Cloud: це завжди увімкнена пам'ять, яка керує вашими агентами, підтримує високу якість коду та доводить коректність за допомогою формальної верифікації. <a href="https://app.graphify.com/login"><b>Розпочніть безкоштовну 14-денну пробну версію &rarr;</b></a>
 </p>
 
 Введіть `/graphify` у вашому ШІ-асистенті для програмування, і він відобразить увесь ваш проєкт (код, документи, PDF-файли, зображення, відео) у **граф знань**, який ви можете **запитувати замість grep** по файлах.
@@ -44,7 +44,7 @@
   <img src="https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/graph-hero.png" alt="graphify's interactive graph.html showing the FastAPI codebase as a force-directed knowledge graph with a legend of detected communities" width="900">
 </p>
 <p align="center">
-  <em>Кодова база FastAPI, відображена graphify. Кожен вузол — це поняття, кольори — виявлені спільноти, і все це клікабельне у graph.html.</em>
+  <em>Кодова база FastAPI, відображена graphify. Кожен вузол: це поняття, кольори: виявлені спільноти, і все це клікабельне у graph.html.</em>
 </p>
 
 **Почати** (30 секунд):
@@ -64,16 +64,16 @@ graphify install               # register the skill with your AI assistant
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 Збережений граф містить `graph.schema_version`, щоб інтеграції могли виявляти
 несумісні зміни формату, а також `graph.graphify_version`, що ідентифікує
 випуск Graphify, який його створив.
 
-**Працює в** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot та ще понад 15 — [виберіть свою платформу](#install).
+**Працює в** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot та ще понад 15: [виберіть свою платформу](#install).
 
 ---
 
@@ -81,11 +81,11 @@ graphify-out/
 
 Повні посібники та довідка розміщені на **[docs.graphify.com](https://docs.graphify.com)**:
 
-- **[Швидкий старт](https://docs.graphify.com/quickstart)** — побудуйте свій перший граф
-- **[Довідник CLI](https://docs.graphify.com/reference/overview)** — кожна команда й прапорець
-- **[Ставте кращі запитання до графа](https://docs.graphify.com/guides/querying)** — шаблони запитів
-- **[Конфігурація](https://docs.graphify.com/reference/configuration)** — змінні середовища та налаштування
-- **[Підтримувані вхідні дані](https://docs.graphify.com/concepts/supported-inputs)** — мови та типи файлів
+- **[Швидкий старт](https://docs.graphify.com/quickstart)**: побудуйте свій перший граф
+- **[Довідник CLI](https://docs.graphify.com/reference/overview)**: кожна команда й прапорець
+- **[Ставте кращі запитання до графа](https://docs.graphify.com/guides/querying)**: шаблони запитів
+- **[Конфігурація](https://docs.graphify.com/reference/configuration)**: змінні середовища та налаштування
+- **[Підтримувані вхідні дані](https://docs.graphify.com/concepts/supported-inputs)**: мови та типи файлів
 - **[Командні робочі процеси](https://docs.graphify.com/guides/team-workflows)** та **[рев'ю PR](https://docs.graphify.com/guides/pull-requests)**
 - **[Усунення несправностей](https://docs.graphify.com/troubleshooting)** та **[Як це працює](https://docs.graphify.com/concepts/architecture)**
 
@@ -131,7 +131,7 @@ Shortest path (3 hops):
 | **Божественні вузли** | Найбільш пов'язані поняття, тож ви бачите, через що все проходить |
 | **Спільноти** | Граф, розбитий на підсистеми (Leiden), з мітками без LLM |
 | **Міжфайлові зв'язки** | `calls` / `imports` / `inherits` / `mixes_in` розв'язуються у ~40 мовах через tree-sitter AST |
-| **Запит, шлях, пояснення** | Поставте запитання, простежте шлях між двома речами або поясніть одне поняття — усе на основі `graph.json` |
+| **Запит, шлях, пояснення** | Поставте запитання, простежте шлях між двома речами або поясніть одне поняття: усе на основі `graph.json` |
 | **Обґрунтування + посилання на документи** | Коментарі `# NOTE:` / `# WHY:` та цитати ADR/RFC стають повноцінними вузлами, пов'язаними з кодом |
 | **Поза межами коду** | Документи, PDF-файли, зображення та відео/аудіо відображаються в той самий граф |
 | **Local-first** | Код розбирається локально за допомогою tree-sitter (без LLM, нічого не залишає вашу машину); лише семантичний прохід по документах/медіа викликає бекенд, і тільки якщо ви його налаштуєте |
@@ -185,11 +185,11 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ## Install
 
 > [!IMPORTANT]
-> **Офіційний пакет:** пакет на PyPI — це `graphifyy` (подвійна y). Інші пакети `graphify*` на PyPI не є афілійованими. Команда CLI досі `graphify`.
+> **Офіційний пакет:** пакет на PyPI: це `graphifyy` (подвійна y). Інші пакети `graphify*` на PyPI не є афілійованими. Команда CLI досі `graphify`.
 
-Офіційний репозиторій вихідного коду — [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
+Офіційний репозиторій вихідного коду: [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**Крок 1 — встановіть пакет:**
+**Крок 1: встановіть пакет:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**Крок 2 — зареєструйте навичку у вашому ШІ-асистенті:**
+**Крок 2: зареєструйте навичку у вашому ШІ-асистенті:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ graphify install --project --platform codex
 
 Користувачам Codex також потрібно `multi_agent = true` під `[features]` у `~/.codex/config.toml` для паралельного вилучення. CodeBuddy використовує той самий інструмент Agent і механізм хуків PreToolUse, що й Claude Code. Factory Droid використовує інструмент `Task` для паралельного диспетчування субагентів. OpenClaw та Aider використовують послідовне вилучення (підтримка паралельних агентів на цих платформах усе ще на ранній стадії). Trae використовує інструмент Agent для паралельного диспетчування субагентів і **не** підтримує хуки `PreToolUse`, тож AGENTS.md є завжди увімкненим механізмом.
 
-`--platform agents` (псевдонім `--platform skills`) націлюється на загальні крос-фреймворкові розташування [Agent-Skills](https://github.com/anthropics/skills): визначений специфікацією глобальний для користувача `~/.agents/skills/` (читається `npx skills` та фреймворками, сумісними зі специфікацією) для глобального встановлення, і `./.agents/skills/` для встановлення в межах проєкту (`--project`). Звичайне `graphify install` за задумом залишається однойплатформним (Claude Code) — використовуйте іменовану платформу `agents`, коли хочете, щоб навичку міг виявити будь-який фреймворк, що читає `.agents/skills`.
+`--platform agents` (псевдонім `--platform skills`) націлюється на загальні крос-фреймворкові розташування [Agent-Skills](https://github.com/anthropics/skills): визначений специфікацією глобальний для користувача `~/.agents/skills/` (читається `npx skills` та фреймворками, сумісними зі специфікацією) для глобального встановлення, і `./.agents/skills/` для встановлення в межах проєкту (`--project`). Звичайне `graphify install` за задумом залишається однойплатформним (Claude Code): використовуйте іменовану платформу `agents`, коли хочете, щоб навичку міг виявити будь-який фреймворк, що читає `.agents/skills`.
 
 > Codex використовує `$graphify` замість `/graphify`.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 Див. [повний довідник команд](#full-command-reference) нижче.
@@ -393,12 +393,12 @@ graphify шанує `.gitignore` і підтримує шаблони `--exclude
 
 ## Конфіденційність
 
-- **Файли коду** — обробляються локально через tree-sitter. Нічого не залишає вашу машину. Корпус лише з коду не потребує ключа API — `graphify extract` працює повністю офлайн. У змішаному репозиторії додайте `--code-only`, щоб індексувати лише код і пропустити документи/PDF-файли/зображення, які інакше потребували б LLM.
-- **Відео / аудіо** — транскрибуються локально за допомогою faster-whisper. Нічого не залишає вашу машину.
-- **Документи, PDF-файли, зображення** — надсилаються вашому ШІ-асистенту для семантичного вилучення (через навичку `/graphify`, використовуючи ту модель, яку запускає сеанс вашого IDE). Безголовий `graphify extract` потребує `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), запущеного екземпляра Ollama (`OLLAMA_BASE_URL`), облікових даних AWS через стандартний ланцюг провайдерів (Bedrock — ключ API не потрібен, використовує IAM) або бінарного файлу `claude` CLI (Claude Code — ключ API не потрібен, використовує вашу підписку Claude). Прапорець `--dedup-llm` використовує той самий ключ.
-- **Місцезнаходження даних** — `graphify extract` автоматично визначає, якого провайдера використовувати, залежно від того, який ключ API встановлено (пріоритет: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Для коду з вимогами до місцезнаходження даних використовуйте `--backend ollama` (повністю локально) або передайте явний прапорець `--backend`. Kimi (`MOONSHOT_API_KEY`) маршрутизує на сервери Moonshot AI в Китаї.
+- **Файли коду**: обробляються локально через tree-sitter. Нічого не залишає вашу машину. Корпус лише з коду не потребує ключа API: `graphify extract` працює повністю офлайн. У змішаному репозиторії додайте `--code-only`, щоб індексувати лише код і пропустити документи/PDF-файли/зображення, які інакше потребували б LLM.
+- **Відео / аудіо**: транскрибуються локально за допомогою faster-whisper. Нічого не залишає вашу машину.
+- **Документи, PDF-файли, зображення**: надсилаються вашому ШІ-асистенту для семантичного вилучення (через навичку `/graphify`, використовуючи ту модель, яку запускає сеанс вашого IDE). Безголовий `graphify extract` потребує `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), запущеного екземпляра Ollama (`OLLAMA_BASE_URL`), облікових даних AWS через стандартний ланцюг провайдерів (Bedrock: ключ API не потрібен, використовує IAM) або бінарного файлу `claude` CLI (Claude Code: ключ API не потрібен, використовує вашу підписку Claude). Прапорець `--dedup-llm` використовує той самий ключ.
+- **Місцезнаходження даних**: `graphify extract` автоматично визначає, якого провайдера використовувати, залежно від того, який ключ API встановлено (пріоритет: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Для коду з вимогами до місцезнаходження даних використовуйте `--backend ollama` (повністю локально) або передайте явний прапорець `--backend`. Kimi (`MOONSHOT_API_KEY`) маршрутизує на сервери Moonshot AI в Китаї.
 - **Жодної телеметрії**, жодного відстеження використання, жодної аналітики.
-- **Логування запитів** — кожен виклик `graphify query`, `graphify path`, `graphify explain` та MCP `query_graph` записується до `~/.cache/graphify-queries.log` у форматі JSON Lines (мітка часу, запитання, корпус, повернуті вузли, тривалість). Повні відповіді підграфа **не** зберігаються за замовчуванням. Встановіть `GRAPHIFY_QUERY_LOG_DISABLE=1`, щоб відмовитися, або `GRAPHIFY_QUERY_LOG=/dev/null`, щоб вимкнути без відключення кодового шляху.
+- **Логування запитів**: кожен виклик `graphify query`, `graphify path`, `graphify explain` та MCP `query_graph` записується до `~/.cache/graphify-queries.log` у форматі JSON Lines (мітка часу, запитання, корпус, повернуті вузли, тривалість). Повні відповіді підграфа **не** зберігаються за замовчуванням. Встановіть `GRAPHIFY_QUERY_LOG_DISABLE=1`, щоб відмовитися, або `GRAPHIFY_QUERY_LOG=/dev/null`, щоб вимкнути без відключення кодового шляху.
 
 ---
 
@@ -416,24 +416,24 @@ graphify шанує `.gitignore` і підтримує шаблони `--exclude
 
 ## Дізнатися більше
 
-- [docs.graphify.com](https://docs.graphify.com) — повна документація: посібники, довідник команд та інтеграції
-- [Як це працює](../how-it-works.md) — конвеєр вилучення, виявлення спільнот, оцінювання впевненості, бенчмарки
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — розбивка модулів, як додати мову
-- [Необов'язкові інтеграції](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — книга про ідеї, що стоять за graphify, та архітектуру від початку до кінця
+- [docs.graphify.com](https://docs.graphify.com): повна документація: посібники, довідник команд та інтеграції
+- [Як це працює](../how-it-works.md): конвеєр вилучення, виявлення спільнот, оцінювання впевненості, бенчмарки
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): розбивка модулів, як додати мову
+- [Необов'язкові інтеграції](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): книга про ідеї, що стоять за graphify, та архітектуру від початку до кінця
 
 ---
 
 ## Graphify Cloud
 
-[**Graphify Cloud**](https://app.graphify.com/login) — це завжди увімкнений шар, побудований поверх graphify. Замість графа, який ви перебудовуєте на вимогу для кожної теки, він підтримує один живий граф упродовж усього вашого життєвого циклу розробки ПЗ:
+[**Graphify Cloud**](https://app.graphify.com/login): це завжди увімкнений шар, побудований поверх graphify. Замість графа, який ви перебудовуєте на вимогу для кожної теки, він підтримує один живий граф упродовж усього вашого життєвого циклу розробки ПЗ:
 
-- **На 80% менше токенів** — завжди увімкнена пам'ять означає, що ваші агенти припиняють перечитувати й повторно пояснювати кодову базу щосеансу.
-- **Монорепозиторій та крос-репозиторій** — один пов'язаний граф для кожного сервісу й репозиторію, а не граф на теку.
-- **Формальна верифікація** — перевіряйте архітектурні та залежнісні інваріанти щодо живого графа.
-- **Рев'ю коду з висоти пташиного польоту над вашим SDLC** — побачте, як зміна розходиться по всій системі, перш ніж зливати її.
-- **Конектори SDLC** — підтягуйте Sentry, Jira та інші, щоб інциденти, тикети й код жили в одному графі.
-- **Завжди увімкнено** — безперервно оновлюється у фоновому режимі по коду, документах і зустрічах.
+- **На 80% менше токенів**: завжди увімкнена пам'ять означає, що ваші агенти припиняють перечитувати й повторно пояснювати кодову базу щосеансу.
+- **Монорепозиторій та крос-репозиторій**: один пов'язаний граф для кожного сервісу й репозиторію, а не граф на теку.
+- **Формальна верифікація**: перевіряйте архітектурні та залежнісні інваріанти щодо живого графа.
+- **Рев'ю коду з висоти пташиного польоту над вашим SDLC**: побачте, як зміна розходиться по всій системі, перш ніж зливати її.
+- **Конектори SDLC**: підтягуйте Sentry, Jira та інші, щоб інциденти, тикети й код жили в одному графі.
+- **Завжди увімкнено**: безперервно оновлюється у фоновому режимі по коду, документах і зустрічах.
 
 **[Розпочніть безкоштовну 14-денну пробну версію на app.graphify.com &rarr;](https://app.graphify.com/login)**
 

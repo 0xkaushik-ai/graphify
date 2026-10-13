@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ graphify install               # register the skill with your AI assistant
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 영속화된 그래프에는 통합 측이 호환되지 않는 포맷 변경을 감지할 수 있도록
 `graph.schema_version`이 포함되며, 그것을 생성한 Graphify 릴리스를 식별하는
 `graph.graphify_version`도 함께 포함됩니다.
 
-**지원 환경**: Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot 및 15개 이상 —— [플랫폼을 선택하세요](#install).
+**지원 환경**: Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot 및 15개 이상: [플랫폼을 선택하세요](#install).
 
 ---
 
@@ -81,11 +81,11 @@ graphify-out/
 
 전체 가이드와 레퍼런스는 **[docs.graphify.com](https://docs.graphify.com)** 에 있습니다:
 
-- **[Quickstart](https://docs.graphify.com/quickstart)** —— 첫 번째 그래프 만들기
-- **[CLI reference](https://docs.graphify.com/reference/overview)** —— 모든 명령과 플래그
-- **[Ask better graph questions](https://docs.graphify.com/guides/querying)** —— 쿼리 패턴
-- **[Configuration](https://docs.graphify.com/reference/configuration)** —— 환경 변수와 튜닝
-- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)** —— 언어와 파일 형식
+- **[Quickstart](https://docs.graphify.com/quickstart)**: 첫 번째 그래프 만들기
+- **[CLI reference](https://docs.graphify.com/reference/overview)**: 모든 명령과 플래그
+- **[Ask better graph questions](https://docs.graphify.com/guides/querying)**: 쿼리 패턴
+- **[Configuration](https://docs.graphify.com/reference/configuration)**: 환경 변수와 튜닝
+- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**: 언어와 파일 형식
 - **[Team workflows](https://docs.graphify.com/guides/team-workflows)** 및 **[PR review](https://docs.graphify.com/guides/pull-requests)**
 - **[Troubleshooting](https://docs.graphify.com/troubleshooting)** 및 **[How it works](https://docs.graphify.com/concepts/architecture)**
 
@@ -131,7 +131,7 @@ Shortest path (3 hops):
 | **갓 노드(God nodes)** | 가장 많이 연결된 개념으로, 모든 것이 무엇을 거쳐 흐르는지 보입니다 |
 | **커뮤니티(Communities)** | 그래프를 서브시스템으로 분할(Leiden), LLM 없는 라벨 포함 |
 | **파일 간 링크** | tree-sitter AST를 통해 약 40개 언어에 걸쳐 `calls` / `imports` / `inherits` / `mixes_in` 해석 |
-| **쿼리, 경로, 설명** | 질문하기, 두 대상 사이의 경로 추적, 또는 하나의 개념 설명 —— 모두 `graph.json`을 대상으로 |
+| **쿼리, 경로, 설명** | 질문하기, 두 대상 사이의 경로 추적, 또는 하나의 개념 설명: 모두 `graph.json`을 대상으로 |
 | **근거 + 문서 참조** | `# NOTE:` / `# WHY:` 주석과 ADR/RFC 인용이 코드에 연결된 일급 노드가 됩니다 |
 | **코드를 넘어서** | 문서, PDF, 이미지, 동영상/오디오가 모두 같은 그래프로 매핑됩니다 |
 | **로컬 우선** | 코드는 tree-sitter로 로컬에서 파싱됩니다(LLM 없음, 그 무엇도 기기를 떠나지 않음). 문서/미디어에 대한 시맨틱 처리만 백엔드를 호출하며, 그것도 설정한 경우에만 호출합니다 |
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 공식 소스 리포지토리는 [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) 입니다.
 
-**1단계 —— 패키지 설치:**
+**1단계: 패키지 설치:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**2단계 —— AI 어시스턴트에 스킬 등록:**
+**2단계: AI 어시스턴트에 스킬 등록:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ graphify install --project --platform codex
 
 Codex 사용자는 병렬 추출을 위해 `~/.codex/config.toml`의 `[features]` 아래에 `multi_agent = true`도 필요합니다. CodeBuddy는 Claude Code와 동일한 Agent 도구와 PreToolUse 훅 메커니즘을 사용합니다. Factory Droid는 병렬 서브에이전트 디스패치에 `Task` 도구를 사용합니다. OpenClaw와 Aider는 순차 추출을 사용합니다(해당 플랫폼의 병렬 에이전트 지원은 아직 초기 단계입니다). Trae는 병렬 서브에이전트 디스패치에 Agent 도구를 사용하며 `PreToolUse` 훅을 지원하지 **않으므로**, AGENTS.md가 상시 가동 메커니즘이 됩니다.
 
-`--platform agents`(별칭 `--platform skills`)는 범용 크로스프레임워크 [Agent-Skills](https://github.com/anthropics/skills) 위치를 대상으로 합니다. 전역 설치에는 사양에 정의된 사용자 전역 경로 `~/.agents/skills/`(`npx skills`와 사양을 준수하는 프레임워크가 읽음)를, 프로젝트(`--project`) 설치에는 `./.agents/skills/`를 사용합니다. 기본 `graphify install`은 설계상 단일 플랫폼(Claude Code)으로 유지됩니다 —— `.agents/skills`를 읽는 모든 프레임워크가 스킬을 발견할 수 있도록 하려면 이름이 지정된 `agents` 플랫폼을 사용하세요.
+`--platform agents`(별칭 `--platform skills`)는 범용 크로스프레임워크 [Agent-Skills](https://github.com/anthropics/skills) 위치를 대상으로 합니다. 전역 설치에는 사양에 정의된 사용자 전역 경로 `~/.agents/skills/`(`npx skills`와 사양을 준수하는 프레임워크가 읽음)를, 프로젝트(`--project`) 설치에는 `./.agents/skills/`를 사용합니다. 기본 `graphify install`은 설계상 단일 플랫폼(Claude Code)으로 유지됩니다: `.agents/skills`를 읽는 모든 프레임워크가 스킬을 발견할 수 있도록 하려면 이름이 지정된 `agents` 플랫폼을 사용하세요.
 
 > Codex는 `/graphify` 대신 `$graphify`를 사용합니다.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 아래의 [전체 명령 레퍼런스](#full-command-reference)를 참조하세요.
@@ -393,12 +393,12 @@ AI 어시스턴트를 넘어, `graphify query`, `graphify path`, `graphify expla
 
 ## 개인정보 보호
 
-- **코드 파일** —— tree-sitter를 통해 로컬에서 처리됩니다. 그 무엇도 기기를 떠나지 않습니다. 코드 전용 코퍼스는 API 키가 필요 없으며, `graphify extract`는 완전히 오프라인으로 실행됩니다. 혼합 리포지토리에서는 `--code-only`를 추가하면 코드만 인덱싱하고, 원래 LLM이 필요한 문서/PDF/이미지를 건너뜁니다.
-- **동영상 / 오디오** —— faster-whisper로 로컬에서 전사됩니다. 그 무엇도 기기를 떠나지 않습니다.
-- **문서, PDF, 이미지** —— 시맨틱 추출을 위해 AI 어시스턴트로 전송됩니다(`/graphify` 스킬을 통해, IDE 세션이 실행하는 모델을 사용). 헤드리스 `graphify extract`에는 `GEMINI_API_KEY` / `GOOGLE_API_KEY`(Gemini), `MOONSHOT_API_KEY`(Kimi), `ANTHROPIC_API_KEY`(Claude), `OPENAI_API_KEY`(OpenAI), `DEEPSEEK_API_KEY`(DeepSeek), 실행 중인 Ollama 인스턴스(`OLLAMA_BASE_URL`), 표준 공급자 체인을 통한 AWS 자격 증명(Bedrock —— API 키 불필요, IAM 사용), 또는 `claude` CLI 바이너리(Claude Code —— API 키 불필요, Claude 구독 사용) 중 하나가 필요합니다. `--dedup-llm` 플래그는 동일한 키를 사용합니다.
-- **데이터 레지던시** —— `graphify extract`는 설정된 API 키를 기준으로 어떤 공급자를 사용할지 자동 감지합니다(우선순위: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). 데이터 레지던시 요구 사항이 있는 코드에는 `--backend ollama`(완전 로컬)를 사용하거나 명시적인 `--backend` 플래그를 전달하세요. Kimi(`MOONSHOT_API_KEY`)는 중국에 있는 Moonshot AI 서버로 라우팅됩니다.
+- **코드 파일**: tree-sitter를 통해 로컬에서 처리됩니다. 그 무엇도 기기를 떠나지 않습니다. 코드 전용 코퍼스는 API 키가 필요 없으며, `graphify extract`는 완전히 오프라인으로 실행됩니다. 혼합 리포지토리에서는 `--code-only`를 추가하면 코드만 인덱싱하고, 원래 LLM이 필요한 문서/PDF/이미지를 건너뜁니다.
+- **동영상 / 오디오**: faster-whisper로 로컬에서 전사됩니다. 그 무엇도 기기를 떠나지 않습니다.
+- **문서, PDF, 이미지**: 시맨틱 추출을 위해 AI 어시스턴트로 전송됩니다(`/graphify` 스킬을 통해, IDE 세션이 실행하는 모델을 사용). 헤드리스 `graphify extract`에는 `GEMINI_API_KEY` / `GOOGLE_API_KEY`(Gemini), `MOONSHOT_API_KEY`(Kimi), `ANTHROPIC_API_KEY`(Claude), `OPENAI_API_KEY`(OpenAI), `DEEPSEEK_API_KEY`(DeepSeek), 실행 중인 Ollama 인스턴스(`OLLAMA_BASE_URL`), 표준 공급자 체인을 통한 AWS 자격 증명(Bedrock: API 키 불필요, IAM 사용), 또는 `claude` CLI 바이너리(Claude Code: API 키 불필요, Claude 구독 사용) 중 하나가 필요합니다. `--dedup-llm` 플래그는 동일한 키를 사용합니다.
+- **데이터 레지던시**: `graphify extract`는 설정된 API 키를 기준으로 어떤 공급자를 사용할지 자동 감지합니다(우선순위: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). 데이터 레지던시 요구 사항이 있는 코드에는 `--backend ollama`(완전 로컬)를 사용하거나 명시적인 `--backend` 플래그를 전달하세요. Kimi(`MOONSHOT_API_KEY`)는 중국에 있는 Moonshot AI 서버로 라우팅됩니다.
 - **텔레메트리 없음**, 사용량 추적 없음, 분석 없음.
-- **쿼리 로깅** —— 모든 `graphify query`, `graphify path`, `graphify explain`, 그리고 MCP `query_graph` 호출은 JSON Lines 형식으로 `~/.cache/graphify-queries.log`에 기록됩니다(타임스탬프, 질문, 코퍼스, 반환된 노드 수, 소요 시간). 전체 서브그래프 응답은 기본적으로 저장되지 **않습니다**. 옵트아웃하려면 `GRAPHIFY_QUERY_LOG_DISABLE=1`을 설정하거나, 코드 경로를 비활성화하지 않고 조용히 하려면 `GRAPHIFY_QUERY_LOG=/dev/null`을 설정하세요.
+- **쿼리 로깅**: 모든 `graphify query`, `graphify path`, `graphify explain`, 그리고 MCP `query_graph` 호출은 JSON Lines 형식으로 `~/.cache/graphify-queries.log`에 기록됩니다(타임스탬프, 질문, 코퍼스, 반환된 노드 수, 소요 시간). 전체 서브그래프 응답은 기본적으로 저장되지 **않습니다**. 옵트아웃하려면 `GRAPHIFY_QUERY_LOG_DISABLE=1`을 설정하거나, 코드 경로를 비활성화하지 않고 조용히 하려면 `GRAPHIFY_QUERY_LOG=/dev/null`을 설정하세요.
 
 ---
 
@@ -416,11 +416,11 @@ AI 어시스턴트를 넘어, `graphify query`, `graphify path`, `graphify expla
 
 ## 더 알아보기
 
-- [docs.graphify.com](https://docs.graphify.com) —— 전체 문서: 가이드, 명령 레퍼런스, 통합
-- [How it works](../how-it-works.md) —— 추출 파이프라인, 커뮤니티 탐지, 신뢰도 점수화, 벤치마크
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) —— 모듈 구성, 언어 추가 방법
-- [Optional integrations](../docker-mcp-sqlite.md) —— Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) —— graphify의 바탕이 된 아이디어와 처음부터 끝까지의 아키텍처를 다룬 책
+- [docs.graphify.com](https://docs.graphify.com): 전체 문서: 가이드, 명령 레퍼런스, 통합
+- [How it works](../how-it-works.md): 추출 파이프라인, 커뮤니티 탐지, 신뢰도 점수화, 벤치마크
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): 모듈 구성, 언어 추가 방법
+- [Optional integrations](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): graphify의 바탕이 된 아이디어와 처음부터 끝까지의 아키텍처를 다룬 책
 
 ---
 
@@ -428,12 +428,12 @@ AI 어시스턴트를 넘어, `graphify query`, `graphify path`, `graphify expla
 
 [**Graphify Cloud**](https://app.graphify.com/login)는 graphify 위에 구축된 상시 가동 계층입니다. 폴더별로 필요할 때마다 다시 구축하는 그래프 대신, 소프트웨어 개발 수명 주기 전반에 걸쳐 하나의 실시간 그래프를 유지합니다:
 
-- **토큰 80% 절감** —— 상시 가동 메모리 덕분에 에이전트가 매 세션마다 코드베이스를 다시 읽고 다시 설명하지 않아도 됩니다.
-- **모노레포와 리포지토리 간** —— 폴더별 그래프가 아니라, 모든 서비스와 리포지토리를 아우르는 하나의 연결된 그래프.
-- **형식 검증** —— 아키텍처와 의존성 불변 조건을 실시간 그래프에 비추어 검사합니다.
-- **SDLC를 한눈에 내려다보는 코드 리뷰** —— 병합하기 전에 변경이 시스템 전체로 어떻게 파급되는지 확인합니다.
-- **SDLC 커넥터** —— Sentry, Jira 등을 끌어와, 인시던트, 티켓, 코드가 하나의 그래프 안에 자리합니다.
-- **상시 가동** —— 코드, 문서, 미팅에 걸쳐 백그라운드에서 지속적으로 업데이트합니다.
+- **토큰 80% 절감**: 상시 가동 메모리 덕분에 에이전트가 매 세션마다 코드베이스를 다시 읽고 다시 설명하지 않아도 됩니다.
+- **모노레포와 리포지토리 간**: 폴더별 그래프가 아니라, 모든 서비스와 리포지토리를 아우르는 하나의 연결된 그래프.
+- **형식 검증**: 아키텍처와 의존성 불변 조건을 실시간 그래프에 비추어 검사합니다.
+- **SDLC를 한눈에 내려다보는 코드 리뷰**: 병합하기 전에 변경이 시스템 전체로 어떻게 파급되는지 확인합니다.
+- **SDLC 커넥터**: Sentry, Jira 등을 끌어와, 인시던트, 티켓, 코드가 하나의 그래프 안에 자리합니다.
+- **상시 가동**: 코드, 문서, 미팅에 걸쳐 백그라운드에서 지속적으로 업데이트합니다.
 
 **[app.graphify.com에서 14일 무료 체험 시작하기 &rarr;](https://app.graphify.com/login)**
 

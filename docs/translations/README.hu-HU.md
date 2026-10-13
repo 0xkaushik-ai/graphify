@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ Ennyi. **Három fájlt** kapsz:
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 A megőrzött gráf tartalmazza a `graph.schema_version` mezőt, hogy az
 integrációk észlelni tudják a nem kompatibilis formátumváltozásokat, valamint a
 `graph.graphify_version` mezőt, amely azonosítja az azt előállító Graphify kiadást.
 
-**Működik ezekben:** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot és még 15+ másban — [válaszd ki a platformodat](#install).
+**Működik ezekben:** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot és még 15+ másban: [válaszd ki a platformodat](#install).
 
 ---
 
@@ -81,11 +81,11 @@ integrációk észlelni tudják a nem kompatibilis formátumváltozásokat, vala
 
 A teljes útmutatók és referencia itt élnek: **[docs.graphify.com](https://docs.graphify.com)**:
 
-- **[Gyors kezdés](https://docs.graphify.com/quickstart)** — építsd meg az első gráfodat
-- **[CLI-referencia](https://docs.graphify.com/reference/overview)** — minden parancs és kapcsoló
-- **[Tegyél fel jobb gráf-kérdéseket](https://docs.graphify.com/guides/querying)** — lekérdezési minták
-- **[Konfiguráció](https://docs.graphify.com/reference/configuration)** — környezeti változók és hangolás
-- **[Támogatott bemenetek](https://docs.graphify.com/concepts/supported-inputs)** — nyelvek és fájltípusok
+- **[Gyors kezdés](https://docs.graphify.com/quickstart)**: építsd meg az első gráfodat
+- **[CLI-referencia](https://docs.graphify.com/reference/overview)**: minden parancs és kapcsoló
+- **[Tegyél fel jobb gráf-kérdéseket](https://docs.graphify.com/guides/querying)**: lekérdezési minták
+- **[Konfiguráció](https://docs.graphify.com/reference/configuration)**: környezeti változók és hangolás
+- **[Támogatott bemenetek](https://docs.graphify.com/concepts/supported-inputs)**: nyelvek és fájltípusok
 - **[Csapatmunkafolyamatok](https://docs.graphify.com/guides/team-workflows)** és **[PR-ellenőrzés](https://docs.graphify.com/guides/pull-requests)**
 - **[Hibaelhárítás](https://docs.graphify.com/troubleshooting)** és **[Hogyan működik](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 A hivatalos forrás-repó a [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**1. lépés — telepítsd a csomagot:**
+**1. lépés: telepítsd a csomagot:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**2. lépés — regisztráld a skillt az AI-asszisztensednél:**
+**2. lépés: regisztráld a skillt az AI-asszisztensednél:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ például `graphify claude install --project` vagy `graphify codex install --pro
 
 A Codex-felhasználóknak a párhuzamos kinyeréshez a `~/.codex/config.toml` fájlban a `[features]` alatt `multi_agent = true` is kell. A CodeBuddy ugyanazt az Agent eszköz- és PreToolUse hook-mechanizmust használja, mint a Claude Code. A Factory Droid a `Task` eszközt használja a párhuzamos subagent-kiosztáshoz. Az OpenClaw és az Aider szekvenciális kinyerést használ (a párhuzamos ügynöktámogatás ezeken a platformokon még korai fázisban van). A Trae az Agent eszközt használja a párhuzamos subagent-kiosztáshoz, és **nem** támogatja a `PreToolUse` hookokat, így az AGENTS.md a mindig bekapcsolt mechanizmus.
 
-A `--platform agents` (alias `--platform skills`) az általános, keretrendszerek közötti [Agent-Skills](https://github.com/anthropics/skills) helyeket célozza: a specifikáció felhasználó-globális `~/.agents/skills/` helyét (amelyet az `npx skills` és a specifikációnak megfelelő keretrendszerek olvasnak) globális telepítéshez, és a `./.agents/skills/` helyet projekt (`--project`) telepítéshez. A puszta `graphify install` szándékosan egyplatformos marad (Claude Code) — használd a nevesített `agents` platformot, ha azt szeretnéd, hogy a skillt bármely keretrendszer felfedezze, amely a `.agents/skills`-t olvassa.
+A `--platform agents` (alias `--platform skills`) az általános, keretrendszerek közötti [Agent-Skills](https://github.com/anthropics/skills) helyeket célozza: a specifikáció felhasználó-globális `~/.agents/skills/` helyét (amelyet az `npx skills` és a specifikációnak megfelelő keretrendszerek olvasnak) globális telepítéshez, és a `./.agents/skills/` helyet projekt (`--project`) telepítéshez. A puszta `graphify install` szándékosan egyplatformos marad (Claude Code): használd a nevesített `agents` platformot, ha azt szeretnéd, hogy a skillt bármely keretrendszer felfedezze, amely a `.agents/skills`-t olvassa.
 
 > A Codex a `$graphify` parancsot használja a `/graphify` helyett.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 Lásd az alábbi [teljes parancsreferenciát](#full-command-reference).
@@ -393,12 +393,12 @@ A backendeket, API-kulcsokat, hook-viselkedést és hangolást környezeti vált
 
 ## Adatvédelem
 
-- **Kódfájlok** — helyben feldolgozva a tree-sitter segítségével. Semmi sem hagyja el a géped. Egy csak kódot tartalmazó korpusz nem igényel API-kulcsot — a `graphify extract` teljesen offline fut. Vegyes repón add hozzá a `--code-only`-t, hogy csak a kódot indexeld, és kihagyd a dokumentációt/PDF-eket/képeket, amelyekhez egyébként LLM kellene.
-- **Videó / audió** — helyben átírva a faster-whisper segítségével. Semmi sem hagyja el a géped.
-- **Dokumentáció, PDF-ek, képek** — az AI-asszisztensednek elküldve szemantikai kinyerésre (a `/graphify` skillen keresztül, azt a modellt használva, amelyen az IDE-munkameneted fut). A fej nélküli `graphify extract` ezek valamelyikét igényli: `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), egy futó Ollama-példány (`OLLAMA_BASE_URL`), AWS-hitelesítő adatok a szabványos szolgáltatóláncon át (Bedrock – nem kell API-kulcs, IAM-et használ), vagy a `claude` CLI-bináris (Claude Code – nem kell API-kulcs, a Claude-előfizetésedet használja). A `--dedup-llm` kapcsoló ugyanazt a kulcsot használja.
-- **Adatrezidencia** — a `graphify extract` automatikusan észleli, melyik szolgáltatót használja az alapján, hogy melyik API-kulcs van beállítva (prioritás: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Adatrezidencia-követelményekkel bíró kódhoz használd a `--backend ollama`-t (teljesen helyben), vagy adj át egy explicit `--backend` kapcsolót. A Kimi (`MOONSHOT_API_KEY`) a kínai Moonshot AI szerverekre irányít.
+- **Kódfájlok**: helyben feldolgozva a tree-sitter segítségével. Semmi sem hagyja el a géped. Egy csak kódot tartalmazó korpusz nem igényel API-kulcsot: a `graphify extract` teljesen offline fut. Vegyes repón add hozzá a `--code-only`-t, hogy csak a kódot indexeld, és kihagyd a dokumentációt/PDF-eket/képeket, amelyekhez egyébként LLM kellene.
+- **Videó / audió**: helyben átírva a faster-whisper segítségével. Semmi sem hagyja el a géped.
+- **Dokumentáció, PDF-ek, képek**: az AI-asszisztensednek elküldve szemantikai kinyerésre (a `/graphify` skillen keresztül, azt a modellt használva, amelyen az IDE-munkameneted fut). A fej nélküli `graphify extract` ezek valamelyikét igényli: `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), egy futó Ollama-példány (`OLLAMA_BASE_URL`), AWS-hitelesítő adatok a szabványos szolgáltatóláncon át (Bedrock – nem kell API-kulcs, IAM-et használ), vagy a `claude` CLI-bináris (Claude Code – nem kell API-kulcs, a Claude-előfizetésedet használja). A `--dedup-llm` kapcsoló ugyanazt a kulcsot használja.
+- **Adatrezidencia**: a `graphify extract` automatikusan észleli, melyik szolgáltatót használja az alapján, hogy melyik API-kulcs van beállítva (prioritás: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). Adatrezidencia-követelményekkel bíró kódhoz használd a `--backend ollama`-t (teljesen helyben), vagy adj át egy explicit `--backend` kapcsolót. A Kimi (`MOONSHOT_API_KEY`) a kínai Moonshot AI szerverekre irányít.
 - **Nincs telemetria**, nincs használatkövetés, nincs analitika.
-- **Lekérdezés-naplózás** — minden `graphify query`, `graphify path`, `graphify explain` és MCP `query_graph` hívás a `~/.cache/graphify-queries.log`-ba naplózódik JSON Lines formátumban (időbélyeg, kérdés, korpusz, visszaadott csomópontok, időtartam). A teljes részgráf-válaszok alapértelmezés szerint **nem** tárolódnak. Állítsd be a `GRAPHIFY_QUERY_LOG_DISABLE=1`-et a kikapcsoláshoz, vagy a `GRAPHIFY_QUERY_LOG=/dev/null`-t az elnémításhoz a kódút letiltása nélkül.
+- **Lekérdezés-naplózás**: minden `graphify query`, `graphify path`, `graphify explain` és MCP `query_graph` hívás a `~/.cache/graphify-queries.log`-ba naplózódik JSON Lines formátumban (időbélyeg, kérdés, korpusz, visszaadott csomópontok, időtartam). A teljes részgráf-válaszok alapértelmezés szerint **nem** tárolódnak. Állítsd be a `GRAPHIFY_QUERY_LOG_DISABLE=1`-et a kikapcsoláshoz, vagy a `GRAPHIFY_QUERY_LOG=/dev/null`-t az elnémításhoz a kódút letiltása nélkül.
 
 ---
 
@@ -416,11 +416,11 @@ Minden parancs és kapcsoló, példákkal: **[CLI-referencia](https://docs.graph
 
 ## Tudj meg többet
 
-- [docs.graphify.com](https://docs.graphify.com) — teljes dokumentáció: útmutatók, parancsreferencia és integrációk
-- [Hogyan működik](../how-it-works.md) — a kinyerési pipeline, közösségészlelés, megbízhatósági pontozás, benchmarkok
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — modulbontás, hogyan adj hozzá egy nyelvet
-- [Opcionális integrációk](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — a könyv a graphify mögötti ötletekről, az architektúra elejétől a végéig
+- [docs.graphify.com](https://docs.graphify.com): teljes dokumentáció: útmutatók, parancsreferencia és integrációk
+- [Hogyan működik](../how-it-works.md): a kinyerési pipeline, közösségészlelés, megbízhatósági pontozás, benchmarkok
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): modulbontás, hogyan adj hozzá egy nyelvet
+- [Opcionális integrációk](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): a könyv a graphify mögötti ötletekről, az architektúra elejétől a végéig
 
 ---
 
@@ -428,12 +428,12 @@ Minden parancs és kapcsoló, példákkal: **[CLI-referencia](https://docs.graph
 
 A [**Graphify Cloud**](https://app.graphify.com/login) a graphify tetejére épített, mindig bekapcsolt réteg. Ahelyett, hogy mappánként igény szerint újraépítenél egy gráfot, egyetlen élő gráfot tart fenn a teljes szoftverfejlesztési életciklusodon át:
 
-- **80%-kal kevesebb token** — a mindig bekapcsolt memória azt jelenti, hogy az ügynökeid nem olvassák és nem magyarázzák el újra a kódbázist minden munkamenetben.
-- **Monorepo és repók közötti** — egyetlen összekapcsolt gráf minden szolgáltatáson és repón át, nem mappánkénti gráf.
-- **Formális verifikáció** — ellenőrizd az architekturális és függőségi invariánsokat az élő gráffal szemben.
-- **Kódellenőrzés az SDLC madártávlati nézetével** — lásd, hogyan terjed tovább egy változás az egész rendszeren, mielőtt mergelsz.
-- **SDLC-konnektorok** — húzd be a Sentryt, Jirát és másokat, hogy az incidensek, jegyek és a kód egyetlen gráfban éljen.
-- **Mindig bekapcsolt** — folyamatosan frissül a háttérben a kódon, dokumentáción és megbeszéléseken át.
+- **80%-kal kevesebb token**: a mindig bekapcsolt memória azt jelenti, hogy az ügynökeid nem olvassák és nem magyarázzák el újra a kódbázist minden munkamenetben.
+- **Monorepo és repók közötti**: egyetlen összekapcsolt gráf minden szolgáltatáson és repón át, nem mappánkénti gráf.
+- **Formális verifikáció**: ellenőrizd az architekturális és függőségi invariánsokat az élő gráffal szemben.
+- **Kódellenőrzés az SDLC madártávlati nézetével**: lásd, hogyan terjed tovább egy változás az egész rendszeren, mielőtt mergelsz.
+- **SDLC-konnektorok**: húzd be a Sentryt, Jirát és másokat, hogy az incidensek, jegyek és a kód egyetlen gráfban éljen.
+- **Mindig bekapcsolt**: folyamatosan frissül a háttérben a kódon, dokumentáción és megbeszéléseken át.
 
 **[Indíts ingyenes 14 napos próbaidőszakot az app.graphify.com oldalon &rarr;](https://app.graphify.com/login)**
 

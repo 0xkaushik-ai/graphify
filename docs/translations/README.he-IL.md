@@ -9,7 +9,7 @@
 <div align="center">
 <details><summary><b>Read this in other languages</b></summary>
 
-🇺🇸 <a href="../../README.md">English</a> | 🇨🇳 <a href="README.zh-CN.md">简体中文</a> | 🇯🇵 <a href="README.ja-JP.md">日本語</a> | 🇰🇷 <a href="README.ko-KR.md">한국어</a> | 🇩🇪 <a href="README.de-DE.md">Deutsch</a> | 🇫🇷 <a href="README.fr-FR.md">Français</a> | 🇪🇸 <a href="README.es-ES.md">Español</a> | 🇮🇳 <a href="README.hi-IN.md">हिन्दी</a> | 🇧🇷 <a href="README.pt-BR.md">Português</a> | 🇷🇺 <a href="README.ru-RU.md">Русский</a> | 🇸🇦 <a href="README.ar-SA.md">العربية</a> | 🇮🇷 <a href="README.fa-IR.md">فارسی</a> | 🇮🇹 <a href="README.it-IT.md">Italiano</a> | 🇵🇱 <a href="README.pl-PL.md">Polski</a> | 🇳🇱 <a href="README.nl-NL.md">Nederlands</a> | 🇹🇷 <a href="README.tr-TR.md">Türkçe</a> | 🇺🇦 <a href="README.uk-UA.md">Українська</a> | 🇻🇳 <a href="README.vi-VN.md">Tiếng Việt</a> | 🇮🇩 <a href="README.id-ID.md">Bahasa Indonesia</a> | 🇸🇪 <a href="README.sv-SE.md">Svenska</a> | 🇬🇷 <a href="README.el-GR.md">Ελληνικά</a> | 🇷🇴 <a href="README.ro-RO.md">Română</a> | 🇨🇿 <a href="README.cs-CZ.md">Čeština</a> | 🇫🇮 <a href="README.fi-FI.md">Suomi</a> | 🇩🇰 <a href="README.da-DK.md">Dansk</a> | 🇳🇴 <a href="README.no-NO.md">Norsk</a> | 🇭🇺 <a href="README.hu-HU.md">Magyar</a> | 🇹🇭 <a href="README.th-TH.md">ภาษาไทย</a> | 🇺🇿 <a href="README.uz-UZ.md">Oʻzbekcha</a> | 🇹🇼 <a href="README.zh-TW.md">繁體中文</a> | 🇵🇭 <a href="README.fil-PH.md">Filipino</a> | 🇮🇱 <a href="README.he-IL.md">עברית</a>
+<a href="../../README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja-JP.md">日本語</a> | <a href="README.ko-KR.md">한국어</a> | <a href="README.de-DE.md">Deutsch</a> | <a href="README.fr-FR.md">Français</a> | <a href="README.es-ES.md">Español</a> | <a href="README.hi-IN.md">हिन्दी</a> | <a href="README.pt-BR.md">Português</a> | <a href="README.ru-RU.md">Русский</a> | <a href="README.ar-SA.md">العربية</a> | <a href="README.fa-IR.md">فارسی</a> | <a href="README.it-IT.md">Italiano</a> | <a href="README.pl-PL.md">Polski</a> | <a href="README.nl-NL.md">Nederlands</a> | <a href="README.tr-TR.md">Türkçe</a> | <a href="README.uk-UA.md">Українська</a> | <a href="README.vi-VN.md">Tiếng Việt</a> | <a href="README.id-ID.md">Bahasa Indonesia</a> | <a href="README.sv-SE.md">Svenska</a> | <a href="README.el-GR.md">Ελληνικά</a> | <a href="README.ro-RO.md">Română</a> | <a href="README.cs-CZ.md">Čeština</a> | <a href="README.fi-FI.md">Suomi</a> | <a href="README.da-DK.md">Dansk</a> | <a href="README.no-NO.md">Norsk</a> | <a href="README.hu-HU.md">Magyar</a> | <a href="README.th-TH.md">ภาษาไทย</a> | <a href="README.uz-UZ.md">Oʻzbekcha</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.fil-PH.md">Filipino</a> | <a href="README.he-IL.md">עברית</a>
 
 </details>
 </div>
@@ -64,16 +64,16 @@ graphify install               # register the skill with your AI assistant
 
 ```
 graphify-out/
-├── graph.html       open in any browser — click nodes, filter, search
+├── graph.html       open in any browser: click nodes, filter, search
 ├── GRAPH_REPORT.md  the highlights: key concepts, surprising connections, suggested questions
-└── graph.json       the full graph — query it anytime without re-reading your files
+└── graph.json       the full graph: query it anytime without re-reading your files
 ```
 
 הגרף הנשמר כולל את `graph.schema_version` כדי שאינטגרציות יוכלו לזהות
 שינויי פורמט לא תואמים, בתוספת `graph.graphify_version` המזהה את
 גרסת Graphify שהפיקה אותו.
 
-**עובד ב-** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, ו-15+ נוספים — [בחרו את הפלטפורמה שלכם](#install).
+**עובד ב-** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, ו-15+ נוספים: [בחרו את הפלטפורמה שלכם](#install).
 
 ---
 
@@ -81,11 +81,11 @@ graphify-out/
 
 מדריכים מלאים ומסמכי עיון נמצאים ב-**[docs.graphify.com](https://docs.graphify.com)**:
 
-- **[Quickstart](https://docs.graphify.com/quickstart)** — בנו את הגרף הראשון שלכם
-- **[CLI reference](https://docs.graphify.com/reference/overview)** — כל פקודה וכל דגל
-- **[Ask better graph questions](https://docs.graphify.com/guides/querying)** — דפוסי תשאול
-- **[Configuration](https://docs.graphify.com/reference/configuration)** — משתני סביבה וכוונון
-- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)** — שפות וסוגי קבצים
+- **[Quickstart](https://docs.graphify.com/quickstart)**: בנו את הגרף הראשון שלכם
+- **[CLI reference](https://docs.graphify.com/reference/overview)**: כל פקודה וכל דגל
+- **[Ask better graph questions](https://docs.graphify.com/guides/querying)**: דפוסי תשאול
+- **[Configuration](https://docs.graphify.com/reference/configuration)**: משתני סביבה וכוונון
+- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**: שפות וסוגי קבצים
 - **[Team workflows](https://docs.graphify.com/guides/team-workflows)** ו-**[PR review](https://docs.graphify.com/guides/pull-requests)**
 - **[Troubleshooting](https://docs.graphify.com/troubleshooting)** ו-**[How it works](https://docs.graphify.com/concepts/architecture)**
 
@@ -189,7 +189,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 מאגר המקור הרשמי הוא [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**שלב 1 — התקינו את החבילה:**
+**שלב 1: התקינו את החבילה:**
 
 ```bash
 # Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
@@ -197,10 +197,10 @@ uv tool install graphifyy
 
 # Alternatives:
 pipx install graphifyy
-pip install graphifyy  # may need PATH setup — see note below
+pip install graphifyy  # may need PATH setup: see note below
 ```
 
-**שלב 2 — רשמו את המיומנות אצל עוזר הבינה המלאכותית שלכם:**
+**שלב 2: רשמו את המיומנות אצל עוזר הבינה המלאכותית שלכם:**
 
 ```bash
 graphify install
@@ -257,7 +257,7 @@ graphify install --project --platform codex
 
 משתמשי Codex זקוקים גם ל-`multi_agent = true` תחת `[features]` ב-`~/.codex/config.toml` לצורך חילוץ מקבילי. CodeBuddy משתמש באותו מנגנון כלי Agent וקרס PreToolUse כמו Claude Code. Factory Droid משתמש בכלי `Task` לשיגור מקבילי של תת-סוכנים. OpenClaw ו-Aider משתמשים בחילוץ טורי (תמיכה בסוכנים מקביליים עדיין בחיתוליה בפלטפורמות אלו). Trae משתמש בכלי Agent לשיגור מקבילי של תת-סוכנים ו**אינו** תומך בקרסי `PreToolUse`, ולכן AGENTS.md הוא המנגנון התמידי.
 
-`--platform agents` (כינוי `--platform skills`) מכוון למיקומים הגנריים חוצי-המסגרות של [Agent-Skills](https://github.com/anthropics/skills): מיקום המשתמש-הגלובלי שבמפרט `~/.agents/skills/` (הנקרא על ידי `npx skills` ומסגרות תואמות-מפרט) להתקנה גלובלית, ו-`./.agents/skills/` להתקנת פרויקט (`--project`). ה-`graphify install` החשוף נשאר חד-פלטפורמי (Claude Code) מתוך כוונת תכן — השתמשו בפלטפורמה הנקובה בשם `agents` כשאתם רוצים שהמיומנות תהיה ניתנת לגילוי על ידי כל מסגרת הקוראת `.agents/skills`.
+`--platform agents` (כינוי `--platform skills`) מכוון למיקומים הגנריים חוצי-המסגרות של [Agent-Skills](https://github.com/anthropics/skills): מיקום המשתמש-הגלובלי שבמפרט `~/.agents/skills/` (הנקרא על ידי `npx skills` ומסגרות תואמות-מפרט) להתקנה גלובלית, ו-`./.agents/skills/` להתקנת פרויקט (`--project`). ה-`graphify install` החשוף נשאר חד-פלטפורמי (Claude Code) מתוך כוונת תכן: השתמשו בפלטפורמה הנקובה בשם `agents` כשאתם רוצים שהמיומנות תהיה ניתנת לגילוי על ידי כל מסגרת הקוראת `.agents/skills`.
 
 > Codex משתמש ב-`$graphify` במקום ב-`/graphify`.
 
@@ -354,13 +354,13 @@ graphify export callflow-html      # Mermaid architecture/call-flow HTML (auto-r
 /graphify add https://arxiv.org/abs/1706.03762   # fetch a paper and add it
 /graphify add <youtube-url>                       # transcribe and add a video
 
-graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull` — see "Recommended workflow" below)
+graphify hook install              # auto-rebuild on commit + branch checkout (run `graphify update .` after `git pull`: see "Recommended workflow" below)
 graphify merge-graphs a.json b.json              # combine two graphs
 
 graphify prs                       # PR dashboard: CI state, review status, worktree mapping
 graphify prs 42                    # deep dive on PR #42 with graph impact
 graphify prs --triage              # AI ranks your review queue (uses whatever backend is configured)
-graphify prs --conflicts           # PRs sharing graph communities — merge-order risk
+graphify prs --conflicts           # PRs sharing graph communities: merge-order risk
 ```
 
 ראו את [מסמך העיון המלא של הפקודות](#full-command-reference) למטה.
@@ -393,12 +393,12 @@ Backends, מפתחות API, התנהגות קרס וכוונון נשלטים ע
 
 ## Privacy
 
-- **קובצי קוד** — מעובדים מקומית דרך tree-sitter. שום דבר לא עוזב את המכונה שלכם. אוסף קוד בלבד אינו דורש מפתח API — `graphify extract` רץ לגמרי במצב לא מקוון. במאגר מעורב, הוסיפו `--code-only` כדי לאנדקס רק את הקוד ולדלג על המסמכים/קובצי PDF/תמונות שאחרת היו דורשים מודל שפה.
-- **וידאו / שמע** — מתומלל מקומית עם faster-whisper. שום דבר לא עוזב את המכונה שלכם.
-- **מסמכים, קובצי PDF, תמונות** — נשלחים לעוזר הבינה המלאכותית שלכם לחילוץ סמנטי (דרך מיומנות `/graphify`, בעזרת כל מודל שמריצה סשן ה-IDE שלכם). `graphify extract` ללא ממשק דורש `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), מופע Ollama פעיל (`OLLAMA_BASE_URL`), אישורי AWS דרך שרשרת הספק הסטנדרטית (Bedrock - לא נדרש מפתח API, משתמש ב-IAM), או את קובץ ההרצה `claude` CLI (Claude Code - לא נדרש מפתח API, משתמש במנוי Claude שלכם). הדגל `--dedup-llm` משתמש באותו מפתח.
-- **מקום אחסון הנתונים** — `graphify extract` מזהה אוטומטית באיזה ספק להשתמש על סמך מפתח ה-API שהוגדר (עדיפות: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). עבור קוד עם דרישות מקום אחסון נתונים, השתמשו ב-`--backend ollama` (מקומי לחלוטין) או העבירו דגל `--backend` מפורש. Kimi (`MOONSHOT_API_KEY`) מנתב לשרתי Moonshot AI בסין.
+- **קובצי קוד**: מעובדים מקומית דרך tree-sitter. שום דבר לא עוזב את המכונה שלכם. אוסף קוד בלבד אינו דורש מפתח API: `graphify extract` רץ לגמרי במצב לא מקוון. במאגר מעורב, הוסיפו `--code-only` כדי לאנדקס רק את הקוד ולדלג על המסמכים/קובצי PDF/תמונות שאחרת היו דורשים מודל שפה.
+- **וידאו / שמע**: מתומלל מקומית עם faster-whisper. שום דבר לא עוזב את המכונה שלכם.
+- **מסמכים, קובצי PDF, תמונות**: נשלחים לעוזר הבינה המלאכותית שלכם לחילוץ סמנטי (דרך מיומנות `/graphify`, בעזרת כל מודל שמריצה סשן ה-IDE שלכם). `graphify extract` ללא ממשק דורש `GEMINI_API_KEY` / `GOOGLE_API_KEY` (Gemini), `MOONSHOT_API_KEY` (Kimi), `ANTHROPIC_API_KEY` (Claude), `OPENAI_API_KEY` (OpenAI), `DEEPSEEK_API_KEY` (DeepSeek), מופע Ollama פעיל (`OLLAMA_BASE_URL`), אישורי AWS דרך שרשרת הספק הסטנדרטית (Bedrock - לא נדרש מפתח API, משתמש ב-IAM), או את קובץ ההרצה `claude` CLI (Claude Code - לא נדרש מפתח API, משתמש במנוי Claude שלכם). הדגל `--dedup-llm` משתמש באותו מפתח.
+- **מקום אחסון הנתונים**: `graphify extract` מזהה אוטומטית באיזה ספק להשתמש על סמך מפתח ה-API שהוגדר (עדיפות: Gemini → Kimi → Claude → OpenAI → DeepSeek → Azure → Bedrock → Ollama). עבור קוד עם דרישות מקום אחסון נתונים, השתמשו ב-`--backend ollama` (מקומי לחלוטין) או העבירו דגל `--backend` מפורש. Kimi (`MOONSHOT_API_KEY`) מנתב לשרתי Moonshot AI בסין.
 - **ללא טלמטריה**, ללא מעקב שימוש, ללא אנליטיקה.
-- **רישום שאילתות** — כל קריאת `graphify query`, `graphify path`, `graphify explain` ו-MCP `query_graph` נרשמת אל `~/.cache/graphify-queries.log` בפורמט JSON Lines (חותמת זמן, שאלה, אוסף, צמתים שהוחזרו, משך). תגובות תת-גרף מלאות **אינן** נשמרות כברירת מחדל. הגדירו `GRAPHIFY_QUERY_LOG_DISABLE=1` כדי לוותר, או `GRAPHIFY_QUERY_LOG=/dev/null` כדי להשתיק בלי להשבית את נתיב הקוד.
+- **רישום שאילתות**: כל קריאת `graphify query`, `graphify path`, `graphify explain` ו-MCP `query_graph` נרשמת אל `~/.cache/graphify-queries.log` בפורמט JSON Lines (חותמת זמן, שאלה, אוסף, צמתים שהוחזרו, משך). תגובות תת-גרף מלאות **אינן** נשמרות כברירת מחדל. הגדירו `GRAPHIFY_QUERY_LOG_DISABLE=1` כדי לוותר, או `GRAPHIFY_QUERY_LOG=/dev/null` כדי להשתיק בלי להשבית את נתיב הקוד.
 
 ---
 
@@ -416,11 +416,11 @@ Backends, מפתחות API, התנהגות קרס וכוונון נשלטים ע
 
 ## Learn more
 
-- [docs.graphify.com](https://docs.graphify.com) — תיעוד מלא: מדריכים, מסמך עיון לפקודות, ואינטגרציות
-- [How it works](../how-it-works.md) — צינור החילוץ, זיהוי קהילות, ציון ביטחון, מדדי ביצועים
-- [ARCHITECTURE.md](../../ARCHITECTURE.md) — פירוט מודולים, כיצד להוסיף שפה
-- [Optional integrations](../docker-mcp-sqlite.md) — Docker MCP Toolkit + SQLite
-- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo) — הספר על הרעיונות שמאחורי graphify, הארכיטקטורה מקצה לקצה
+- [docs.graphify.com](https://docs.graphify.com): תיעוד מלא: מדריכים, מסמך עיון לפקודות, ואינטגרציות
+- [How it works](../how-it-works.md): צינור החילוץ, זיהוי קהילות, ציון ביטחון, מדדי ביצועים
+- [ARCHITECTURE.md](../../ARCHITECTURE.md): פירוט מודולים, כיצד להוסיף שפה
+- [Optional integrations](../docker-mcp-sqlite.md): Docker MCP Toolkit + SQLite
+- [The Memory Layer](https://safishamsi.gumroad.com/l/qetvlo): הספר על הרעיונות שמאחורי graphify, הארכיטקטורה מקצה לקצה
 
 ---
 
@@ -428,12 +428,12 @@ Backends, מפתחות API, התנהגות קרס וכוונון נשלטים ע
 
 [**Graphify Cloud**](https://app.graphify.com/login) היא השכבה התמידית הבנויה מעל graphify. במקום גרף שאתם בונים מחדש לפי דרישה לכל תיקייה, היא שומרת על גרף חי יחיד לאורך כל מחזור חיי פיתוח התוכנה שלכם:
 
-- **80% פחות טוקנים** — זיכרון תמידי אומר שהסוכנים שלכם מפסיקים לקרוא ולהסביר מחדש את בסיס הקוד בכל סשן.
-- **מונורפו וחוצה-מאגרים** — גרף מחובר אחד על פני כל שירות ומאגר, ולא גרף לכל תיקייה.
-- **אימות פורמלי** — בדקו משתמרים (invariants) של ארכיטקטורה ותלויות מול הגרף החי.
-- **סקירת קוד עם מבט על של מחזור חיי הפיתוח שלכם** — ראו כיצד שינוי מתפשט על פני כל המערכת לפני שאתם ממזגים.
-- **מחברי SDLC** — משכו פנימה את Sentry, Jira ועוד, כך שתקריות, כרטיסים וקוד חיים בגרף אחד.
-- **תמידי** — מתעדכן ברציפות ברקע על פני קוד, מסמכים ופגישות.
+- **80% פחות טוקנים**: זיכרון תמידי אומר שהסוכנים שלכם מפסיקים לקרוא ולהסביר מחדש את בסיס הקוד בכל סשן.
+- **מונורפו וחוצה-מאגרים**: גרף מחובר אחד על פני כל שירות ומאגר, ולא גרף לכל תיקייה.
+- **אימות פורמלי**: בדקו משתמרים (invariants) של ארכיטקטורה ותלויות מול הגרף החי.
+- **סקירת קוד עם מבט על של מחזור חיי הפיתוח שלכם**: ראו כיצד שינוי מתפשט על פני כל המערכת לפני שאתם ממזגים.
+- **מחברי SDLC**: משכו פנימה את Sentry, Jira ועוד, כך שתקריות, כרטיסים וקוד חיים בגרף אחד.
+- **תמידי**: מתעדכן ברציפות ברקע על פני קוד, מסמכים ופגישות.
 
 **[התחילו תקופת ניסיון חינם של 14 ימים ב-app.graphify.com &rarr;](https://app.graphify.com/login)**
 
