@@ -47,11 +47,11 @@ Type `/graphify` in your AI coding assistant and it maps your entire project (co
   <em>The FastAPI codebase mapped by graphify. Every node is a concept, colors are detected communities, and the whole thing is clickable in graph.html.</em>
 </p>
 
-**Get started** (30 seconds):
+**Get started** (30 seconds). Needs Python 3.10+ and uv (or pipx):
 
 ```bash
 uv tool install graphifyy      # install the CLI (or: pipx install graphifyy)
-graphify install               # register the skill with your AI assistant
+graphify install               # detects your assistant and registers the skill
 ```
 
 Then, in your AI assistant:
@@ -73,7 +73,7 @@ The persisted graph includes `graph.schema_version` so integrations can detect
 incompatible format changes, plus `graph.graphify_version` identifying the
 Graphify release that produced it.
 
-**Works in** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, and 15+ more: [pick your platform](#install).
+**One install, any assistant, any OS.** Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, and 20+ more, on macOS, Linux, and Windows: [pick your platform](#install).
 
 ---
 
@@ -189,24 +189,17 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 The official source repository is [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify).
 
-**Step 1. Install the package:**
+The two-command quickstart is at the top of this README. This section covers the install methods, project-scoped installs, and every supported platform.
+
+**Install methods** (pick one):
 
 ```bash
-# Recommended (isolated env; if 'graphify' isn't found after, run: uv tool update-shell):
-uv tool install graphifyy
-
-# Alternatives:
-pipx install graphifyy
-pip install graphifyy  # may need PATH setup: see note below
+uv tool install graphifyy   # recommended, isolated env (if 'graphify' isn't found after, run: uv tool update-shell)
+pipx install graphifyy      # alternative
+pip install graphifyy       # may need PATH setup, see Troubleshooting below
 ```
 
-**Step 2. Register the skill with your AI assistant:**
-
-```bash
-graphify install
-```
-
-That's it. Open your AI assistant and type `/graphify .`
+Then run `graphify install` once. It detects which assistant you run and registers the skill, so there is no per-assistant setup. Open your AI assistant and type `/graphify .`
 
 To install the assistant skill into the current repository instead of your user
 profile, add `--project`:
@@ -313,13 +306,7 @@ This writes a small config file that tells your assistant to consult the knowled
 
 `GRAPH_REPORT.md` is still available for broad architecture review.
 
-**CodeBuddy** does the same two things as Claude Code: writes a `CODEBUDDY.md` section telling CodeBuddy to read `graphify-out/GRAPH_REPORT.md` before answering architecture questions, and installs `PreToolUse` hooks (`.codebuddy/settings.json`) that fire before Bash search commands and file reads, nudging toward `graphify query` instead.
-
-**Codex** writes to `AGENTS.md`, which is what actually carries the always-on graph guidance on this platform. `graphify codex install` also registers a `PreToolUse` hook in `.codex/hooks.json` (`graphify hook-check`), but that entry is deliberately a **no-op**: Codex Desktop rejects `hookSpecificOutput.additionalContext` on `PreToolUse`, so emitting a nudge there would break Bash tool calls. Unlike Claude Code, where the hook (`graphify hook-guard`) does the nudging, on Codex the hook fires and intentionally does nothing, and `AGENTS.md` is the always-on mechanism.
-
-**Kilo Code** installs the Graphify skill to `~/.config/kilo/skills/graphify/SKILL.md` and a native `/graphify` command to `~/.config/kilo/command/graphify.md`. `graphify kilo install` also writes `AGENTS.md` plus a native `tool.execute.before` plugin (`.kilo/plugins/graphify.js` + `.kilo/kilo.json` or `.kilo/kilo.jsonc` registration) so Kilo gets the same always-on graph reminder behavior through native `.kilo` config.
-
-**Cursor** writes `.cursor/rules/graphify.mdc` with `alwaysApply: true`, so Cursor includes it in every conversation automatically, no hook needed.
+Exactly which files each platform writes (CodeBuddy's `CODEBUDDY.md` + `PreToolUse` hooks, Codex's `AGENTS.md`, Kilo's native `.kilo` plugin, Cursor's `alwaysApply` rule, and so on) is covered in **[Always-on setup](https://docs.graphify.com/guides/always-on)**.
 
 To remove graphify from all platforms at once: `graphify uninstall` (add `--purge` to also delete `graphify-out/`). Or use the per-platform command (e.g. `graphify claude uninstall`).
 
@@ -403,11 +390,7 @@ language.tpl=.ts
 viz_node_limit=0
 ```
 
-The declaration controls file classification, extractor selection and language-specific grammar and resolution, and the AST cache: a file re-parsed under a different language never reuses the old entry. Original source paths and physical format conventions, such as Fortran `.F90` preprocessing and C/C++ header/implementation pairing, are preserved. Optional language backends must still be installed. A typo is reported once on stderr and the scan continues with graphify's defaults.
-
-Adding, changing, or removing a language declaration invalidates affected incremental manifest entries even when the source bytes have not changed. `graphify watch` recognizes declared source extensions and root `.graphifyrc` changes, including atomic replacement; configuration changes schedule an AST rebuild and flag semantic work for the next extraction. The same configuration is read by `graphify extract`, `graphify update`, the hooks, the MCP server, and the `/graphify` skill.
-
-Extensionless local JS/TS imports can also resolve declared suffixes. Native suffixes retain precedence within file and directory-index lookup, and file candidates are tried before directory indexes. Python module and package lookups also support declared Python suffixes, while retaining native `.py` precedence.
+The declaration flows through classification, extractor selection, grammar and resolution, imports, `graphify watch`, and the AST cache (a file re-parsed under a different language never reuses the old entry), and the same `.graphifyrc` is read by `extract`, `update`, the hooks, the MCP server, and the `/graphify` skill. A typo is reported once on stderr and the scan continues with the defaults. How declarations interact with caching, incremental rebuilds, and import resolution: **[Configuration](https://docs.graphify.com/reference/configuration)**.
 
 ---
 
