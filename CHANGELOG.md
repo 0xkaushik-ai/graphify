@@ -2,6 +2,20 @@
 
 Full release notes with details on each version: [GitHub Releases](https://github.com/Graphify-Labs/graphify/releases)
 
+## 0.9.89 (2026-10-13)
+
+Sixteen community pull requests: cross-repo member-call resolution (Go, PHP, TypeScript, Kotlin, Objective-C), generic/template type-parameter cleanup (Kotlin, Scala, C++, Swift), an Objective-C enum extractor, interface-dispatch fan-out, a native Pi guard extension, and several resolution/ingest fixes. The AST cache schema is bumped, so the first build after upgrading re-extracts.
+
+- Feature: **cross-repo member calls** now finish across a repository boundary for Go, PHP, TypeScript/JS, Kotlin and Objective-C: a call whose receiver type is declared in another repo is parked by name during the single-repo build and bound on `merge-graphs`/`global add` against a unique same-named exported type, fail-closed on ambiguity (#3152, #3388, #3393, #3385, #3387, #3389, #3391, #3395, thanks @xiongjianxu).
+- Fix: **Go** a package's type whose methods span several files now folds into one node instead of fragmenting under `_disambiguate_colliding_node_ids`, so single-definition guards and receiver typing work (#3399, #3400, thanks @xiongjianxu).
+- Fix: **Kotlin / Scala / C++ / Swift** generic and template type parameters (`class Box<T>`, `[T]`, `template<typename T>`, `struct Stack<Element>`) no longer mint sourceless stub god-nodes; a real same-named type is still referenced (#4406, #4407, #4408, #4409, thanks @rajatnagda45).
+- Feature: **Objective-C** `NS_ENUM` and `NS_OPTIONS` declarations are now extracted as an enum type plus its members, with the macro forms validated and malformed macros rejected fail-closed (#4400, #4401, thanks @oleksii-tumanov).
+- Feature: **dispatch** an interface member now links to every implementer, not just one, so a DI chain through a multi-implementer interface resolves; the fan-out is gated to genuine implementers with a correct method match (#3800, #4396, thanks @Goodkamalpandey).
+- Feature: **Pi** a native Pi guard extension now runs `graphify hook-guard` before Pi's tool calls and also loads under Oh My Pi, so the hook-guard policy reaches Pi; install/uninstall delegates to `pi install`/`pi remove` and the guard fails open (#4378, thanks @andrebrait).
+- Feature: **hook** a firing read/search nudge now shows the graph nodes behind the nudged call and tightens its wording, so agents act on it instead of treating it as noise; the graph read piggybacks on the already-bounded nudge and is injection-safe and size-capped (#4368, thanks @andrebrait).
+- Fix: **resolution** a `.js` import now resolves to a `.tsx` source when no real `.js` file exists, matching TypeScript's NodeNext resolution; a real `.js` still wins (#3486, #4395, thanks @DevChiniwala).
+- Fix: distinct downloaded binary captures (PDFs/images) whose URLs collide to one filename are now kept under numbered names instead of silently overwriting each other, matching the markdown path's de-dup (#4393, #4394, thanks @oleksii-tumanov).
+
 ## 0.9.88 (2026-10-12)
 
 Twenty community pull requests: language-extraction and call-resolution fixes (Java, C/C++, Python, Swift, Go, PowerShell, C#, JS/EJS), dedup/shrink-guard hardening, and query/graph.html ergonomics. The AST cache schema is bumped, so the first build after upgrading re-extracts.
