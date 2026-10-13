@@ -60,9 +60,12 @@ def _resolve_js_import_path(candidate: Path) -> Path:
 
     # TS ESM convention: imports often spell .js/.jsx while source is .ts/.tsx.
     if candidate.suffix == ".js":
-        ts_candidate = candidate.with_suffix(".ts")
-        if ts_candidate.is_file() and effective_suffix(ts_candidate) in _JS_CACHE_BYPASS_SUFFIXES:
-            return ts_candidate
+        for ts_candidate in (
+            candidate.with_suffix(".ts"),
+            candidate.with_suffix(".tsx"),
+        ):
+            if ts_candidate.is_file() and effective_suffix(ts_candidate) in _JS_CACHE_BYPASS_SUFFIXES:
+                return ts_candidate
     elif candidate.suffix == ".jsx":
         tsx_candidate = candidate.with_suffix(".tsx")
         if tsx_candidate.is_file() and effective_suffix(tsx_candidate) in _JS_CACHE_BYPASS_SUFFIXES:
