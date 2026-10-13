@@ -77,20 +77,6 @@ Graphify release that produced it.
 
 ---
 
-## Documentation
-
-Full guides and reference live at **[docs.graphify.com](https://docs.graphify.com)**:
-
-- **[Quickstart](https://docs.graphify.com/quickstart)**: build your first graph
-- **[CLI reference](https://docs.graphify.com/reference/overview)**: every command and flag
-- **[Ask better graph questions](https://docs.graphify.com/guides/querying)**: querying patterns
-- **[Configuration](https://docs.graphify.com/reference/configuration)**: environment variables and tuning
-- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**: languages and file types
-- **[Team workflows](https://docs.graphify.com/guides/team-workflows)** and **[PR review](https://docs.graphify.com/guides/pull-requests)**
-- **[Troubleshooting](https://docs.graphify.com/troubleshooting)** and **[How it works](https://docs.graphify.com/concepts/architecture)**
-
----
-
 ## See it in action
 
 <p align="center">
@@ -141,7 +127,7 @@ What you get out of the box:
 
 ---
 
-## Benchmarks
+## Benchmarks: 0.497 recall@10, 0 LLM credits
 
 | Benchmark | Metric | graphify | Field |
 |---|---|---|---|
@@ -152,6 +138,20 @@ What you get out of the box:
 | Graph build | LLM credits | **0** | per-token for most systems |
 
 Every system ran on the same harness with the same model and budgets, scored by a judge blind-validated against a second judge (90.6% agreement, Cohen's kappa 0.81). Full per-system tables, the code-intelligence result, and reproduction commands: **[BENCHMARKS.md](./BENCHMARKS.md)**.
+
+---
+
+## Documentation
+
+Full guides and reference live at **[docs.graphify.com](https://docs.graphify.com)**:
+
+- **[Quickstart](https://docs.graphify.com/quickstart)**: build your first graph
+- **[CLI reference](https://docs.graphify.com/reference/overview)**: every command and flag
+- **[Ask better graph questions](https://docs.graphify.com/guides/querying)**: querying patterns
+- **[Configuration](https://docs.graphify.com/reference/configuration)**: environment variables and tuning
+- **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**: languages and file types
+- **[Team workflows](https://docs.graphify.com/guides/team-workflows)** and **[PR review](https://docs.graphify.com/guides/pull-requests)**
+- **[Troubleshooting](https://docs.graphify.com/troubleshooting)** and **[How it works](https://docs.graphify.com/concepts/architecture)**
 
 ---
 
@@ -331,7 +331,7 @@ Both encourage scoped graph queries before broad source searches. Choose the ins
 
 ---
 
-## What files it handles
+## What files it handles: ~40 languages
 
 graphify parses ~40 programming languages locally with tree-sitter AST, and maps docs, PDFs, images, and audio/video through an optional semantic pass. Full list: **[Supported inputs](https://docs.graphify.com/concepts/supported-inputs)**.
 
