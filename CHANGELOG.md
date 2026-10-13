@@ -2,6 +2,25 @@
 
 Full release notes with details on each version: [GitHub Releases](https://github.com/Graphify-Labs/graphify/releases)
 
+## 0.9.90 (2026-10-13)
+
+Fourteen community pull requests: C# call-resolution and id-collision fixes, Python/Go/dedup correctness, a hub-label sidecar, a post-merge heal hook, and query/build fixes. The AST cache schema is bumped, so the first build after upgrading re-extracts.
+
+- Fix: **C#** a nameless member-call receiver (`run.Sequence.Apply()`, `Make().Apply()`) no longer mis-binds to the caller's own same-named method; every C# member call defers and resolves only through a typed receiver (#4422, thanks @nixvideojuego-ui).
+- Fix: **C#** `new X()` no longer binds to a method that shares the type's name, same-file or cross-file; a real same-named type still wins (#4428, thanks @nixvideojuego-ui).
+- Feature: **C#** `foreach` loop variables are now typed from the collection's element type (arrays, known sequences, dictionary `.Keys`/`.Values`), so calls on the loop variable resolve; untypable iterables stay unresolved (#4423, thanks @nixvideojuego-ui).
+- Fix: **C#** node ids now keep names that differ only by a leading/trailing `_` or by case apart (`Action`/`_Action`, `Load`/`load`, `Token`/`TOKEN`), in both ids and member-call resolution keys, instead of collapsing one onto the other (#4415, #4416, thanks @JensD-git).
+- Fix: **C#** colliding ids are salted before the partial-class merge, so a partial half keeps its members and an unrelated node sharing a half's id is no longer deleted (#4411, #4412, thanks @JensD-git).
+- Fix: **Go** a generic receiver type (`func (b *Box[T]) ...`) is normalized before building its id, so a generic type's methods attach to the type node instead of a separate `Box[T]` node (#4438, thanks @Goodkamalpandey).
+- Fix: **Python** a module member call (`mod.func()`) now resolves when the caller is a method or nested function, by walking the enclosing scopes to the file node instead of reading only the immediate parent (#2447, #4437, thanks @SrijanSriv).
+- Fix: an edge between two surviving nodes is no longer dropped just because its own `source_file` was not dispatched this run; it is kept as long as both endpoints are kept nodes (#2276, #4436, thanks @SrijanSriv).
+- Fix: dedup keeps a dropped-folder document next to a top-level file that mints the same id (`protocol.md` beside `docs/protocol.md` and `docs/firmware/protocol.md`), path-qualifying the siblings instead of collapsing and losing one; a genuine reference still collapses onto the named file (#4281, #4410, thanks @Deepjyoti-Sarmah).
+- Fix: **Jinja** templates (`.j2`, `.jinja`, `.jinja2`) are now classified as documents instead of being dropped from the graph (#3427, #3455, thanks @nikhilsaxena04).
+- Fix: **build** source-less placeholder nodes orphaned by a re-extraction that drops their edges are now swept on a normal (non-prune) incremental build, not just under prune; the sweep removes only code placeholders and external stubs and spares disk-isolated, fresh-isolated, and hyperedge-member nodes (#4399, thanks @Mpasha17).
+- Fix: **query** the fallback traversal now retains relationships among the visited nodes (seed-to-seed edges, cycles, cross-links, and parallel relations), via the induced subgraph, instead of printing only tree edges (#4314, #4315, thanks @vibhanshu-mishra).
+- Feature: **watch** hub-fallback community labels now go to a `.graphify_labels.pending.json` sidecar, so the tracked `.graphify_labels.json` holds only curated (manual/LLM) names; a promoted name drops from the sidecar and an emptied sidecar is removed (#3334, #3551, thanks @ayushcodes10).
+- Feature: **hooks** `graphify hook install` now also installs a `post-merge` hook that runs an unscoped background rebuild after a merge, healing a symbol the graph.json union merge driver resurrected on one side (which nothing else would re-extract), so the phantom node no longer persists (#2418, #3556, thanks @ayushcodes10).
+
 ## 0.9.89 (2026-10-13)
 
 Sixteen community pull requests: cross-repo member-call resolution (Go, PHP, TypeScript, Kotlin, Objective-C), generic/template type-parameter cleanup (Kotlin, Scala, C++, Swift), an Objective-C enum extractor, interface-dispatch fan-out, a native Pi guard extension, and several resolution/ingest fixes. The AST cache schema is bumped, so the first build after upgrading re-extracts.
