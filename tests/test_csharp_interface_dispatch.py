@@ -266,6 +266,37 @@ def test_a_non_csharp_implementer_is_not_dispatched_to(tmp_path):
     assert not dispatch
 
 
+def test_a_gate_failing_implementer_does_not_dilute_confidence(tmp_path):
+    # `implementers[iface]` holds every `implements` source regardless of
+    # language or whether the node even resolved (a dangling/external
+    # reference stub). Only `A` passes the gate and gets an edge; the stub
+    # must not count toward "how many implementers" for confidence purposes,
+    # or a single real implementer would score as if it had a sibling.
+    from graphify.csharp_dispatch import resolve_csharp_interface_dispatch
+
+    nodes = [
+        {"id": "iface", "label": "IR", "source_file": "a.cs", "_callable_class": True},
+        {"id": "a", "label": "A", "source_file": "a.cs", "_callable_class": True},
+        {"id": "stub", "label": "Stub", "_callable_class": True},  # sourceless: fails declared_in
+        {"id": "iface_m", "label": ".M()", "source_file": "a.cs", "_callable": True},
+        {"id": "a_m", "label": ".M()", "source_file": "a.cs", "_callable": True},
+        {"id": "stub_m", "label": ".M()", "_callable": True},
+    ]
+    edges = [
+        {"source": "a", "target": "iface", "relation": "implements"},
+        {"source": "stub", "target": "iface", "relation": "implements"},
+        {"source": "iface", "target": "iface_m", "relation": "method"},
+        {"source": "a", "target": "a_m", "relation": "method"},
+        {"source": "stub", "target": "stub_m", "relation": "method"},
+    ]
+    resolve_csharp_interface_dispatch([], nodes, edges)
+    dispatch_edges = [e for e in edges if e["relation"] == "dispatches_to"]
+    assert len(dispatch_edges) == 1
+    assert dispatch_edges[0]["source"] == "iface_m"
+    assert dispatch_edges[0]["target"] == "a_m"
+    assert dispatch_edges[0]["confidence_score"] == 0.85
+
+
 def test_mixed_corpus_links_only_the_csharp_pair(tmp_path):
     dispatch, r = _extract(tmp_path, {
         "IReport.cs": "public interface IReport { void Build(); }\n",

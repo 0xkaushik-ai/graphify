@@ -150,17 +150,22 @@ def resolve_interface_dispatch(
         interface_methods = methods_of.get(interface_nid, {})
         if not interface_methods:
             continue
-        score = _dispatch_confidence(len(impls))
 
+        # Gate first, then count: an `implements` edge from a sourceless stub
+        # (a dangling/external reference) or a cross-language name collision
+        # never produces an edge below, so it must not count toward "how many
+        # implementers is this split between" either — that would understate
+        # confidence for the implementers that actually get a dispatch edge.
+        gated_impls: list[tuple[str, dict]] = []
         for impl_nid in impls:
             impl_node = node_by_id.get(impl_nid)
-            # Both ends must be declarations in this language's files. A
-            # sourceless stub minted for a dangling reference carries no
-            # members worth dispatching to, and a cross-language pair is a
-            # name collision rather than an implementation.
-            if impl_node is None or not declared_in(impl_node, suffixes):
-                continue
+            if impl_node is not None and declared_in(impl_node, suffixes):
+                gated_impls.append((impl_nid, impl_node))
+        if not gated_impls:
+            continue
+        score = _dispatch_confidence(len(gated_impls))
 
+        for impl_nid, impl_node in gated_impls:
             impl_methods = methods_of.get(impl_nid, {})
             for name, declared in interface_methods.items():
                 if len(declared) != 1:
