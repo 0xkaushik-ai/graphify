@@ -2,6 +2,19 @@
 
 Full release notes with details on each version: [GitHub Releases](https://github.com/Graphify-Labs/graphify/releases)
 
+## 0.9.91 (2026-10-14)
+
+Eight community pull requests: a Windows MCP-stdio hang fix, Rust/JS/TS/extract call-resolution and id-collision fixes, an Ollama context-size fix, and a clustering label-retention fix. The AST cache schema is bumped, so the first build after upgrading re-extracts.
+
+- Fix: **MCP** `graph_stats` no longer hangs under a stdio host on Windows (and no longer silently drops its built-at-commit staleness line): `_git_head` closes the git child's stdin so git does not block on the JSON-RPC pipe (#4440, #4441, thanks @bercedev).
+- Fix: **Rust** a `use crate::…::Name` edge now lands on the declaration it imports rather than a bare name-folded target, so `explain`/`affected` resolve the type even when it is only constructed; a cross-crate `use std::…`/`use serde::…` still does not hijack a same-named local declaration (#4439, #4443, thanks @bercedev).
+- Fix: **JS/TS** a file-scope callback's own parameters are now shadowed, so a bare parameter passed on as a call argument no longer mints phantom cross-bundle `indirect_call` edges to same-named functions elsewhere in the corpus (#4448, #4457, thanks @bercedev).
+- Fix: **extract** a module symbol whose id spells a sibling file's id (a `const sql` beside `x.sql`) is kept on its own node instead of being merged onto the sibling's file node and dropped; the file stays findable by label (#4449, #4452, thanks @Deepjyoti-Sarmah).
+- Fix: **TypeScript** a class field's receiver type is now scoped to its own class and bases, so `this.field.method()` resolves to the right class when two classes share a field name; a same-named local or parameter no longer borrows a field's type (#4294, #4297, thanks @rohit-jsfreaky).
+- Fix: **Ollama** extraction and labeling requests now go to Ollama's native `/api/chat`, so the derived `num_ctx` actually reaches the server and large prompts are no longer silently truncated; a server without `/api/chat` (LM Studio, llama.cpp) falls back to the OpenAI-compatible endpoint (#4413, #4414, thanks @smngvlkz).
+- Fix: **cluster** a community keeps its curated or LLM label across a rebuild when its membership still overlaps the previous community by a strict majority, instead of discarding the name on a single-node change or a community-count change (#2298, #4451, thanks @SrijanSriv).
+- Test: **ingest** the skip-existing symlink test now compares the link target against what `readlink` returned, fixing a false failure on Windows where `readlink` returns an extended-length path (#4435, #4442, thanks @bercedev).
+
 ## 0.9.90 (2026-10-13)
 
 Fourteen community pull requests: C# call-resolution and id-collision fixes, Python/Go/dedup correctness, a hub-label sidecar, a post-merge heal hook, and query/build fixes. The AST cache schema is bumped, so the first build after upgrading re-extracts.
