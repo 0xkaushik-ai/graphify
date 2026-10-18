@@ -152,18 +152,27 @@ def _attach_files(
     return root_node, matched_files, by_file
 
 
+_NO_REPO_LABEL = "(no repo)"
+
+
 def _repo_groups(
     file_nodes: List[Dict[str, Any]],
-) -> Dict[str, List[Dict[str, Any]]]:
-    """Group nodes by their ``repo`` tag (set by ``merge-graphs`` / ``global add``).
+) -> "tuple[Dict[str, List[Dict[str, Any]]], List[Dict[str, Any]]]":
+    """Split nodes into ``({repo tag: nodes}, untagged nodes)``.
 
-    Nodes without a usable tag go under ``"(no repo)"`` so they are not lost.
+    The tag is the ``repo`` attribute set by ``merge-graphs`` / ``global add``.
+    Untagged nodes are returned separately so they never count as a repo: only
+    real tags decide whether a graph is treated as a merged one.
     """
     groups: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    untagged: List[Dict[str, Any]] = []
     for n in file_nodes:
         tag = n.get("repo")
-        groups[tag if isinstance(tag, str) and tag else "(no repo)"].append(n)
-    return groups
+        if isinstance(tag, str) and tag:
+            groups[tag].append(n)
+        else:
+            untagged.append(n)
+    return groups, untagged
 
 
 def build_tree(
@@ -195,9 +204,11 @@ def build_tree(
         return {"name": "(empty graph)", "total_count": 0, "children": []}
 
     explicit_root = root is not None
-    groups = _repo_groups(file_nodes)
+    groups, untagged = _repo_groups(file_nodes)
 
     if len(groups) < 2:
+        # Zero or one real repo tag: not a merged graph. Every node, tagged or
+        # not, goes through the original single-root path.
         if root is None:
             root = _common_root([n["source_file"] for n in file_nodes])
         root_node, matched_files, by_file = _attach_files(
@@ -214,8 +225,11 @@ def build_tree(
         }
         total_matched = total_files = 0
         sample = ""
-        for tag in sorted(groups):
-            group = groups[tag]
+        ordered = sorted(groups.items())
+        if untagged:
+            # Kept visible, but only once two real tags made this a merged graph.
+            ordered.append((_NO_REPO_LABEL, untagged))
+        for tag, group in ordered:
             paths = [n["source_file"] for n in group]
             if root is not None:
                 group_root = root

@@ -136,6 +136,26 @@ def test_build_tree_merged_graph_untagged_nodes_are_kept():
     assert set(_by_name(build_tree(graph))) == {"repo-a", "repo-b", "(no repo)"}
 
 
+def test_build_tree_partially_tagged_single_repo_is_not_a_merged_graph():
+    """One real repo tag plus untagged nodes is not a merged graph: it must
+    take the original single-root path, not grow a "(no repo)" sibling."""
+    graph = {"nodes": [
+        {"id": "a", "label": "A", "source_file": "pkg/a.py", "repo": "only-repo"},
+        {"id": "b", "label": "B", "source_file": "pkg/b.py"},
+    ]}
+    tree = build_tree(graph)
+    assert tree["name"] == "pkg"
+    assert set(_by_name(tree)) == {"a.py", "b.py"}
+
+
+def test_build_tree_untagged_graph_is_unchanged_by_repo_grouping():
+    graph = _graph({"pkg/a.py": "func_a", "pkg/sub/b.py": "func_b"})
+    assert "repo" not in graph["nodes"][0]
+    tree = build_tree(graph)
+    assert tree["name"] == "pkg"
+    assert {"a.py", "sub"} <= set(_by_name(tree))
+
+
 def test_build_tree_merged_graph_explicit_root_matching_nothing_raises():
     graph = _merged_graph({
         "repo-a": {"src/a.py": "A"},
