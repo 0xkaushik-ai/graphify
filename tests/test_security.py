@@ -461,3 +461,32 @@ def test_sanitize_metadata_bool_not_coerced_to_int():
     assert out["flag_t"] is True
     assert out["flag_f"] is False
     assert out["num"] == 1
+
+
+# ── redact_secrets ────────────────────────────────────────────────────────────
+
+def test_redact_secrets_shapes():
+    from graphify.security import redact_secrets
+    cases = [
+        "ghp_" + "a" * 36,
+        "AKIA" + "IOSFODNN7EXAMPLE",
+        "sk_live_" + "x" * 24,
+        "xoxb-1234567890-abcdefghij",
+        "-----BEGIN OPENSSH PRIVATE KEY-----",
+        "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.abcdefghijk",
+    ]
+    for secret in cases:
+        out = redact_secrets(f"see {secret} here")
+        assert secret not in out and "[redacted]" in out, secret
+
+
+def test_redact_secrets_url_password_keeps_host():
+    from graphify.security import redact_secrets
+    assert redact_secrets("postgres://svc:hunter2@db.internal/app") == "postgres://[redacted]@db.internal/app"
+
+
+def test_redact_secrets_leaves_plain_text_and_none():
+    from graphify.security import redact_secrets
+    assert redact_secrets("use chunked processing; see https://example.com/a/b") == "use chunked processing; see https://example.com/a/b"
+    assert redact_secrets(None) == ""
+    assert redact_secrets("") == ""

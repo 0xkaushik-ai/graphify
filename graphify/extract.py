@@ -16,6 +16,7 @@ from pathlib import Path, PurePath
 from typing import Any, Callable
 
 from .cache import load_cached, save_cached
+from .security import redact_secrets
 from .mcp_ingest import extract_mcp_config, is_mcp_config_path
 from .manifest_ingest import extract_package_manifest, is_package_manifest_path
 from .resolver_registry import (
@@ -1759,6 +1760,9 @@ def _shorten_rationale_label(text: str, width: int = 80) -> str:
     an unbroken URL) -- that would emit a content-free label, so fall back to
     a plain character truncation of the normalized text in that case.
     """
+    # Redact BEFORE shortening: truncating first could cut a token mid-way and
+    # leave an unredactable prefix in the label.
+    text = redact_secrets(text)
     label = textwrap.shorten(text, width=width, placeholder="…")
     if label in ("", "…"):
         flat = " ".join(text.split())
