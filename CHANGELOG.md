@@ -4,7 +4,7 @@ Full release notes with details on each version: [GitHub Releases](https://githu
 
 ## 0.9.93 (2026-10-20)
 
-Seven community pull requests: Kotlin/C#/Swift/Rust extraction fixes so a reference to a type alias, delegate, macro or sibling-module `use` resolves to its real declaration instead of minting a sourceless stub; a node-confidence fold, a truncated-reply label decode, and a `.graphifyrc` BOM fix. The AST cache schema is bumped, so the first build after upgrading re-extracts.
+Fifteen community pull requests. Extraction: a reference to a Kotlin type alias, C# delegate, Swift macro, Dart typedef, Python module function or Rust sibling-module `use` now resolves to its real declaration instead of minting a sourceless stub; Metal/CUDA GPU qualifiers no longer mint god nodes; `extern "C"` headers route to the C++ extractor. Plus a credential-redaction pass on rationale labels, a node-confidence fold, a truncated-reply label decode, a `.graphifyrc` BOM fix, a GraphML multigraph export fix, and two PR-tooling fixes (slashed default branch, legacy CI statuses). The AST cache schema is bumped, so the first build after upgrading re-extracts.
 
 - Fix: **Kotlin** a `typealias` declaration is extracted, so a field or parameter typed as the alias resolves to it instead of minting a sourceless cross-file stub (#4553, #4557, thanks @rajatnagda45).
 - Fix: **C#** a `delegate` declaration is extracted, so references resolve to it instead of a sourceless stub; built-in `Func<>`/`Action<>` stay external (#4552, #4556, thanks @rajatnagda45).
@@ -13,6 +13,14 @@ Seven community pull requests: Kotlin/C#/Swift/Rust extraction fixes so a refere
 - Fix: **build** a node's drifted or legacy confidence is folded onto the enum the same way edges and hyperedges already are, so a node no longer reaches graph.json with an unnormalized confidence (#4529, #4531, thanks @rudycelekli; reported by @grazenN).
 - Fix: **llm** community labels salvaged from a truncated reply are JSON-decoded, so an escaped label (`\"`, `\n`, `\uXXXX`, surrogate pairs) is no longer kept with literal backslash escapes (#4537, thanks @rudycelekli).
 - Fix: **rcfile** `.graphifyrc` is read as utf-8-sig, so a file saved with a UTF-8 BOM no longer drops its first key (#4538, thanks @rudycelekli).
+- Fix: **Dart** a `typedef` is extracted as a type alias on its own line, including the legacy `typedef R name(args)` form, instead of a bogus variable of type `typedef`; a field or parameter typed by the alias resolves to it rather than minting a sourceless `typedef` stub (#4582, thanks @madhusudanpatnaik).
+- Fix: **Python** a `module.func()` call resolves to the module child named exactly `func`, even when a same-key sibling (for example a `FuncSchema` class beside a `func_schema` function) previously made the lookup ambiguous and dropped the edge; it never binds to a same-named child of an unrelated module (#4577, thanks @madhusudanpatnaik).
+- Fix: **C++** Metal and CUDA GPU address/execution-space qualifiers (`kernel`, `device`, `constant`, `__global__`, `__device__`, ...) in a `.metal`/`.cu` file no longer mint sourceless god nodes; the kernel function still extracts and a `<<<...>>>` launch still resolves (#4550, #4554, thanks @rajatnagda45).
+- Fix: **extract** a `.h` header containing `extern "C"` is routed to the C++ extractor, so a C-API header the C grammar rejects extracts its symbols instead of nothing (#4526, thanks @bekzodibragimov2004-design).
+- Fix: **extract** credential-shaped text (API keys, tokens, Bearer tokens, private-key headers, `user:pass@` URLs) in a comment or docstring that becomes a rationale label is redacted before it reaches graph.json, the viz or exports; ordinary identifiers such as git SHAs and UUIDs are left intact (#4566, thanks @0xkaushik-ai).
+- Fix: **export** GraphML export of a graph loaded as a MultiGraph (a graph with parallel edges, after #4500) no longer crashes with an empty output; parallel edges are written with distinct keys and round-trip through `read_graphml` (#4536, thanks @rudycelekli).
+- Fix: **prs** the default branch is derived by stripping only the `refs/remotes/origin/` prefix, so a branch name that contains a slash (for example `release/2.x`) is kept whole and PRs against it are no longer all dropped as wrong-base (#4534, thanks @rudycelekli).
+- Fix: **prs** CI classification now reads legacy commit-status `StatusContext` state in addition to check-run conclusions, so a PR whose only signal is an external status (Jenkins, CircleCI) is classified correctly, with a failing status taking precedence (#4533, thanks @rudycelekli).
 
 ## 0.9.92 (2026-10-16)
 
