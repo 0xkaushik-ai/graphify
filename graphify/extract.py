@@ -4793,14 +4793,18 @@ def _resolve_python_member_calls(
     # join would miss under an explicit cache_root). The `imports` edge's source
     # is the caller's own file node; `contains` maps a file node to its children.
     contains_children: dict[str, dict[str, list[str]]] = {}
+    # The same children by exact name, for a folded key several of them share.
+    contains_exact: dict[tuple[str, str], list[str]] = {}
     file_of_node: dict[str, str] = {}
     for e in all_edges:
         if e.get("relation") == "contains":
             src, tgt = e.get("source"), e.get("target")
             tnode = node_by_id.get(tgt)
             if tnode is not None:
+                label = str(tnode.get("label", ""))
                 contains_children.setdefault(src, {}).setdefault(
-                    _key(tnode.get("label", "")), []).append(tgt)
+                    _key(label), []).append(tgt)
+                contains_exact.setdefault((src, label.strip("()").lstrip(".")), []).append(tgt)
                 file_of_node[tgt] = src
     imported_by_filenode: dict[str, set[str]] = {}
     # Local alias bound by `as` on a specific import edge (#2082): `from pkg import
@@ -5077,6 +5081,11 @@ def _resolve_python_member_calls(
             if len(mods) != 1:  # not an imported module, or ambiguous -> bail
                 continue
             children = contains_children[mods[0]].get(_key(callee), [])
+            if len(children) > 1:
+                # The key folds case and drops `_`, so `dataclass_schema()` and
+                # `class DataclassSchema` share it; Python names are exact. Among
+                # them, the one named exactly `callee` is the call's target.
+                children = contains_exact.get((mods[0], callee), [])
             if len(children) != 1:  # absent or ambiguous callable -> bail
                 continue
             _emit_call(caller, children[0], rc)
