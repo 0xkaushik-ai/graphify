@@ -490,3 +490,25 @@ def test_redact_secrets_leaves_plain_text_and_none():
     assert redact_secrets("use chunked processing; see https://example.com/a/b") == "use chunked processing; see https://example.com/a/b"
     assert redact_secrets(None) == ""
     assert redact_secrets("") == ""
+
+
+def test_redact_secrets_opaque_bearer_token():
+    # An opaque (non-JWT) Bearer token is redacted; the word "Bearer" is kept.
+    from graphify.security import redact_secrets
+    out = redact_secrets("Authorization: Bearer abcDEF123456ghiJKL789mnop")
+    assert "abcDEF123456ghiJKL789mnop" not in out
+    assert out == "Authorization: Bearer [redacted]"
+
+
+def test_redact_secrets_does_not_mangle_hashes_and_ids():
+    # Over-redaction guard: a credential-redactor that mangled ordinary
+    # high-entropy identifiers would corrupt real rationale labels. A git SHA,
+    # a sha256 digest and a UUID must pass through untouched.
+    from graphify.security import redact_secrets
+    for benign in (
+        "see commit 1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b for context",
+        "digest sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "run id 550e8400-e29b-41d4-a716-446655440000 completed",
+        "class AkiaConfigProvider implements Provider",
+    ):
+        assert redact_secrets(benign) == benign, benign

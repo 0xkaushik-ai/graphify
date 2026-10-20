@@ -404,6 +404,7 @@ _SECRET_SHAPE_RE = re.compile(
     r"|\bsk-(?:ant-|proj-)?[A-Za-z0-9_-]{20,}"
     r"|\bAIza[0-9A-Za-z_-]{35}\b"
     r"|\beyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}"
+    r"|(?<=\bBearer )[A-Za-z0-9._~+/=-]{16,}"
     r"|(?<=://)[^\s/:@]+:[^\s/@]+(?=@)"
 )
 
