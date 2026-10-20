@@ -1437,8 +1437,8 @@ def _query_graph_text(
         for value in seeds:
             nid = resolve_seed(G, value, seed_root)
             if nid is None:
-                _nid, refusal = _resolve_single_node(G, value)
-                if _is_ambiguity_refusal(refusal):
+                refusal = _query_name_refusal(G, value)
+                if refusal:
                     if refusal not in ambiguous_refusals:
                         ambiguous_refusals.append(refusal)
                 elif value not in unresolved:
@@ -1453,11 +1453,12 @@ def _query_graph_text(
             return "No unique node match for --seed: " + ", ".join(seeds)
         return _render_query(G, question, start_nodes, mode=mode, depth=depth, token_budget=token_budget,
                              context_filters=context_filters, graph_path=graph_path, given=True, unresolved=unresolved)
-    # A question that names one symbol shared by several nodes is refused,
-    # matching `explain` and `path` (#4511). A sentence that is not itself a
-    # node name falls through to keyword scoring.
-    _node, _refusal = _resolve_single_node(G, question)
-    if _is_ambiguity_refusal(_refusal):
+    # A question that is itself the exact name of several nodes is refused,
+    # matching `explain` and `path` (#4511). A sentence, or a bare keyword that
+    # only prefix/substring-matches labels, is not an ambiguous node name and
+    # falls through to keyword scoring (#4517).
+    _refusal = _query_name_refusal(G, question)
+    if _refusal:
         return _refusal
     terms = _query_terms(question)
     # One graph scoring pass produces both the combined ranking (used to drive
@@ -1800,6 +1801,28 @@ def _resolve_single_node(G: nx.Graph, label: str) -> tuple[str | None, str | Non
     if refusal:
         return None, refusal
     return tier[0], None
+
+
+def _query_name_refusal(G: nx.Graph, label: str) -> str | None:
+    """Refuse a `query`/`--seed` value only when it is a literal node NAME that
+    matches several nodes, not when it is merely a search keyword.
+
+    `query` doubles as keyword search, so a bare term that prefix- or
+    substring-matches several labels (`client` -> `AlphaClient`, `BetaClient`) is a
+    legitimate exploratory search and must still score, not be refused. Only an
+    EXACT-tier tie (the term is itself the name of two or more nodes, as in #4511's
+    `.nonce()`) is a genuinely ambiguous node reference and gets the same refusal
+    `explain`/`path` give. Returns the refusal message, or None to fall through to
+    scoring. (`explain`/`path`/get_node keep using `_resolve_single_node`, whose
+    lower prefix/substring tiers are correct for a direct node lookup.)
+    """
+    source_exact, exact, _prefix, _substring = _find_node_tiers(G, label)
+    tier = source_exact or exact
+    if not tier:
+        return None
+    refusal = _tier_refusal(G, label, tier,
+                            file_query=bool(source_exact) and "::" not in label)
+    return refusal if _is_ambiguity_refusal(refusal) else None
 
 
 def _tier_refusal(G: nx.Graph, label: str, tier: list[str], *, file_query: bool) -> str | None:

@@ -148,3 +148,14 @@ def test_query_missing_seed_exits_not_found(monkeypatch, tmp_path, capsys):
         "query", "anything", "--seed", "NoSuchSymbolXyz", "--graph", str(_write_graph(tmp_path)))
     assert code == EXIT_NOT_FOUND
     assert "No unique node match for --seed: NoSuchSymbolXyz" in out
+
+
+def test_query_substring_keyword_still_searches_not_refused(monkeypatch, tmp_path, capsys):
+    """A bare keyword that only prefix/substring-matches labels (`client` ->
+    `AlphaClient`, `BetaClient`) is an exploratory search, not an ambiguous node
+    name, so query scores it instead of refusing (#4517). Only an EXACT-tier tie
+    (like `.nonce()`) refuses."""
+    code, out = _run(monkeypatch, capsys, "query", "client", "--graph", str(_write_graph(tmp_path)))
+    assert code != EXIT_AMBIGUOUS
+    assert "Ambiguous:" not in out
+    assert "Client" in out  # it actually searched and surfaced a client node
