@@ -2,6 +2,18 @@
 
 Full release notes with details on each version: [GitHub Releases](https://github.com/Graphify-Labs/graphify/releases)
 
+## 0.9.93 (2026-10-20)
+
+Seven community pull requests: Kotlin/C#/Swift/Rust extraction fixes so a reference to a type alias, delegate, macro or sibling-module `use` resolves to its real declaration instead of minting a sourceless stub; a node-confidence fold, a truncated-reply label decode, and a `.graphifyrc` BOM fix. The AST cache schema is bumped, so the first build after upgrading re-extracts.
+
+- Fix: **Kotlin** a `typealias` declaration is extracted, so a field or parameter typed as the alias resolves to it instead of minting a sourceless cross-file stub (#4553, #4557, thanks @rajatnagda45).
+- Fix: **C#** a `delegate` declaration is extracted, so references resolve to it instead of a sourceless stub; built-in `Func<>`/`Action<>` stay external (#4552, #4556, thanks @rajatnagda45).
+- Fix: **Swift** `macro` declarations are extracted and a freestanding `#macro(...)` call resolves to the declaration; an unknown or standard-library macro stays unresolved rather than minting a stub (#4551, #4555, thanks @rajatnagda45).
+- Fix: **Rust** a `use` rooted at a sibling `mod` (for example `use item::Thing;`) now reaches its declaration, while an external `use serde::...` still does not hijack a same-named local type (#4564, #4567, thanks @Deepjyoti-Sarmah; reported by @almothafar-maf).
+- Fix: **build** a node's drifted or legacy confidence is folded onto the enum the same way edges and hyperedges already are, so a node no longer reaches graph.json with an unnormalized confidence (#4529, #4531, thanks @rudycelekli; reported by @grazenN).
+- Fix: **llm** community labels salvaged from a truncated reply are JSON-decoded, so an escaped label (`\"`, `\n`, `\uXXXX`, surrogate pairs) is no longer kept with literal backslash escapes (#4537, thanks @rudycelekli).
+- Fix: **rcfile** `.graphifyrc` is read as utf-8-sig, so a file saved with a UTF-8 BOM no longer drops its first key (#4538, thanks @rudycelekli).
+
 ## 0.9.92 (2026-10-16)
 
 Twenty-three community pull requests: call-resolution and id-collision fixes across JS/TS, Python, Go, Rust and Solidity; graph round-trip, dedup and confidence-folding fixes; skill code-only-update and dispatch fixes; and LLM/Ollama and detection fixes. The AST cache schema is bumped, so the first build after upgrading re-extracts.
