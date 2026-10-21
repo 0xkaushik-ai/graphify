@@ -3739,6 +3739,19 @@ def _find_require_call(value_node):
         return _find_require_call(obj)
     return None
 
+def _js_value_is_require(value_node, source: bytes) -> bool:
+    """True only when `value_node` is a literal `require(...)` call (or
+    `require(...).x`). `_find_require_call` matches any `identifier(...)` callee,
+    so the module-scope binding guard must name-check the callee; otherwise it
+    also suppresses real `const x = factory()` nodes and breaks #2604/#2552
+    (#4634)."""
+    call = _find_require_call(value_node)
+    if call is None:
+        return False
+    fn = call.child_by_field_name("function")
+    return fn is not None and _read_text(fn, source) == "require"
+
+
 def _require_imports_js(node, source: bytes, importer_nid: str, stem: str, edges: list, str_path: str) -> bool:
     """Detect CommonJS require imports inside lexical_declaration / variable_declaration.
 
@@ -4415,7 +4428,7 @@ def _js_extra_walk(node, source: bytes, file_nid: str, stem: str, str_path: str,
                         # shadowed the class the required file exports, so
                         # `new X()` bound to the local node instead of the
                         # required one (#4621). `var` never produced one either.
-                        and _find_require_call(value) is None
+                        and not _js_value_is_require(value, source)
                         and (
                             is_exported_scalar_binding
                             or value.type in (
