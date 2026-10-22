@@ -1815,7 +1815,8 @@ def _near_miss_message(G: nx.Graph, label: str, hits: list[str], *, limit: int =
 
 
 def _resolve_single_node(G: nx.Graph, label: str) -> tuple[str | None, str | None]:
-    """Shared node resolution for the get_node / get_neighbors tools.
+    """Shared node resolution for the `explain` CLI command and the get_node /
+    get_neighbors MCP tools.
 
     Returns ``(node_id, None)`` when *label* resolves to a single winner via the
     tiered `_find_node` ranking, or ``(None, message)`` when there is no match or
