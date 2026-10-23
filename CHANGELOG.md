@@ -2,6 +2,10 @@
 
 Full release notes with details on each version: [GitHub Releases](https://github.com/Graphify-Labs/graphify/releases)
 
+## 0.9.95 (2026-10-23)
+
+- Fix: **extract** a bare call that resolves to a same-named symbol only because the caller imported that symbol's module (`from b import other`, then a call to a `_make_id` defined in both `a.py` and `b.py`) is no longer promoted to `EXTRACTED`; the edge is still emitted for connectivity but stays `INFERRED`, so a symbol that was never imported is not falsely certified. A real symbol import (`from a import _make_id`) still resolves `EXTRACTED` (#2945, #4707, thanks @nothariharan; reported by @TotalUnitManagement).
+
 ## 0.9.94 (2026-10-22)
 
 Nineteen community pull requests. A security pass on ingestion: a fetched URL with no hostname, with a malformed or zero port, or with embedded `user:pass@` credentials is now rejected before the request leaves, on the first fetch and on every redirect, and a text capture no longer follows a dangling symlink out of the corpus. Extraction and resolution: a Maven POM contributes only its own dependencies, a JS/TS member call on an untyped receiver stops guessing a same-named method in the same file, a CommonJS `require` binding no longer shadows the class the required file exports, and Objective-C category node ids stay repo-relative instead of embedding the absolute checkout path. SQL gets its own pass: T-SQL bracketed names are unbracketed, a `GO` batch separator ends the statement, cross-file table stubs fold onto their real definition, and a procedure emits `reads_from`/`writes_to` edges. Plus a markdown bare method only links when its class is cited, the MCP node lookup refuses a substring near-miss instead of answering with an unrelated node, a cross-repo edge points at the call site, Objective-C calls resolve across a split header/impl, an incremental build stops re-queuing files an extractor declined by design, a quoted Codex hook command for install paths with spaces, an IPv6 bracketed-`Host` serve fix, and a complete, drift-guarded `--platform` list in `--help`. The AST cache schema is bumped, so the first build after upgrading re-extracts.
