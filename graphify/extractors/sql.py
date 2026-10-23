@@ -986,6 +986,8 @@ def extract_sql(path: Path, content: str | bytes | None = None) -> dict:
                 continue
             tbl_name = m.group(1)
             tbl_line = src_text[: m.start()].count("\n") + 1
-            _add_node(_make_id(stem, tbl_name), tbl_name, tbl_line)
+            # Clean the label (brackets/quotes) for display but key the id off the
+            # raw name so it matches the pre-pass registration the FK edges resolved to.
+            _add_node(_make_id(stem, tbl_name), _clean_ident(tbl_name), tbl_line)
 
     return {"nodes": nodes, "edges": edges}
