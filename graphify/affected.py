@@ -120,11 +120,21 @@ def _prefer_file_node(
 ) -> str | None:
     """Return the file-level node when a source_file query matches many nodes."""
     query_basename = _normalize_label(Path(query).name)
+    query_norm = _normalize_label(query)
+
+    def _is_file_label(label: str) -> bool:
+        # Label disambiguation renames a file node whose basename is shared
+        # (`hooks.py` -> `alpha/hooks.py`), so a path suffix of the query counts
+        # as the file's own name too (#4698). Without it, a second L1 node such
+        # as a module docstring's rationale node tied with the file node.
+        label = _normalize_label(label)
+        return label in (query_basename, query_norm) or query_norm.endswith("/" + label)
+
     exact_file_nodes = [
         node_id
         for node_id in node_ids
         if str(graph.nodes[node_id].get("source_location", "")) == "L1"
-        and _normalize_label(str(graph.nodes[node_id].get("label", ""))) == query_basename
+        and _is_file_label(str(graph.nodes[node_id].get("label", "")))
     ]
     if len(exact_file_nodes) == 1:
         return exact_file_nodes[0]
