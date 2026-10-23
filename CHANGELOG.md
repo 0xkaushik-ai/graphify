@@ -4,6 +4,7 @@ Full release notes with details on each version: [GitHub Releases](https://githu
 
 ## 0.9.95 (2026-10-23)
 
+- Feature: **yaml** `.yaml`/`.yml` files are now extracted structurally (a file node plus `contains` edges to keys) and classified as code rather than documents, so Helm charts, Kubernetes manifests, and CI pipelines contribute nodes to a code-only or `--update` run instead of nothing, matching how `.json` is handled. Multi-document streams (`---` separators) are walked per document; a data array, an OpenAPI/Swagger spec, a JSON-schema-in-YAML, and a flat data bundle are skipped so data-heavy YAML does not mint orphan nodes; parsing uses `safe_load` so a `!!python/...` tag never executes; output is bounded (1 MiB, 500 pairs, depth 6). The AST cache schema is bumped, so the first build after upgrading re-extracts (#2214, #4706, thanks @nothariharan; reported by @dchavezf).
 - Fix: **extract** a bare call that resolves to a same-named symbol only because the caller imported that symbol's module (`from b import other`, then a call to a `_make_id` defined in both `a.py` and `b.py`) is no longer promoted to `EXTRACTED`; the edge is still emitted for connectivity but stays `INFERRED`, so a symbol that was never imported is not falsely certified. A real symbol import (`from a import _make_id`) still resolves `EXTRACTED` (#2945, #4707, thanks @nothariharan; reported by @TotalUnitManagement).
 
 ## 0.9.94 (2026-10-22)
